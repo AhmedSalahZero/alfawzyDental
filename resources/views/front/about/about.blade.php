@@ -79,7 +79,7 @@
             <x-badges.badge : :title="__('Meet The Founders')" :lg="true"></x-badges.badge>
         </div>
         <div class="founders flex flex-col mt-3 gap-8 items-start ">
-            @foreach($specialCategory->members as $member)
+            @foreach($specialCategory->members??[] as $member)
             <div class="founder shadow-md rounded-2xl element-internal-padding space-y-5 flex justify-center items-cener flex-col md:flex-row  gap-12 w-full">
                 <div class="founder-info text-center w-[332px] mx-auto">
                     <img src="{{ get_file($member->image) }}" alt="" class="rounded-2xl mb-6  max-w-full h-[325px] object-cover ">
