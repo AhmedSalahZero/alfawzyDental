@@ -37,16 +37,14 @@
         </div>
         <div class="main-branches-google py-10 px-2 md:px-10 flex flex-col md:flex-row items-start  bg-white shadow-sm md:rounded-[48px] mt-20">
             <div class="basis-1/3">
-                <img src="{{ asset('front/image/contact-directions.png') }}" class="max-w-full" alt="">
+                <img src="{{get_file($settings->contact_us_image) }}" class="max-w-full" alt="">
             </div>
             <div class="basis-2/3  max-w-[666px]">
                 <p class="text-lg leading-8">
-                    {!!
-                    __('Our business has a 4.8-star rating on Google platform, based on over 700 reviews from satisfied customers. <br> <br> Our quick and professional responses to all reviews demonstrate our commitment to delivering excellent services and providing a positive experience for all our customers. <br> <br> By continuously monitoring and improving standards based on customer feedback, we have seen an increase in online visibility and a stronger reputation in the business.')
-                    !!}
+                   {{$settings->contact_us_desc}}
                 </p>
 				<div class="map__link mt-5 ">
-					<a href="#" class=" inline-flex items-center justify-center min-h-[64px] w-[244px] gap-2 capitalize bg-main text-white rounded-2xl shadow-sm">
+					<a href="{{$settings->contact_us_link}}" class=" inline-flex items-center justify-center min-h-[64px] w-[244px] gap-2 capitalize bg-main text-white rounded-2xl shadow-sm">
 						<i class="icon-size fa-brands fa-google  "></i>
 						<span class="text-lg font-semibold ">{{ __('Map Link') }}</span>
 					</a>

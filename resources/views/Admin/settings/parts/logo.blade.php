@@ -50,6 +50,17 @@
         </div>
 
         <div class="form-group row mb-4">
+            <label for="main_home_image" class="col-md-2 col-form-label">  صورة تواصل معنا
+            </label>
+            <div class="col-md-10">
+                <input type="file"
+                       data-default-file="{{get_file($settings->contact_us_image)}}"
+                       class="form-control dropify" id="contact_us_image" name="contact_us_image"
+                       placeholder="">
+            </div>
+        </div>
+
+        <div class="form-group row mb-4">
             <label for="video_footer" class="col-md-2 col-form-label">    Video In Footer
             </label>
             <div class="col-md-10">

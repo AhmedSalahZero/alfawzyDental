@@ -51,6 +51,7 @@ class SettingController extends Controller
         $data['fave_icon'] = $setting->fave_icon;
         $data['main_home_image'] = $setting->main_home_image;
         $data['video_footer'] = $setting->video_footer;
+        $data['contact_us_image'] = $setting->contact_us_image;
 
         //--------------------------------------------------
         if ($request->hasFile('logo_header'))
@@ -67,6 +68,9 @@ class SettingController extends Controller
 
         if ($request->hasFile('video_footer'))
             $data["video_footer"] = $this->uploadFiles('settings', $request->file('video_footer'), null);
+
+        if ($request->hasFile('contact_us_image'))
+            $data["contact_us_image"] = $this->uploadFiles('settings', $request->file('contact_us_image'), null);
 
         return $data;
     }
@@ -113,6 +117,8 @@ class SettingController extends Controller
             "app_name" => $request->app_name,
             "partner_title" => $request->partner_title,
             "partner_desc" => $request->partner_desc,
+            "contact_us_link" => $request->contact_us_link,
+            "contact_us_desc" => $request->contact_us_desc,
 
         ];
     }

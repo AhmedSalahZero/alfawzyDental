@@ -45,34 +45,34 @@ function getPages(): array
     return [
         'about' => [
             'title' => __('About'),
-            'url' => '#',
+            'url' => route('web_services.index'),
             'is_active' => false
         ],
         'our-services' => [
             'title' => __('Our Services'),
-            'url' => '#',
+            'url' => route('web_services.index'),
             'is_active' => false
         ],
         'our partners' => [
             'title' => __('Our Partners'),
-            'url' => '#',
+            'url' => route('web_partners.index'),
             'is_active' => false
         ],
         'Gallery' => [
             'title' => __('Gallery'),
-            'url' => '#',
+            'url' => route('web_gallery.index'),
             'is_active' => false
         ], 'Dental Tourism' => [
             'title' => __('Dental Tourism'),
-            'url' => '#',
+            'url' => route('dental.tourism.index'),
             'is_active' => false
         ], 'FAQs' => [
             'title' => __('FAQs'),
-            'url' => '#',
+            'url' => route('web_faq.index'),
             'is_active' => false
         ], 'Contacts' => [
             'title' => __('Contacts'),
-            'url' => '#',
+            'url' => route('web_contacts.index'),
             'is_active' => false
         ],
 
