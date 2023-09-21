@@ -51,7 +51,7 @@
                     <a class="nav-link" id="v-pills-counter-tab" data-bs-toggle="pill" href="#v-pills-counter" role="tab"
                        aria-controls="v-pills-counter" aria-selected="false">
                         <i class="bx bxs-comment d-block check-nav-icon mt-1 mb-1"></i>
-                        <p class="fw-bold mb-4">  Counter Setting</p>
+                        <p class="fw-bold mb-4">  اعدادات العدادات </p>
                     </a>
 
 
