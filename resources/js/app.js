@@ -1,1 +1,13 @@
-import './bootstrap';
+// 1- load jquery
+const $ = require('jquery')
+window.$ = window.Jquery = $;
+
+// s-alpine js
+import Alpine from 'alpinejs'
+window.Alpine = Alpine;
+Alpine.start();
+
+// swiper
+const Swiper = require('swiper/bundle');
+require('swiper/css/bundle');
+window.Swiper = Swiper.Swiper ;

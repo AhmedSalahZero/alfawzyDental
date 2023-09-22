@@ -1,0 +1,38 @@
+.map {
+    position: relative;
+    &__canvas {
+        margin: 0 !important;
+    }
+    &__content {
+    }
+   
+    &__btn {
+        @apply lg:mt-0 lg:w-48 max-w-[200px]   md:max-w-[250px] lg:max-w-[400px] mx-auto lg:mx-0 lg:mr-[-4px];
+    }
+	&__popup{
+		@apply w-full h-full 
+	}
+	&__img{
+		height:130px;
+		width:100%;
+		object-fit:cover;
+	}
+}
+
+.gmnoprint,
+.gm-control-active,
+.gm-svpc,
+.gmnoprint,
+img[alt="Google"][draggable="false"] {
+    display: none !important;
+}
+.gm-style-iw.gm-style-iw-c
+{
+	max-width:initial !important;
+	max-height:initial !important;
+	width:250px;
+	height:260px;
+	padding-bottom:  3rem;
+	box-sizing:inherit;
+	// height:243px;
+}

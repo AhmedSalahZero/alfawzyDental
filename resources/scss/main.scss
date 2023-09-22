@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./base/variables";
+@import "./base/type";
+@import "./base/utilities";
+@import "./components/min-service";
+@import "./components/swiper";
+@import "./components/swiper-header";
+@import "./components/map";
+@import "./components/faq";
+@import "./components/gallery";
+@import "./components/doctor-card";
+@import "./base/mixin";
+@import "./layout/header";
+// md:text-5xl -> text-2xl

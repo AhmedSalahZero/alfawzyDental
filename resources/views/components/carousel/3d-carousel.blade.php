@@ -6,7 +6,6 @@
     <!--you can swap "threeD" for "twoD" -->
 	<section id="container" class='threeD relative'>
 		<figure id="carousel" class=''></figure>
-
 		   <div class="z-50 w-[50px] h-[100px] absolute top-full  left-[43%] -translate-x-1/2  -translate-y-1/2 ">
 	        <div id="prev" class=" swiper-button-prev after:!text-sm swiper-button-prev-video !h-6 !w-6  z-10 absolute !left-[-40px]  !mt-0 !top-1/2 !-translate-y-1/2"></div>
 	        <div id="next" class=" swiper-button-next after:!text-sm swiper-button-next-video !h-6 !w-6  z-10 absolute !right-[-40px] !mt-0 !top-1/2 !-translate-y-1/2 "></div>
@@ -159,7 +158,6 @@
 		enableNextCtrl();
 		enablePrevCtrl();
 		$('body').addClass('ready');
-		console.log('Ready');
 		return this;
 	};
 	function morph(){
@@ -182,7 +180,6 @@
 		if(posCtrlLbl !== undefined){
 			_obj.posCtrlLbl.text(Math.abs(_obj.pos));
 		}
-		console.log(_obj.pos);
 	};
 	this.toggleAxis = function(){
 		_obj.axis = _rotOpp[_obj.axis];
@@ -233,12 +230,31 @@ $(document).ready(function(){
 			generateColors:true,
 			displayBackface:true,
 		});
+		
+		$(document).on('click','figure[data-pos]',function(){
+			const video  = `<video class="video-class" autoplay loop>
+          <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"/>
+          <source src="http://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg"/>
+     </video>`;
+			this.outerHTML=video
+			window.dispatchEvent(new Event('resize'));
+
+			
+		})
 	});
+	
+
+
 	$('#3DCtrl').click(function(){$('#container').toggleClass('twoD threeD');})
 		</script>
 	@endpush
 @push('css')
 	<style>
+	.video-class{
+		width:100%;
+		height:100%;
+		object-fit:cover;
+	}
 	.carousel * {max-width:100%;	max-height:100%;}
 .carousel {
   width: 100%;
@@ -277,7 +293,8 @@ $(document).ready(function(){
 	bottom:0;
 	display:none;
 }
-figure {
+figure,video {
+	cursor:pointer;
 	display: block;
 	-webkit-margin-before: 0;
 	-webkit-margin-after: 0;
@@ -342,7 +359,7 @@ overflow:hidden;
 	top:0;
 	border-radius: 	0;
 }
-figure{
+figure,video{
 	background-repeat:no-repeat;
 	background-size:100%;
 	background-position:center center;

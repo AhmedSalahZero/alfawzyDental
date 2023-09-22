@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "Albert_Sans";
+    src: url("/front/fonts/Albert_Sans/AlbertSans-Thin.ttf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Albert_Sans";
+    src: url("/front/fonts/Albert_Sans/AlbertSans-ExtraLight.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Albert_Sans";
+    src: url("/front/fonts/Albert_Sans/AlbertSans-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Albert_Sans";
+    src: url("/front/fonts/Albert_Sans/AlbertSans-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Albert_Sans";
+    src: url("/front/fonts/Albert_Sans/AlbertSans-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Albert_Sans";
+    src: url("/front/fonts/Albert_Sans/AlbertSans-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Albert_Sans";
+    src: url("/front/fonts/Albert_Sans/AlbertSans-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Albert_Sans";
+    src: url("/front/fonts/Albert_Sans/AlbertSans-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Albert_Sans";
+    src: url("/front/fonts/Albert_Sans/AlbertSans-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+html,
+body{
+	font-family:'Albert_Sans',sans-serif;
+	height:100%;
+}
+
+.header__text{
+	@apply text-xl sm:text-2xl md:text-5xl;
+}
+.section-header{
+	@apply mb-24
+}
+
+.main__title__bold
+{
+	@apply capitalize text-3xl sm:text-5xl font-bold tracking-tight text-black;
+}
+.main__title
+{
+	@apply text-black text-xl  sm:text-3xl font-bold leading-[52px] capitalize
+}
+.sub__title
+{
+	@apply capitalize font-semibold  text-2xl sm:text-4xl
+}
+.normal__title
+{
+	@apply text-lg font-semibold ;
+}
+.normal__header
+{
+	@apply text-base font-semibold ;
+}
+.description__paragraph
+{
+	@apply text-[#231F20] font-normal text-lg text-justify leading-7 ;
+}

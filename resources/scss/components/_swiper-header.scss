@@ -1,0 +1,32 @@
+.header-swiper .swiper-wrapper{
+	height:100% !important
+}
+.header-swiper {
+	position: absolute !important;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 99;
+}
+
+.header-swiper .swiper-slide {
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.header-swiper .swiper-slide {
+	text-align: center !important;
+	font-size: 18px !important;
+	background: transparent !important;
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
+}
+
+.header-swiper .swiper-slide img {
+	display: block !important;
+	width: 100% !important;
+	height: 100% !important;
+	object-fit: cover !important;
+}
