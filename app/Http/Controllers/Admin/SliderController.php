@@ -4,11 +4,11 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Http\Traits\Upload_Files;
-use App\Models\Review;
+use App\Models\Slider;
 use Illuminate\Http\Request;
 use Yajra\DataTables\DataTables;
 
-class ReviewController extends Controller
+class SliderController extends Controller
 {
     //
     use Upload_Files;
@@ -17,7 +17,7 @@ class ReviewController extends Controller
     {
 
         if ($request->ajax()) {
-            $admins = Review::query()->latest();
+            $admins = Slider::query()->latest();
             return DataTables::of($admins)
                 ->addColumn('action', function ($admin) {
 
@@ -46,22 +46,15 @@ class ReviewController extends Controller
 
 
                 })
-                ->editColumn('rate', function ($row) {
 
-                    $rate='';
-                    for ($i=0;$i<$row->rate;$i++)
-                        $rate=$rate.'<i class="fas fa-star fa-2x" style="color: yellow;"></i>';
-
-                    return $rate;
-                })
-
-                    ->editColumn('image', function ($admin) {
+                ->editColumn('image', function ($admin) {
                     return '
                               <a data-fancybox="" href="' . get_file($admin->image) . '">
                                 <img height="60px" src="' . get_file($admin->image) . '">
                             </a>
                              ';
                 })
+
 
                 ->editColumn('created_at', function ($admin) {
                     return date('Y/m/d', strtotime($admin->created_at));
@@ -71,33 +64,31 @@ class ReviewController extends Controller
 
 
         }
-        return view('Admin.CRUDS.reviews.index');
+        return view('Admin.CRUDS.sliders.index');
     }
 
 
     public function create()
     {
 
-        return view('Admin.CRUDS.reviews.parts.create');
+
+        return view('Admin.CRUDS.sliders.parts.create');
     }
 
     public function store(Request $request)
     {
         $data = $request->validate([
-            'name' => 'required',
+            'title' => 'required',
             'image' => 'required|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
-            'rate' => 'required|regex:/^\d+(\.\d{1,2})?$/',
-            'text' => 'required',
-
 
         ]);
 
         if ($request->image)
-            $data["image"] = $this->uploadFiles('reviews', $request->file('image'), null);
+            $data["image"] = $this->uploadFiles('sliders', $request->file('image'), null);
 
 
 
-        Review::create($data);
+        Slider::create($data);
 
 
         return response()->json(
@@ -118,28 +109,27 @@ class ReviewController extends Controller
 
     public function edit($id)
     {
-        $row=Review::findOrFail($id);
-        return view('Admin.CRUDS.reviews.parts.edit', compact('row'));
+        $row=Slider::findOrFail($id);
+
+        return view('Admin.CRUDS.sliders.parts.edit', compact('row'));
 
     }
 
     public function update(Request $request, $id)
     {
         $data = $request->validate([
-            'name' => 'required',
+            'title' => 'required',
             'image' => 'nullable|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
-            'rate' => 'required|regex:/^\d+(\.\d{1,2})?$/',
-            'text' => 'required',
 
         ]);
 
         if ($request->image)
-            $data["image"] = $this->uploadFiles('reviews', $request->file('image'), null);
+            $data["image"] = $this->uploadFiles('sliders', $request->file('image'), null);
 
 
 
 
-        $row=Review::findOrFail($id);
+        $row=Slider::findOrFail($id);
 
         $row->update($data);
 
@@ -154,7 +144,7 @@ class ReviewController extends Controller
 
     public function destroy( $id)
     {
-        $row=Review::findOrFail($id);
+        $row=Slider::findOrFail($id);
 
         $row->delete();
 
@@ -164,4 +154,6 @@ class ReviewController extends Controller
                 'message' => 'تمت العملية بنجاح!'
             ]);
     }//end fun
+
+
 }

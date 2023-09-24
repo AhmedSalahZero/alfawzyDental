@@ -81,7 +81,7 @@ class GalleryController extends Controller
 
 
         $data = $request->validate([
-            'file' => 'required|mimes:jpeg,jpg,png,gif,svg,webp,avif,mp4',
+            'file' => 'required|mimes:jpeg,jpg,png,gif,svg,webp,avif,mp4|max:5000',
 
         ]);
 
@@ -126,7 +126,7 @@ class GalleryController extends Controller
     public function update(Request $request, $id)
     {
         $data = $request->validate([
-            'file' => 'nullable|mimes:jpeg,jpg,png,gif,svg,webp,avif,mp4',
+            'file' => 'nullable|mimes:jpeg,jpg,png,gif,svg,webp,avif,mp4|max:5000',
 
         ]);
 

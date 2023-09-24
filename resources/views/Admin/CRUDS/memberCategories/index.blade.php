@@ -1,6 +1,6 @@
 @extends('Admin.layouts.inc.app')
 @section('title')
-   Member Category
+   Our Team Category
 @endsection
 @section('css')
 
@@ -8,11 +8,11 @@
 @section('content')
     <div class="card">
         <div class="card-header d-flex align-items-center">
-            <h5 class="card-title mb-0 flex-grow-1">Member Categories </h5>
+            <h5 class="card-title mb-0 flex-grow-1">Our Team Categories </h5>
 
 
                 <div>
-                    <button id="addBtn" class="btn btn-primary">Add a Member Category</button>
+                    <button id="addBtn" class="btn btn-primary">Add a Team Category</button>
                 </div>
 
         </div>
@@ -41,7 +41,7 @@
                 <!--begin::Modal header-->
                 <div class="modal-header">
                     <!--begin::Modal title-->
-                    <h2><span id="operationType"></span> Member Category </h2>
+                    <h2><span id="operationType"></span> Team Category </h2>
                     <!--end::Modal title-->
                     <!--begin::Close-->
                     <div class="btn btn-sm btn-icon btn-active-color-primary" style="cursor: pointer"

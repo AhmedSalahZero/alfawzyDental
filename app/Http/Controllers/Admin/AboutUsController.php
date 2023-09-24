@@ -20,9 +20,9 @@ class AboutUsController extends Controller
     public function store(Request $request){
 
         $data = $request->validate([
-            'image1' => 'nullable|mimes:jpeg,jpg,png,gif,svg,webp,avif',
-            'image2' => 'nullable|mimes:jpeg,jpg,png,gif,svg,webp,avif',
-            'team_image' => 'nullable|mimes:jpeg,jpg,png,gif,svg,webp,avif',
+            'image1' => 'nullable|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
+            'image2' => 'nullable|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
+            'team_image' => 'nullable|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
             'title'=>'nullable',
             'desc'=>'nullable',
             'team_title'=>'nullable',

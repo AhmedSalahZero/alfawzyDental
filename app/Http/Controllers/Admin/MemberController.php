@@ -84,7 +84,7 @@ class MemberController extends Controller
     {
         $data = $request->validate([
             'name' => 'required',
-            'image' => 'required|mimes:jpeg,jpg,png,gif,svg,webp,avif',
+            'image' => 'required|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
             'job_title' => 'required',
             'category_member_id' => 'required|exists:category_members,id',
             'desc' => 'required',
@@ -130,7 +130,7 @@ class MemberController extends Controller
     {
         $data = $request->validate([
             'name' => 'required',
-            'image' => 'nullable|mimes:jpeg,jpg,png,gif,svg,webp,avif',
+            'image' => 'nullable|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
             'job_title' => 'required',
             'category_member_id' => 'required|exists:category_members,id',
             'desc' => 'required',

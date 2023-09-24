@@ -49,6 +49,13 @@
                     </li> <!-- end Dashboard Menu -->
 
                 <li class="nav-item">
+                    <a class="nav-link menu-link" href="{{route('sliders.index')}}">
+                        <i class="fa fa-camera"></i> <span data-key="t-dashboards">Sliders</span>
+                    </a>
+                </li> <!-- end Dashboard Menu -->
+
+
+                <li class="nav-item">
                     <a class="nav-link menu-link" href="{{route('about_us.index')}}">
                         <i class="fa fa-info"></i> <span data-key="t-dashboards">About Us </span>
                     </a>
@@ -113,14 +120,14 @@
 
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="{{route('categoryMembers.index')}}">
-                        <i class="fa fa-list"></i> <span data-key="t-dashboards">Member Categories </span>
+                        <i class="fa fa-list"></i> <span data-key="t-dashboards">Our Team Categories </span>
                     </a>
                 </li> <!-- end Dashboard Menu -->
 
 
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="{{route('members.index')}}">
-                        <i class="fa fa-user-doctor"></i> <span data-key="t-dashboards">Members </span>
+                        <i class="fa fa-user-doctor"></i> <span data-key="t-dashboards">Our Teams </span>
                     </a>
                 </li> <!-- end Dashboard Menu -->
 

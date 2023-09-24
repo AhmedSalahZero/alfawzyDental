@@ -76,9 +76,9 @@ class ServiceCategoryController extends Controller
     {
         $data = $request->validate([
             'title' => 'required',
-            'brief' => 'required',
-            'desc' => 'required',
-            'image' => 'required|mimes:jpeg,jpg,png,gif,svg,webp,avif',
+            'brief' => 'nullable',
+            'desc' => 'nullable',
+            'image' => 'nullable|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
 
 
 
@@ -119,9 +119,9 @@ class ServiceCategoryController extends Controller
     {
         $data = $request->validate([
             'title' => 'required',
-            'brief' => 'required',
-            'desc' => 'required',
-            'image' => 'nullable|mimes:jpeg,jpg,png,gif,svg,webp,avif',
+            'brief' => 'nullable',
+            'desc' => 'nullable',
+            'image' => 'nullable|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
 
 
         ]);

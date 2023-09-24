@@ -86,6 +86,7 @@ class SettingController extends Controller
             "email" => $request->email,
             "phone" => $request->phone,
             "whatsapp" => $request->whatsapp,
+            "tiktok" => $request->tiktok,
 
         ];
     }

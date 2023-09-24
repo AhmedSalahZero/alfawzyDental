@@ -94,7 +94,7 @@ class DentalTourismController extends Controller
         $data = $request->validate([
             'title1' => 'required',
             'title2' => 'required',
-            'image' => 'nullable|mimes:jpeg,jpg,png,gif,svg,webp,avif',
+            'image' => 'nullable|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
             'desc' => 'required',
             'desc1' => 'required',
             'desc2' => 'required',

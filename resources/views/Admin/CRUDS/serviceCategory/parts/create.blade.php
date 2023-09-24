@@ -25,14 +25,14 @@
 
 
         <div class="col-sm-12 pb-3 p-2">
-            <label for="brief" class="form-label"> Brief <span class="red-star">*</span> </label>
+            <label for="brief" class="form-label"> Brief  </label>
             <textarea name="brief" id="brief" class="form-control" rows="5"
                       placeholder=""></textarea>
         </div>
 
 
         <div class="col-sm-12 pb-3 p-2">
-            <label for="desc" class="form-label"> Desc <span class="red-star">*</span> </label>
+            <label for="desc" class="form-label"> Desc  </label>
             <textarea name="desc" id="desc" class="form-control" rows="5"
                       placeholder=""></textarea>
         </div>

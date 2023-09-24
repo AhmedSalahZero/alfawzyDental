@@ -92,7 +92,7 @@ class BlogController extends Controller
     {
         $data = $request->validate([
             'title' => 'required',
-            'image' => 'required|mimes:jpeg,jpg,png,gif,svg,webp,avif',
+            'image' => 'required|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
             'brief' => 'required',
             'desc' => 'required',
             'author_id'=>'required|exists:authors,id',
@@ -138,7 +138,7 @@ class BlogController extends Controller
     {
         $data = $request->validate([
             'title' => 'required',
-            'image' => 'nullable|mimes:jpeg,jpg,png,gif,svg,webp,avif',
+            'image' => 'nullable|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
             'brief' => 'required',
             'desc' => 'required',
             'author_id'=>'required|exists:authors,id',

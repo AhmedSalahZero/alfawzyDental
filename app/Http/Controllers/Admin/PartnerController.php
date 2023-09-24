@@ -79,7 +79,7 @@ class PartnerController extends Controller
 
 
         $data = $request->validate([
-            'image' => 'required|mimes:jpeg,jpg,png,gif,svg,webp,avif',
+            'image' => 'required|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
 
         ]);
 
@@ -116,7 +116,7 @@ class PartnerController extends Controller
     public function update(Request $request, $id)
     {
         $data = $request->validate([
-            'image' => 'nullable|mimes:jpeg,jpg,png,gif,svg,webp,avif',
+            'image' => 'nullable|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
 
         ]);
 

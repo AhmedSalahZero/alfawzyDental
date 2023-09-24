@@ -17,6 +17,7 @@ use App\Models\Patient;
 use App\Models\Review;
 use App\Models\Service;
 use App\Models\Setting;
+use App\Models\Slider;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -32,6 +33,7 @@ class HomeController extends Controller
         $oddReview = Review::whereRaw('id % 2 != 0')->get();
         $about=AboutUs::firstOrCreate();
         $dental=DentalTourism::with(['images','rows'])->firstOrCreate();
+        $sliders=Slider::get();
 
 
 
@@ -46,6 +48,7 @@ class HomeController extends Controller
             'evenReviews'=>$evenReviews,
             'about'=>$about,
             'dental'=>$dental,
+            'sliders'=>$sliders,
 		]);
 
 	}
@@ -53,7 +56,7 @@ class HomeController extends Controller
 	{
         $row=AboutUs::firstOrCreate();
         $partners=Partner::get();
-        $categories=CategoryMember::where('is_special',0)->with(['members'])->get();
+        $categories=CategoryMember::where('is_special',0)->orWhere('is_special',null)->with(['members'])->get();
         $specialCategory=CategoryMember::where('is_special',1)->with(['members'])->first();
 
         return view('front.about.about',compact('row','partners','categories','specialCategory'));

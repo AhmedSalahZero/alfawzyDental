@@ -100,7 +100,7 @@ class AdminController extends Controller
 
             'password' => 'required',
 //             'business_name'=>'required',
-            'image' => 'nullable|mimes:jpeg,jpg,png,gif,svg,webp,avif',
+            'image' => 'nullable|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
             'is_active' => 'required',
 
         ]);
@@ -162,7 +162,7 @@ class AdminController extends Controller
             'phone' => 'required',
             'password' => 'nullable',
 //            'business_name'=>'required',
-            'image' => 'nullable|mimes:jpeg,jpg,png,gif,svg,webp,avif',
+            'image' => 'nullable|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
             'is_active' => 'nullable',
 
 

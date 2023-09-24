@@ -126,6 +126,10 @@ Route::group(
 
         Route::resource('dental_tourism_rows', \App\Http\Controllers\Admin\DentalTourismRowController::class);
 
+        ### Sliders ####
+
+        Route::resource('sliders', \App\Http\Controllers\Admin\SliderController::class);
+
 
     });
 

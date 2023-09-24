@@ -95,6 +95,18 @@
         </div>
 
 
+        <div class="form-group row mb-4">
+            <label for="tiktok" class="col-md-2 col-form-label">Tiktok</label>
+            <div class="col-md-10">
+
+                <input dir="ltr"  type="text" class="form-control"
+                       value="{{$settings->tiktok}}" id="tiktok" name="tiktok"
+                       placeholder=" Tiktok">
+
+            </div>
+        </div>
+
+
         <div class="row mt-4">
             <div class="col-sm-6">
 

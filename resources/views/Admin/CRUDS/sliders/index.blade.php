@@ -1,6 +1,6 @@
 @extends('Admin.layouts.inc.app')
 @section('title')
-   Out Teams
+   Sliders
 @endsection
 @section('css')
 
@@ -8,11 +8,11 @@
 @section('content')
     <div class="card">
         <div class="card-header d-flex align-items-center">
-            <h5 class="card-title mb-0 flex-grow-1">Our Teams</h5>
+            <h5 class="card-title mb-0 flex-grow-1">Sliders</h5>
 
 
                 <div>
-                    <button id="addBtn" class="btn btn-primary">Add a Team</button>
+                    <button id="addBtn" class="btn btn-primary">Add a Slider</button>
                 </div>
 
         </div>
@@ -22,10 +22,8 @@
                 <thead>
                 <tr>
                     <th>#</th>
-                    <th>Name</th>
+                    <th>Title</th>
                     <th>Image</th>
-                    <th>Job Title</th>
-                    <th>Category</th>
                     <th>  {{trans('admin.created at')}}</th>
                     <th>{{trans('admin.actions')}}</th>
                 </tr>
@@ -42,7 +40,7 @@
                 <!--begin::Modal header-->
                 <div class="modal-header">
                     <!--begin::Modal title-->
-                    <h2><span id="operationType"></span> Team </h2>
+                    <h2><span id="operationType"></span> Slider </h2>
                     <!--end::Modal title-->
                     <!--begin::Close-->
                     <div class="btn btn-sm btn-icon btn-active-color-primary" style="cursor: pointer"
@@ -89,15 +87,13 @@
     <script>
         var columns = [
             {data: 'id', name: 'id'},
-            {data: 'name', name: 'name'},
+            {data: 'title', name: 'title'},
             {data: 'image', name: 'image'},
-            {data: 'job_title', name: 'job_title'},
-            {data: 'category_member_id', name: 'category_member_id'},
             {data: 'created_at', name: 'created_at'},
             {data: 'action', name: 'action', orderable: false, searchable: false},
         ];
     </script>
-    @include('Admin.layouts.inc.ajax',['url'=>'members'])
+    @include('Admin.layouts.inc.ajax',['url'=>'sliders'])
 
 
 

@@ -434,14 +434,14 @@ function getSocialIcons()
             'icon' => 'fa-brands fa-snapchat',
             'link' => $settings->snapchat,
         ],
-//        __('Google') => [
-//            'icon' => 'fa-brands fa-google',
-//            'link' => $settings->gmail,
-//        ],
-//        __('Tiktok') => [
-//            'icon' => 'fa-brands fa-tiktok',
-//            'link' => '#'
-//        ]
+        __('Google') => [
+            'icon' => 'fa-brands fa-google',
+            'link' => $settings->gmail,
+        ],
+        __('Tiktok') => [
+            'icon' => 'fa-brands fa-tiktok',
+            'link' => $settings->tiktok
+        ]
     ];
 }
 
@@ -471,7 +471,7 @@ if (!function_exists('setting')) {
 
 
 if (!function_exists('get_file')) {
-    function get_file($file)
+    function get_file($file=null)
     {
         // Storage::exists( $file )
         if (filter_var($file, FILTER_VALIDATE_URL)) {
@@ -479,7 +479,7 @@ if (!function_exists('get_file')) {
         } elseif ($file) {
             $file_path = asset('storage/uploads') . '/' . $file;
         } else {
-            $file_path = asset('dashboard/assets/images/companies/img-1.png');
+            $file_path = asset('assets/default/imgs/default-img.png');
         }
         return $file_path;
     }//end
