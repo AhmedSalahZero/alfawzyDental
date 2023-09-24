@@ -7,7 +7,9 @@ use App\Http\Traits\Upload_Files;
 
 
 use App\Models\Admin;
+use App\Models\Author;
 use App\Models\Contact;
+use App\Models\Service;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -21,9 +23,12 @@ class HomeController extends Controller
 
 
         $admins=Admin::count();
+        $services=Service::count();
+        $authors=Author::count();
+        $contacts=Contact::count();
 
 
-        return view('Admin.home.index',compact('admins'));
+        return view('Admin.home.index',compact('admins','services','authors','contacts'));
     }//end fun
 
 

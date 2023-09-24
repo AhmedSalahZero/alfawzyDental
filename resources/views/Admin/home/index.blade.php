@@ -8,6 +8,19 @@
 @endsection
 @section('content')
     <div class="row">
+
+        <div class="col-xl-3 col-lg-4 col-sm-6">
+            <a href="{{route('contacts.index')}}" class="text-center bg-white d-block  rounded-3 mb-3">
+                <p class="text-uppercase fw-bold text-white text-truncate rounded-3 bg-danger p-2 mb-0">
+                    Contacts </p>
+                <h2 class="py-4 mb-0 text-danger"><span class="counter-value"
+                                                        data-target="{{$contacts}}">0</span>
+                    <span class="fs-5 text-muted">  </span>
+                </h2>
+            </a>
+        </div><!-- end col -->
+
+
         <div class="col-xl-3 col-lg-4 col-sm-6">
             <a href="{{route('admins.index')}}" class="text-center bg-white d-block  rounded-3 mb-3">
                 <p class="text-uppercase fw-bold text-white text-truncate rounded-3 bg-primary p-2 mb-0">
@@ -17,6 +30,25 @@
             </a>
         </div><!-- end col -->
 
+        <div class="col-xl-3 col-lg-4 col-sm-6">
+            <a href="{{route('services.index')}}" class="text-center bg-white d-block  rounded-3 mb-3">
+                <p class="text-uppercase fw-bold text-white text-truncate rounded-3 bg-warning p-2 mb-0">
+                    Services </p>
+                <h2 class="py-4 mb-0 text-warning"><span class="counter-value" data-target="{{$services}}">0</span>
+                </h2>
+            </a>
+        </div><!-- end col -->
+
+        <div class="col-xl-3 col-lg-4 col-sm-6">
+            <a  href="{{route('authors.index')}}" class="text-center bg-white d-block  rounded-3 mb-3">
+                <p class="text-uppercase fw-bold text-white text-truncate rounded-3 bg-dark p-2 mb-0">
+                    Authors </p>
+                <h2 class="py-4 mb-0 text-info"><span class="counter-value"
+                                                      data-target="{{$authors}}">0</span>
+                    <span class="fs-5 text-muted">  </span>
+                </h2>
+            </a>
+        </div><!-- end col -->
 
 
 
