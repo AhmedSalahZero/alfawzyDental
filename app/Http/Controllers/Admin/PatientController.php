@@ -125,7 +125,7 @@ class PatientController extends Controller
     {
         $data = $request->validate([
             'image' => 'nullable|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
-            'video' => 'required|file|max:20000',
+            'video' => 'nullable|file|max:20000',
 
 
         ]);
