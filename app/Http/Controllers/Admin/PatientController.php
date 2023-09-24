@@ -55,7 +55,13 @@ class PatientController extends Controller
                              ';
                 })
 
-                ->editColumn('created_at', function ($admin) {
+                ->editColumn('video', function ($admin) {
+                      $link=get_file($admin->video);
+                    return "<a href='$link' target='_blank' class='btn btn-success'>Show Video</a>";
+
+                })
+
+                    ->editColumn('created_at', function ($admin) {
                     return date('Y/m/d', strtotime($admin->created_at));
                 })
                 ->escapeColumns([])
@@ -77,12 +83,16 @@ class PatientController extends Controller
     {
         $data = $request->validate([
             'image' => 'required|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
+            'video' => 'required|file|max:20000',
 
         ]);
 
         if ($request->image)
             $data["image"] = $this->uploadFiles('patients', $request->file('image'), null);
 
+
+        if ($request->video)
+            $data["video"] = $this->uploadFiles('patients', $request->file('video'), null);
 
 
         Patient::create($data);
@@ -115,11 +125,17 @@ class PatientController extends Controller
     {
         $data = $request->validate([
             'image' => 'nullable|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
+            'video' => 'required|file|max:20000',
+
 
         ]);
 
         if ($request->image)
             $data["image"] = $this->uploadFiles('patients', $request->file('image'), null);
+
+
+        if ($request->video)
+            $data["video"] = $this->uploadFiles('patients', $request->file('video'), null);
 
 
 

@@ -15,6 +15,14 @@
         </div>
 
 
+        <div class="form-group">
+            <label for="video" class="form-control-label">Video </label>
+            <input type="file" class="dropify" name="video" data-default-file="{{get_file($row->video)}}" accept="video/*"/>
+            <span
+                class="form-text text-muted text-center">{{trans('admin.Only the following formats are allowed: mp4.')}}</span>
+        </div>
+
+
 
 
     </div>

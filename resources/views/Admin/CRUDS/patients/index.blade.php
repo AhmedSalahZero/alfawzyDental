@@ -23,6 +23,7 @@
                 <tr>
                     <th>#</th>
                     <th>Image</th>
+                    <th>Video</th>
                     <th>  {{trans('admin.created at')}}</th>
                     <th>{{trans('admin.actions')}}</th>
                 </tr>
@@ -87,6 +88,7 @@
         var columns = [
             {data: 'id', name: 'id'},
             {data: 'image', name: 'image'},
+            {data: 'video', name: 'video'},
             {data: 'created_at', name: 'created_at'},
             {data: 'action', name: 'action', orderable: false, searchable: false},
         ];
