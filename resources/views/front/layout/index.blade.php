@@ -74,7 +74,8 @@
 
 
                 <li class="group/li relative" x-data="{isOpen:false}"
-                    {{-- @mouseover.away="isOpen=false" @mouseover="isOpen = true" --}} @click.away="isOpen=false">
+                    
+					 @click.away="isOpen=false">
                     <a @click="isOpen=!isOpen" href="{{route('home.index')}}" class="
 						@if(isset($showHeaderBanner) && $showHeaderBanner)
 						text-white
@@ -88,7 +89,9 @@
 
 
 
-                <li class="group/li relative" x-data="{isOpen:false}"
+                <li class="group/li relative " x-data="{isOpen:false}"
+				@mouseleave="isOpen = false"
+				 @mouseover="isOpen = true"
                     {{-- @mouseover.away="isOpen=false" @mouseover="isOpen = true" --}} @click.away="isOpen=false">
                     <a @click="isOpen=!isOpen" href="#" class="
 						@if(isset($showHeaderBanner) && $showHeaderBanner)
@@ -96,7 +99,7 @@
 						@else
 						text-black
 						@endif
-						 text-nowrap capitalize text-sm flex items-center lg:text-base md:gap-1 lg:font-semibold  group-hover/li:text-main transition-colors duration-300">
+						 text-nowrap capitalize text-sm inline pb-8 items-center lg:text-base md:gap-1 lg:font-semibold  group-hover/li:text-main transition-colors duration-300">
                         About
                         <i class="fa-solid fa-chevron-down text-xs"></i>
                     </a>
