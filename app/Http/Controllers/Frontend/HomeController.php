@@ -52,6 +52,17 @@ class HomeController extends Controller
 		]);
 
 	}
+
+    public function patientVideo($id){
+        $row=Patient::findOrFail($id);
+        return view('front.home.parts.patientVideo',compact('row'));
+    }
+    public function patientImage(Request $request){
+        $rows=Patient::get();
+        $row=$rows[$request->key];
+
+        return get_file($row->image) ;
+    }
 	public function showAbout()
 	{
         $row=AboutUs::firstOrCreate();

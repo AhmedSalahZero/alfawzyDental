@@ -38,6 +38,8 @@ Route::group(
     Route::get('/blogs', [HomeController::class, 'showBlogs'])->name('web_blogs.index');
     Route::get('/blog/{id}', [HomeController::class, 'showBlog'])->name('web_blog.index');
 
+    Route::get('patientVideo/{id}',[HomeController::class, 'patientVideo'])->name('patientVideo');
+    Route::get('patientImage',[HomeController::class, 'patientImage'])->name('patientImage');
 
 
 
