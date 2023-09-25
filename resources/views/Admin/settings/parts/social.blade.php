@@ -84,10 +84,10 @@
 
 
         <div class="form-group row mb-4">
-            <label for="gmail" class="col-md-2 col-form-label">Gmail</label>
+            <label for="gmail" class="col-md-2 col-form-label">Google Map</label>
             <div class="col-md-10">
 
-                <input dir="ltr" data-validation="required" type="email" class="form-control"
+                <input dir="ltr" data-validation="required" type="text" class="form-control"
                        value="{{$settings->gmail}}" id="gmail" name="gmail"
                        placeholder=" Gmail">
 
