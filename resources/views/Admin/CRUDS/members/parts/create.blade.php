@@ -48,8 +48,8 @@
 
 
 
-        <div class="col-sm-6 pb-3 p-2">
-            <label for="desc" class="form-label"> Desc <span class="red-star">*</span> </label>
+        <div class="col-sm-12 pb-3 p-2">
+            <label for="desc" class="form-label"> Desc  </label>
             <textarea name="desc" id="desc" class="form-control" rows="5"
                       placeholder=""></textarea>
         </div>

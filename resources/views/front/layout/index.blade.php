@@ -74,7 +74,7 @@
 
 
                 <li class="group/li relative" x-data="{isOpen:false}"
-                    
+
 					 @click.away="isOpen=false">
                     <a @click="isOpen=!isOpen" href="{{route('home.index')}}" class="
 						@if(isset($showHeaderBanner) && $showHeaderBanner)
@@ -93,7 +93,7 @@
 				@mouseleave="isOpen = false"
 				 @mouseover="isOpen = true"
                     {{-- @mouseover.away="isOpen=false" @mouseover="isOpen = true" --}} @click.away="isOpen=false">
-                    <a @click="isOpen=!isOpen" href="#" class="
+                    <a @click="isOpen=!isOpen" href="{{ route('web_about.index') }}" class="
 						@if(isset($showHeaderBanner) && $showHeaderBanner)
 						text-white
 						@else
@@ -128,9 +128,11 @@
 
 
 
-                <li class="group/li relative" x-data="{isOpen:false}"
+                <li class="group/li relative " x-data="{isOpen:false}"
+                    @mouseleave="isOpen = false"
+                    @mouseover="isOpen = true"
                     {{-- @mouseover.away="isOpen=false" @mouseover="isOpen = true" --}} @click.away="isOpen=false">
-                    <a @click="isOpen=!isOpen" href="#" class="
+                    <a @click="isOpen=!isOpen" href="{{route('web_services.index')}}" class="
 						@if(isset($showHeaderBanner) && $showHeaderBanner)
 						text-white
 						@else
@@ -153,6 +155,9 @@
                                                    :title="$category->title">
                             </x-links.sub-menu-item>
                         @endforeach
+
+
+
 
                     </ul>
 

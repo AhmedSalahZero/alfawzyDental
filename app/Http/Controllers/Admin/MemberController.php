@@ -87,7 +87,7 @@ class MemberController extends Controller
             'image' => 'required|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
             'job_title' => 'required',
             'category_member_id' => 'required|exists:category_members,id',
-            'desc' => 'required',
+            'desc' => 'nullable',
 
 
 
@@ -133,7 +133,7 @@ class MemberController extends Controller
             'image' => 'nullable|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
             'job_title' => 'required',
             'category_member_id' => 'required|exists:category_members,id',
-            'desc' => 'required',
+            'desc' => 'nullable',
 
 
         ]);
