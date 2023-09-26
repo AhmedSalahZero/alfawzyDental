@@ -24,7 +24,7 @@ space-between-sections-t
             </div>
             <div class="basis-3/5   space-left  contact__form">
 				<h2 class="header__text font-bold mb-4">{{ __('Get A Quote') }}</h2>
-				<p class="small_description text-black font-medium text-lg mb-10">{{ __('Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual') }}</p>
+				<p class="small_description text-black font-medium text-lg mb-10">{{$settings->contact_us_desc}}</p>
 
                 <form id="Form" method="post" class="w-full" action="{{route('web_contacts.store')}}">
                     @csrf
