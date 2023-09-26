@@ -27,10 +27,10 @@
     </video>
 </div>
 <x-sidebar></x-sidebar>
-<div
+<a target="_blank" href="{{ getWhatsappApi($settings->whatsapp) }}"
     class="inline-flex md:hidden z-[999] fixed md:static bottom-0 md:bottom-auto left-1/2 md:left-auto w-full md:w-auto -translate-x-1/2 md:-translate-x-0  md:z-0    whatsapp__container  items-center justify-center social-whatsapp mr-8">
     <x-social.whatsapp></x-social.whatsapp>
-</div>
+</a>
 <header class="
 	z-50
 	@if(isset($showHeaderBanner) && $showHeaderBanner)
@@ -53,8 +53,8 @@
     @endif
     <div class="res-container h-full !items-start">
         <div class="header__menu z-[5] flex justify-between
+			items-center
 			@if(isset($showHeaderBanner) && $showHeaderBanner)
-			items-start
 			pt-4
 			@else
 			self-center
@@ -103,7 +103,7 @@
                         About
                         <i class="fa-solid fa-chevron-down text-xs"></i>
                     </a>
-                    <ul x-show="isOpen" x-transition:enter="transition ease-out duration-100"
+                    <ul x-cloak x-show="isOpen" x-transition:enter="transition ease-out duration-100"
                         x-transition:enter-start="transform opacity-0 scale-95"
                         x-transition:enter-end="transform opacity-100 scale-100"
                         x-transition:leave="transition ease-in duration-75"
@@ -143,7 +143,7 @@
                         <i class="fa-solid fa-chevron-down text-xs"></i>
 
                     </a>
-                    <ul x-show="isOpen" x-transition:enter="transition ease-out duration-100"
+                    <ul x-cloak x-show="isOpen" x-transition:enter="transition ease-out duration-100"
                         x-transition:enter-start="transform opacity-0 scale-95"
                         x-transition:enter-end="transform opacity-100 scale-100"
                         x-transition:leave="transition ease-in duration-75"
@@ -238,12 +238,11 @@
 
 
             </ul>
-
-            <div
+            <a target="_blank"  href="{{ getWhatsappApi($settings->whatsapp) }}" 
                 class="hidden md:inline-flex fixed md:static bottom-0 md:bottom-auto left-1/2 md:left-auto w-full md:w-auto -translate-x-1/2 md:-translate-x-0 z-50 md:z-0    whatsapp__container  items-center justify-center social-whatsapp mr-8">
                 <x-social.whatsapp :settings="$settings">
                     </x-social.whatsapp:>
-            </div>
+            </a>
             <div class="w-10 h-10 rounded-lg bg-white hidden md:flex md:justify-center md:items-center  cursor-pointer"
                  @click="showSideBar=!showSideBar">
                 <i class="fa-solid fa-bars-staggered text-black icon-size"></i>
@@ -387,12 +386,12 @@
             <div class="footer__logos w-full md:w-1/3 flex space-y-10 items-center justify-between flex-col  h-full">
                 <div class="footer__logo ">
                     <img src="{{get_file($settings->logo_footer)}}"
-                         class=" w-[100px] h-[175px] md:w-[138px] md:h-[195px] " alt="">
+                         class=" w-[137px] h-[158px] md:w-[138px] md:h-[195px] " alt="">
                 </div>
                 <ul class="footer__social flex space-x-4 sm:space-x-3  md:space-x-4 lg:space-x-4 items-center h-full  ">
                     @foreach(getSocialIcons() as $iconName=>$iconArr)
                         <li class="mb-10 mb:mb-0">
-                            <a title="{{ $iconName }}" href="{{ $iconArr['link'] }}"
+                            <a target="_blank" title="{{ $iconName }}" href="{{ $iconArr['link'] }}"
                                class="w-8 h-8 flex items-center justify-center  bg-main object-cover rounded-full p-1 ">
                                 <i class="{{ $iconArr['icon'] }} text-white icon-size"></i>
                             </a>
@@ -405,7 +404,7 @@
                 <ul class="columns-2 gap-2   justify-end">
                     @foreach(footerPages() as $index=>$footerPageArr )
                         <li>
-                            <a class="font-semibold transition-all duration-400 hover:text-main text-black capitalize mb-5 inline-block"
+                            <a class=" transition-all duration-400 hover:text-main text-black capitalize mb-5 inline-block font-normal"
                                href="{{ $footerPageArr['link'] }}">{{ $footerPageArr['title'] }}</a>
                         </li>
                     @endforeach
@@ -470,6 +469,9 @@
     var swiper = new Swiper(".header-swiper", {
         spaceBetween: 30
         , slidesPerView: "1"
+		,
+		effect: 'fade',
+		crossFade:true
         , centeredSlides: true
         , autoplay: {
             delay: 2500

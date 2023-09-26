@@ -62,11 +62,10 @@ space-between-sections-t
 
             </div>
         </div>
-        <div class="mt-10 text-center md:text-right">
+        <div class="mt-10 text-center md:text-right fixed bottom-[5%] right-[5%] z-[9999] ">
             <a target="_blank" href="https://wa.me/{{$settings->whatsapp}}" class="inline-block text-center  md:text-right ">
                 <img src="{{ asset('front/image/lg-whatsapp.png') }}" class="w-12 h-12 md:w-[82px] md:h-[82px] rounded-full shadow-sm">
             </a>
         </div>
     </div>
 </section>
-
