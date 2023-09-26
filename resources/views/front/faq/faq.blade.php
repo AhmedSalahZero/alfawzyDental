@@ -1,5 +1,8 @@
 @extends('front.layout.index')
+@section('title')
 
+    FaqQuestions
+@endsection
 @push('content')
 <x-banners.single-banner :title="__('Frequently Asked Questions and Answers')"></x-banners.single-banner>
 <section class="section space-between-sections faq-section">

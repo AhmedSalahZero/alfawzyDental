@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ env('APP_NAME') }}</title>
+    <title>{{setting()->app_name}} -@yield('title') </title>
+
     <link rel="stylesheet" href="{{ asset('front/icons/fontawesome-6-4-2/css/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('front/scss/main.css') }}">
     <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" type="text/css"/>
@@ -238,7 +239,7 @@
 
 
             </ul>
-            <a target="_blank"  href="{{ getWhatsappApi($settings->whatsapp) }}" 
+            <a target="_blank"  href="{{ getWhatsappApi($settings->whatsapp) }}"
                 class="hidden md:inline-flex fixed md:static bottom-0 md:bottom-auto left-1/2 md:left-auto w-full md:w-auto -translate-x-1/2 md:-translate-x-0 z-50 md:z-0    whatsapp__container  items-center justify-center social-whatsapp mr-8">
                 <x-social.whatsapp :settings="$settings">
                     </x-social.whatsapp:>

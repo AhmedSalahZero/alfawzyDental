@@ -1,5 +1,8 @@
 @extends('front.layout.index')
+@section('title')
 
+    Contact Us
+@endsection
 @push('content')
 <x-banners.single-banner :lg="true" :title="__('Contact Us')"></x-banners.single-banner>
 <section class="contact-us-info-section section -translate-y-1/2 md:-translate-y-[60%] mb-[-930px] md:mb-[-500px]">

@@ -1,5 +1,10 @@
 @extends('front.layout.index')
 
+@section('title')
+
+    Home
+@endsection
+
 @push('content')
 
     @include('front.home.parts.slider')
@@ -69,7 +74,7 @@
             });
             new Swiper(".testimonial-swiper2", {
                 loop: false,
-				
+
                 grabCursor: true,
                 slidesPerView: "3",
                 breakpoints: {

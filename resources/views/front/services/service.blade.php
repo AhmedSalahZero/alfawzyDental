@@ -1,5 +1,8 @@
 @extends('front.layout.index')
+@section('title')
 
+    Service
+@endsection
 @push('content')
     <x-banners.single-banner :title="__('Our Services')"></x-banners.single-banner>
 

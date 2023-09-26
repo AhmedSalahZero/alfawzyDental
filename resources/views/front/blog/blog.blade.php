@@ -1,5 +1,8 @@
 @extends('front.layout.index')
+@section('title')
 
+    Blog
+@endsection
 @push('content')
 <x-banners.single-banner :title="$blog->title"></x-banners.single-banner>
 <section class="section space-between-sections-y">

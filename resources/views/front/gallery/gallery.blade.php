@@ -1,5 +1,8 @@
 @extends('front.layout.index')
+@section('title')
 
+    Galleries
+@endsection
 @push('content')
     <x-banners.single-banner :title="__('Gallery')"></x-banners.single-banner>
 

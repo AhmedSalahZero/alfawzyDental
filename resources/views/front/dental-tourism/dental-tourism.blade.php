@@ -1,5 +1,8 @@
 @extends('front.layout.index')
+@section('title')
 
+    Dental Tourism
+@endsection
 @push('content')
 <x-banners.single-banner :title="__('dental tourism')"></x-banners.single-banner>
 <section class="pyramids space-between-sections-t">
