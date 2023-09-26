@@ -2,8 +2,8 @@
     <div class="res-container">
         <div
             class="dential-tourism w-11/12 mx-auto pt-20 bg-main-sharper pb-56  lg:pb-96 relative text-center rounded-[32px] px-3 md:px-5">
-            <h1 class="main__title__bold mb-4">Dental Tourism</h1>
-            <p class="font-medium text-black tracking-tight text-lg mb-5 max-w-[510px] mx-auto"> {{$dental->desc}} </p>
+            <h1 class="main__title__bold mb-4">{{__('Dental Tourism')}}</h1>
+            <p class="font-medium text-black tracking-tight text-lg mb-5 max-w-[700px] mx-auto opacity-60"> {{$dental->desc}} </p>
             <a class="btn bg-white  " href="{{route('dental.tourism.index')}}">
                 {{ __('Dential Packages') }}
             </a>

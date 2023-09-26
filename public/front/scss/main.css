@@ -721,6 +721,9 @@ input[type="range"]:active::-webkit-slider-thumb {
 .bottom-\[-120\%\] {
   bottom: -120%;
 }
+.bottom-\[5\%\] {
+  bottom: 5%;
+}
 .end-0 {
   inset-inline-end: 0px;
 }
@@ -765,6 +768,9 @@ input[type="range"]:active::-webkit-slider-thumb {
 }
 .right-9 {
   right: 2.25rem;
+}
+.right-\[5\%\] {
+  right: 5%;
 }
 .top-0 {
   top: 0px;
@@ -864,6 +870,9 @@ input[type="range"]:active::-webkit-slider-thumb {
 }
 .z-\[99999999999999999\] {
   z-index: 99999999999999999;
+}
+.z-\[9999\] {
+  z-index: 9999;
 }
 .z-\[999\] {
   z-index: 999;
@@ -1333,6 +1342,12 @@ input[type="range"]:active::-webkit-slider-thumb {
 .h-screen {
   height: 100vh;
 }
+.h-\[137px\] {
+  height: 137px;
+}
+.h-\[158px\] {
+  height: 158px;
+}
 .max-h-\[500px\] {
   max-height: 500px;
 }
@@ -1534,6 +1549,12 @@ input[type="range"]:active::-webkit-slider-thumb {
 .w-screen {
   width: 100vw;
 }
+.w-\[1px\] {
+  width: 1px;
+}
+.w-\[137px\] {
+  width: 137px;
+}
 .min-w-0 {
   min-width: 0px;
 }
@@ -1635,6 +1656,9 @@ input[type="range"]:active::-webkit-slider-thumb {
 }
 .max-w-screen-xl {
   max-width: 1280px;
+}
+.max-w-\[700px\] {
+  max-width: 700px;
 }
 .flex-1 {
   flex: 1 1 0%;
@@ -2747,6 +2771,9 @@ input[type="range"]:active::-webkit-slider-thumb {
 .pb-6 {
   padding-bottom: 1.5rem;
 }
+.pb-8 {
+  padding-bottom: 2rem;
+}
 .pb-\[5px\] {
   padding-bottom: 5px;
 }
@@ -2821,9 +2848,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 }
 .pt-\[6px\] {
   padding-top: 6px;
-}
-.pb-8 {
-  padding-bottom: 2rem;
 }
 .text-left {
   text-align: left;
@@ -3255,6 +3279,12 @@ input[type="range"]:active::-webkit-slider-thumb {
 .opacity-\[\.54\] {
   opacity: .54;
 }
+.opacity-60 {
+  opacity: 0.6;
+}
+.opacity-80 {
+  opacity: 0.8;
+}
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -3516,7 +3546,7 @@ input[type="range"]:active::-webkit-slider-thumb {
 }
 html,
 body {
-  font-family: "Albert_Sans", sans-serif;
+  font-family: "Albert_Sans", sans-serif !important;
   height: 100%;
 }
 
@@ -3855,7 +3885,7 @@ body {
 }
 
 [x-cloak] {
-  display: none;
+  display: none !important;
 }
 
 .fixed-video {
@@ -5858,6 +5888,22 @@ img[alt=Google][draggable=false] {
 
   .md\:mt-0 {
     margin-top: 0px;
+  }
+
+  .md\:mt-14 {
+    margin-top: 3.5rem;
+  }
+
+  .md\:mt-40 {
+    margin-top: 10rem;
+  }
+
+  .md\:mt-36 {
+    margin-top: 9rem;
+  }
+
+  .md\:mt-64 {
+    margin-top: 16rem;
   }
 
   .md\:block {

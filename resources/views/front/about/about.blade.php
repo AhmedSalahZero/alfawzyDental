@@ -43,9 +43,9 @@
                         </div>
 
 
-                        <div class="whatsapp__container inline-flex items-center justify-center social-whatsapp mr-auto">
+                        <a href="{{getWhatsappApi($settings->whatsapp)}}" class="whatsapp__container inline-flex items-center justify-center social-whatsapp mr-auto">
                             <x-social.whatsapp></x-social.whatsapp>
-                        </div>
+                        </a>
 
                     </div>
                 </div>
@@ -104,7 +104,7 @@
             </div>
             <div class="doctors-cards element-internal-padding grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center items-center">
                 @foreach($category->members as $member)
-                <x-cards.flip-card>
+                <x-cards.flip-card :enabled="false">
                     <x-slot name="front__face">
                         <div class="doctor__image mb-6 mx-auto">
                             <img class="rounded-[22px] max-w-full h-[325px]" src="{{ get_file($member->image)}}" alt="{{ $row->name}}">

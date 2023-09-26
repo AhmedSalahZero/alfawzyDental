@@ -5,9 +5,9 @@
 <section class="pyramids space-between-sections-t">
     <div class="res-container">
         <div class="dental-tourism space-y-4 ">
-            <img src="{{get_file($dental->image)}}" class="max-w-full mx-auto" alt="">
+            <img src="{{get_file($dental->image)}}" class="max-w-full mx-auto rounded-[32px] mb-8" alt="">
             <div class="dential-tourism-infos px-2 md:px-10">
-                <p class="description__paragraph mb-4">
+                <p class="description__paragraph mb-4 opacity-80">
                     {{$dental->desc}}
                 </p>
 
@@ -45,11 +45,11 @@
                            </div>
         </div>
 
-		<div class="dental-grid">
+		<div class="dental-grid mt-8 ">
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-20 justify-items-center items-center">
 				@foreach($dental->images as $image)
 				<div class="dental-grid-img">
-					<img src="{{ get_file($image->image) }}" class="max-w-full ">
+					<img src="{{ get_file($image->image) }}" class="max-w-full rounded-[32px]">
 				</div>
 				@endforeach
 			</div>
@@ -67,6 +67,3 @@
     @include('front.contact.contactJs')
 
 @endpush
-
-
-

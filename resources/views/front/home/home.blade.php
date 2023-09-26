@@ -51,10 +51,10 @@
                     // when window width is >= 480px
 
                     // when window width is >= 640px
-                    1280: {
-                        slidesPerView: 3
-                        , spaceBetween: '40'
-                    }
+                   // 1280: {
+                   //     slidesPerView: 3
+                   //     , spaceBetween: '40'
+                   // }
                 },
                 spaceBetween: 30,
                 speed: 6000,
@@ -69,6 +69,7 @@
             });
             new Swiper(".testimonial-swiper2", {
                 loop: false,
+				
                 grabCursor: true,
                 slidesPerView: "3",
                 breakpoints: {
@@ -84,10 +85,10 @@
                     // when window width is >= 480px
 
                     // when window width is >= 640px
-                    1280: {
-                        slidesPerView: 3
-                        , spaceBetween: '40'
-                    }
+                   // 1280: {
+                   //     slidesPerView: 3
+                   //     , spaceBetween: '40'
+                   // }
                 },
                 spaceBetween: 30,
                 speed: 6000,
@@ -107,5 +108,3 @@
 
     @include('front.contact.contactJs')
 @endpush
-
-

@@ -1,4 +1,12 @@
-  <div class="doctors-card !px-5 shadow-lg  transition-all  duration-500   group/doctor-card preserve-3d  relative element-internal-padding rounded-[32px]">
+  @props([
+	'enabled'=>true 
+  ])
+  <div class="
+  @if($enabled)
+  doctors-card
+  @endif 
+  
+   !px-5 shadow-lg  transition-all  duration-500   group/doctor-card preserve-3d  relative element-internal-padding rounded-[32px]">
                     <div class="card__front backface-hidden  text-center">
                         {{ $front__face }}
                     </div>

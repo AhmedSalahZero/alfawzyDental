@@ -86,7 +86,7 @@
 .rotate-y-180{
 	transform: rotateY(180deg);
 }
-[x-cloak] { display: none; }
+[x-cloak] { display: none !important;  }
 .fixed-video{
 	border:3px solid $main-color;
 	background: #eee;

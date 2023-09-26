@@ -3,7 +3,7 @@
 'link'=>$link,
 'subMenu'=>$subMenu??[]
 ])
-<li x-data="{isMenuIsOpen:false}" class="border-b pb-3 group/li-mobile border-gray-200 transition-all duration-300 ease-in-out">
+<li x-data="{isMenuIsOpen:false}" x-cloak class="border-b  pb-3 group/li-mobile border-gray-200 transition-all duration-300 ease-in-out">
     <a @click="isMenuIsOpen=!isMenuIsOpen" href="{{ $link }}" class="group-hover/li-mobile:text-main transition-all duration-300 ease-in ">
         <span>{{ $title }}</span>
         <i class="fa-solid fa-chevron-down text-xs"></i>
