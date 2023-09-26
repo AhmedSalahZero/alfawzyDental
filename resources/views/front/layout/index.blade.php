@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="{{url('front')}}/alertify/css/alertify.min.css"/>
     <!-- include a theme -->
     <link rel="stylesheet" href="{{url('front')}}/alertify/css/themes/default.min.css"/>
+    <link rel="shortcut icon" href="{{get_file($settings->fave_icon)}}">
+
     <style>
 
 
