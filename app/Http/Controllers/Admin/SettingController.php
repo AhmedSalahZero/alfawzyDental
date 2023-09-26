@@ -114,7 +114,7 @@ class SettingController extends Controller
             "footer_desc1" => $request->footer_desc1,
             "footer_title2" => $request->footer_title2,
             "footer_title1" => $request->footer_title1,
-            "main_home_title" => $request->main_home_title,
+            "review_link" => $request->review_link,
             "app_name" => $request->app_name,
             "partner_title" => $request->partner_title,
             "partner_desc" => $request->partner_desc,

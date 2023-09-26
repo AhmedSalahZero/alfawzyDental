@@ -16,8 +16,8 @@
             </div>
 
             <div class="col-6">
-                <label for="main_home_title" class="form-label">Main Home Title</label>
-                <input dir="ltr" type="text" id="main_home_title" name="main_home_title" class="form-control" placeholder="" value="{{$settings->main_home_title}}">
+                <label for="review_link" class="form-label">Review Link  </label>
+                <input dir="ltr" type="text" id="review_link" name="review_link" class="form-control" placeholder="" value="{{$settings->review_link}}">
             </div>
 
 

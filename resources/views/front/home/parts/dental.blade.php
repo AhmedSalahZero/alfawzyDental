@@ -5,7 +5,7 @@
             <h1 class="main__title__bold mb-4">{{__('Dental Tourism')}}</h1>
             <p class="font-medium text-black tracking-tight text-lg mb-5 max-w-[700px] mx-auto opacity-60"> {{$dental->desc}} </p>
             <a class="btn bg-white  " href="{{route('dental.tourism.index')}}">
-                {{ __('Dential Packages') }}
+                Dental Packages
             </a>
             <img src="{{ get_file($dental->image) }} " alt=""
                  class="absolute rounded-[32px] max-w-[100%] sm:max-w-[90%] md:max-w-[65%] max-h-[500px] left-1/2 -translate-x-1/2 object-cover bottom-0 translate-y-1/2">

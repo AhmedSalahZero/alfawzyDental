@@ -4,7 +4,7 @@
             <div class=" description relative basis-1/3 max-w-[300px] z-[2] mt-[-100px]">
                 <div class="max-w-[274px] ">
                     <h1 class="main__title__bold mb-10">{{ __('What Our Patients Say') }}</h1>
-                    <a href="#" class="btn bg-main !inline-flex items-center justify-between text-white ">
+                    <a href="{{$settings->review_link}}" class="btn bg-main !inline-flex items-center justify-between text-white ">
                         <i class="fa-brands fa-google bg-main mr-2 rounded-2xl "></i>
                         <span class="normal-text whitespace-nowrap ">{{__('Read our Reviews')}}</span>
                     </a>
