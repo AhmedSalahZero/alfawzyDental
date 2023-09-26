@@ -47,7 +47,7 @@
                    {{$settings->contact_us_desc}}
                 </p>
 				<div class="map__link mt-5 ">
-					<a href="{{$settings->contact_us_link}}" class=" inline-flex items-center justify-center min-h-[64px] w-[244px] gap-2 capitalize bg-main text-white rounded-2xl shadow-sm">
+					<a target="_blank" href="{{$settings->contact_us_link}}" class=" inline-flex items-center justify-center min-h-[64px] w-[244px] gap-2 capitalize bg-main text-white rounded-2xl shadow-sm">
 						<i class="icon-size fa-brands fa-google  "></i>
 						<span class="text-lg font-semibold ">{{ __('Map Link') }}</span>
 					</a>

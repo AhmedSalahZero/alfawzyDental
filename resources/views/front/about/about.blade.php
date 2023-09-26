@@ -46,7 +46,7 @@
                         </div>
 
 
-                        <a href="{{getWhatsappApi($settings->whatsapp)}}" class="whatsapp__container inline-flex items-center justify-center social-whatsapp mr-auto">
+                        <a target="_blank" href="{{getWhatsappApi($settings->whatsapp)}}" class="whatsapp__container inline-flex items-center justify-center social-whatsapp mr-auto">
                             <x-social.whatsapp></x-social.whatsapp>
                         </a>
 
