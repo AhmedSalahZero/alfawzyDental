@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 class AboutUsController extends Controller
 {
     //
+
     use  Upload_Files;
     public function index(){
         $row=AboutUs::firstOrCreate();
