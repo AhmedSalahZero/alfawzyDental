@@ -39,7 +39,13 @@
             <div class="blogs grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-y-20 gap-x-10 justify-center items-center">
                 @foreach($blogs as $index=>$blog)
 
-                    <x-blogs.blog :img="get_file($blog->image)" :date="date('d M', strtotime($blog->created_at))" :title="substr($blog->title, 0, 30)" :subtitle="substr($blog->brief, 0, 30)" :description="substr($blog->desc, 0, 30)"></x-blogs.blog>
+                    <x-blogs.blog :img="get_file($blog->image)"
+                                  :date="date('d M', strtotime($blog->created_at))"
+                                  :title="substr($blog->title, 0, 30)"
+                                  :subtitle="substr($blog->brief, 0, 30)"
+                                  :description="substr($blog->desc, 0, 30)"
+                                  :id="$blog->id"
+                    ></x-blogs.blog>
 
                 @endforeach
             </div>
