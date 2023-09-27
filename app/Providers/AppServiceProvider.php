@@ -29,8 +29,8 @@ class AppServiceProvider extends ServiceProvider
     {
         Schema::defaultStringLength(125);
         view()->share('settings', Setting::firstOrCreate());
-        view()->share('all_services', Service::get());
-        view()->share('serviceCategories', CategoryService::get());
+        view()->share('all_services', Service::orderBy('ranking','ASC')->get());
+        view()->share('serviceCategories', CategoryService::orderBy('ranking','ASC')->get());
 
     }
 }
