@@ -28,6 +28,9 @@
                     <th>{{trans('admin.actions')}}</th>
                 </tr>
                 </thead>
+                <tbody id="sortTable">
+
+                </tbody>
             </table>
         </div>
     </div>
@@ -84,9 +87,34 @@
 
 @endsection
 @section('js')
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
     <script>
+        $('#sortTable').sortable({
+            stop: function () {
+                var servicesArray = [];
+                $('.sortClass').each(function (index) {
+                    var newRank = {
+                        id: $(this).data('id'),
+                        rank: index + 1
+                    }
+                    $(this).find("td:first").text(newRank.rank)
+                    servicesArray.push(newRank)
+                }).promise().done(function () {
+                    var method = {
+                        array: servicesArray
+                    }
+                    $.post("{{route('admin.updateServiceCategoryRank')}}", method, function (data) {
+                        // console.log(data)
+                        alertify.success('M.Elsdodey ');
+
+                    })
+                });
+            }
+        })
+
         var columns = [
-            {data: 'id', name: 'id'},
+            {data: 'ranking', name: 'ranking'},
             {data: 'image', name: 'image'},
             {data: 'title', name: 'title'},
             {data: 'created_at', name: 'created_at'},

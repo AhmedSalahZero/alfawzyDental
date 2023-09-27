@@ -24,11 +24,11 @@ class HomeController extends Controller
 {
 	public function index()
 	{
-        $categoryServices=CategoryService::get();
-        $services=Service::take('6')->orderBy('id','DESC')->get();
+        $categoryServices=CategoryService::orderBy('ranking','ASC')->get();
+        $services=Service::take('6')->orderBy('ranking','ASC')->get();
         $reviews=Review::latest()->get();
         $patients=Patient::get();
-        $all_services=Service::get();
+        $all_services=Service::orderBy('ranking','ASC')->get();
         $evenReviews = Review::whereRaw('id % 2 = 0')->get();
         $oddReview = Review::whereRaw('id % 2 != 0')->get();
         $about=AboutUs::firstOrCreate();
@@ -73,7 +73,7 @@ class HomeController extends Controller
         return view('front.about.about',compact('row','partners','categories','specialCategory'));
 	}public function showServices()
 	{
-        $categories=CategoryService::with(['services'])->get();
+        $categories=CategoryService::with(['services'])->orderBy('ranking','ASC')->get();
 		return view('front.services.services',compact('categories'));
 	}
 

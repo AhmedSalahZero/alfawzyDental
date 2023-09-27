@@ -75,10 +75,14 @@ Route::group(
 
         Route::resource('serviceCategories', \App\Http\Controllers\Admin\ServiceCategoryController::class);
 
+        Route::post('updateServiceCategoryRank',[App\Http\Controllers\Admin\ServiceCategoryController::class,'updateRank'])->name('admin.updateServiceCategoryRank');
+
         ### Services ###
 
 
         Route::resource('services', \App\Http\Controllers\Admin\ServiceController::class);
+
+        Route::post('updateServiceRank',[App\Http\Controllers\Admin\ServiceController::class,'updateRank'])->name('admin.updateServiceRank');
 
 
         ### Galleries ###
@@ -129,6 +133,7 @@ Route::group(
         ### Sliders ####
 
         Route::resource('sliders', \App\Http\Controllers\Admin\SliderController::class);
+
 
 
     });

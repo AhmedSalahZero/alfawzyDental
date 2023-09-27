@@ -16,7 +16,7 @@ class ServiceCategoryController extends Controller
     {
 
         if ($request->ajax()) {
-            $admins = CategoryService::query()->latest();
+            $admins = CategoryService::query()->orderBy('ranking','ASC');
             return DataTables::of($admins)
                 ->addColumn('action', function ($admin) {
 
@@ -58,6 +58,15 @@ class ServiceCategoryController extends Controller
                     return date('Y/m/d', strtotime($admin->created_at));
                 })
                 ->escapeColumns([])
+                ->setRowAttr([
+                    'data-rank'=>function($user){
+                        return $user->ranking;
+                    },'data-id'=>function($user){
+                        return $user->id;
+                    },'class'=>function($user){
+                        return 'sortClass';
+                    }
+                ])
                 ->make(true);
 
 
@@ -156,4 +165,13 @@ class ServiceCategoryController extends Controller
                 'message' => 'تمت العملية بنجاح!'
             ]);
     }//end fun
+
+    public function updateRank(Request $request)
+    {
+        foreach ($request->array as $rankData)
+        {
+            CategoryService::find($rankData['id'])->update(['ranking'=>$rankData['rank']]);
+        }
+    }//end fun
+
 }
