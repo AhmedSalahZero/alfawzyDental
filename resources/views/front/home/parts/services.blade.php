@@ -1,10 +1,10 @@
 <section class="section section-bg space-between-sections-y  relative">
     <div class="res-container">
-        <h2 class="section-header text-center font-bold text-5xl text-black capitalize ">{{ __('Our Services') }}</h2>
-        <x-swiper.swiper :services="$services"></x-swiper.swiper>
+        <h2 class="section-header text-center font-bold text-5xl text-black capitalize ">Our Special Services</h2>
+        <x-swiper.swiper :services="$special_services"></x-swiper.swiper>
     </div>
 </section>
-{{-- 
+{{--
 
 <div class=" section  section-to-up min-services relative z-[60] -mt-10">
     <div class="res-container">

@@ -25,6 +25,7 @@
                     <th>Title</th>
                     <th>Image</th>
                     <th>Category</th>
+                    <th>Is Special  </th>
                     <th>  {{trans('admin.created at')}}</th>
                     <th>{{trans('admin.actions')}}</th>
                 </tr>
@@ -88,6 +89,8 @@
 
 @endsection
 @section('js')
+    <script src="https://cdn.ckeditor.com/4.21.0/standard/ckeditor.js"></script>
+
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 
     <script>
@@ -119,11 +122,42 @@
             {data: 'title', name: 'title'},
             {data: 'image', name: 'image'},
             {data: 'category_service_id', name: 'category_service_id'},
+            {data: 'is_special', name: 'is_special'},
             {data: 'created_at', name: 'created_at'},
             {data: 'action', name: 'action', orderable: false, searchable: false},
         ];
     </script>
     @include('Admin.layouts.inc.ajax',['url'=>'services'])
+
+    <script>
+        $(document).on('change', '.activeBtn', function () {
+            var id = $(this).attr('data-id');
+
+            $.ajax({
+                type: 'GET',
+                url: "{{route('admin.active.services')}}",
+                data: {
+                    id: id,
+                },
+
+                success: function (res) {
+                    if (res['status'] == true) {
+
+                        toastr.success("{{trans('admin.operation accomplished successfully')}}")
+                        // $('#table').DataTable().ajax.reload(null, false);
+                    } else {
+                        // location.reload();
+
+                    }
+                },
+                error: function (data) {
+                    // location.reload();
+                }
+            });
+
+
+        })
+    </script>
 
 
 

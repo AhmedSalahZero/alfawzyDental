@@ -26,7 +26,7 @@
                                 </a>
                             </x-slot>
                             <x-slot name="back__face">
-                                <p>{{$service->desc}}</p>
+                                <p>{!! $service->desc !!}</p>
                             </x-slot>
 
                         </x-cards.flip-card>
@@ -35,23 +35,25 @@
             </div>
 
 
-
+              @foreach($special_services as $service)
             <div class="top-managemet-element mb-24 py-5 px-2 md:px-20 shadow-sm rounded-[32px] ">
                 <div class="top-managements__title text-center mb-16 ">
-                    <x-badges.badge :title="$category->title" :lg="true"></x-badges.badge>
+                    <x-badges.badge :title="$service->title" :lg="true"></x-badges.badge>
                 </div>
                 <div class="service-description__item flex flex-col md:flex-row flex-wrap ">
                     <div class="service__description-img basis-1/4 mb-4 md:mb-0">
-                        <img src="{{get_file($category->image)}}" alt="" class="max-w-full">
+                        <img src="{{get_file($service->image)}}" alt="" class="max-w-full">
                     </div>
                     <div class="service__description-infos basis-3/4  md:pl-10 max-w-[732px] text-justify">
-                          {{$category->brief}}
+                         {!! $service->desc !!}
                     </div>
                     <div class="basis-full max-w-[1146px]">
-                           {{$category->desc}}
+                        {!! $service->details !!}
+
                     </div>
                 </div>
             </div>
+            @endforeach
 
 
         </div>

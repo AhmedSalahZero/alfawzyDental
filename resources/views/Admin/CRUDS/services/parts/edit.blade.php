@@ -51,9 +51,30 @@
 
 
 
+        <div class="col-sm-12 pb-3 p-2">
+            <label for="details" class="form-label"> Details <span class="red-star">*</span> </label>
+            <textarea name="details" id="details" class="form-control" rows="5"
+                      placeholder="">{{$row->details}}</textarea>
+        </div>
+
+
+
 
     </div>
 </form>
+
+<script src="https://cdn.ckeditor.com/4.21.0/standard/ckeditor.js"></script>
+
+
+<script>
+    CKEDITOR.replace('desc', {
+        extraAllowedContent: 'div ol ul ol li',
+    });
+    CKEDITOR.replace('details', {
+        extraAllowedContent: 'div ol ul ol li',
+    });
+
+</script>
 
 <script>
     $('.dropify').dropify();

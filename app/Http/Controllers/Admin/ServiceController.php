@@ -57,6 +57,22 @@ class ServiceController extends Controller
                              ';
                 })
 
+                ->editColumn('is_special', function ($row) {
+                    $active = '';
+
+                    $operation = '';
+
+
+
+                    if ($row->is_special == 1)
+                        $active = 'checked';
+
+                    return '<div class="form-check form-switch">
+                               <input ' . $operation . '  class="form-check-input activeBtn" data-id="' . $row->id . ' " type="checkbox" role="switch" id="flexSwitchCheckChecked" ' . $active . '  >
+                           </div>';
+                })
+
+
 
                 ->editColumn('category_service_id', function ($row) {
 
@@ -99,6 +115,7 @@ class ServiceController extends Controller
             'image' => 'required|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
             'desc' => 'required',
             'category_service_id'=>'required|exists:category_services,id',
+            'details' => 'required',
 
 
         ]);
@@ -142,6 +159,8 @@ class ServiceController extends Controller
             'image' => 'nullable|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
             'desc' => 'required',
             'category_service_id'=>'required|exists:category_services,id',
+            'details' => 'required',
+
         ]);
 
         if ($request->image)
@@ -182,6 +201,21 @@ class ServiceController extends Controller
         {
             Service::find($rankData['id'])->update(['ranking'=>$rankData['rank']]);
         }
+    }//end fun
+
+    public function activate(Request $request)
+    {
+
+        $admin = Service::findOrFail($request->id);
+        if ($admin->is_special == true) {
+            $admin->is_special = 0;
+            $admin->save();
+        } else {
+            $admin->is_special = 1;
+            $admin->save();
+        }
+
+        return response()->json(['status' => true]);
     }//end fun
 
 }

@@ -81,6 +81,7 @@ Route::group(
 
 
         Route::resource('services', \App\Http\Controllers\Admin\ServiceController::class);
+        Route::get('activateService', [App\Http\Controllers\Admin\ServiceController::class, 'activate'])->name('admin.active.services');
 
         Route::post('updateServiceRank',[App\Http\Controllers\Admin\ServiceController::class,'updateRank'])->name('admin.updateServiceRank');
 

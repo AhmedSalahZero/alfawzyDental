@@ -25,7 +25,7 @@ class HomeController extends Controller
 	public function index()
 	{
         $categoryServices=CategoryService::orderBy('ranking','ASC')->get();
-        $services=Service::take('6')->orderBy('ranking','ASC')->get();
+        $special_services=Service::take('6')->orderBy('ranking','ASC')->where('is_special',true)->get();
         $reviews=Review::latest()->get();
         $patients=Patient::get();
         $all_services=Service::orderBy('ranking','ASC')->get();
@@ -40,7 +40,7 @@ class HomeController extends Controller
         return view('front.home.home',[
 			'showHeaderBanner'=>true,
             'categoryServices'=>$categoryServices,
-            'services'=>$services,
+            'special_services'=>$special_services,
             'reviews'=>$reviews,
             'patients'=>$patients,
             'all_services'=>$all_services,
@@ -74,13 +74,16 @@ class HomeController extends Controller
 	}public function showServices()
 	{
         $categories=CategoryService::with(['services'])->orderBy('ranking','ASC')->get();
-		return view('front.services.services',compact('categories'));
+        $special_services=Service::where('is_special',true)->orderBy('ranking','ASC')->get();
+		return view('front.services.services',compact('categories','special_services'));
 	}
 
     public function showService($id){
         $category=CategoryService::with(['services'])->findOrFail($id);
+        $special_services=Service::where('category_service_id',$id)->where('is_special',true)->orderBy('ranking','ASC')->get();
 
-        return view('front.services.service',compact('category'));
+
+        return view('front.services.service',compact('category','special_services'));
 
     }
 
