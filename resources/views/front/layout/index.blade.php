@@ -21,7 +21,7 @@
     </style>
     @stack('css')
 </head>
-<body x-data="{showSideBar:false}" class="overflow-x-hidden ">
+<body x-data="{showSideBar:false,mobileMenuIsOpen:false}" class="overflow-x-hidden ">
 
 <div class="fixed-video">
 	<span id="close-video">x</span>
@@ -42,6 +42,34 @@
     class="inline-flex md:hidden z-[999] fixed md:static bottom-0 md:bottom-auto left-1/2 md:left-auto w-full md:w-auto -translate-x-1/2 md:-translate-x-0  md:z-0    whatsapp__container  items-center justify-center social-whatsapp mr-8">
     <x-social.whatsapp></x-social.whatsapp>
 </a>
+
+<div class="fixed z-[9999999] top-0 left-0 w-[70vw] h-screen bg-white  "
+                         x-transition:enter="transition ease-out duration-100"
+                         x-transition:enter-start="transform opacity-0 scale-95"
+                         x-transition:enter-end="transform opacity-100 scale-100"
+                         x-transition:leave="transition ease-in duration-75"
+                         x-transition:leave-start="transform opacity-100 scale-100"
+                         x-transition:leave-end="transform opacity-0 scale-95" x-show="mobileMenuIsOpen">
+                        <ul class="pt-10 px-3  flex flex-col gap-2 ">
+                            @foreach(getPages() as $pageName=>$navArr)
+                                <x-links.mobile-nav-link
+                                    :subMenu="[['title'=>'first','link'=>'#'],['title'=>'second','link'=>'#']]"
+                                    :title="$navArr['title']" :link="$navArr['url']"></x-links.mobile-nav-link>
+                            @endforeach
+                        </ul>
+                        <ul class="flex space-between items-center pt-4">
+                            @foreach(getSocialIcons() as $iconName=>$iconArr)
+                                <x-links.social-links :icon-size="'text-lg'" :iconName="$iconName"
+                                                      :iconClass="$iconArr['icon']"
+                                                      :iconLink="$iconArr['link']"></x-links.social-links>
+                            @endforeach
+                        </ul>
+                        <div @click="mobileMenuIsOpen=false"
+                             class="remove border border-gray-300  absolute top-3 right-3 h-6 flex-center  w-6 rounded-full cursor-pointer  bg-white">
+                            <i class="fa-solid fa-xmark text-black  icon-size "></i>
+                        </div>
+                    </div>
+					
 <header class="
 	z-50
 	@if(isset($showHeaderBanner) && $showHeaderBanner)
@@ -261,37 +289,12 @@
             </div>
 
 
-            <div class="bar__menu relative z-20   md:hidden " x-data="{mobileMenuIsOpen:false }">
+            <div class="bar__menu relative z-20   md:hidden " >
                 <div class="bar__ment-content  " @click.away="mobileMenuIsOpen=false">
                     <div @click="mobileMenuIsOpen=!mobileMenuIsOpen" class="cursor-pointer">
                         <i class="fa-solid fa-bars-staggered text-white "></i>
                     </div>
-                    <div class="fixed  top-0 left-0 w-[70vw] h-screen bg-white  "
-                         x-transition:enter="transition ease-out duration-100"
-                         x-transition:enter-start="transform opacity-0 scale-95"
-                         x-transition:enter-end="transform opacity-100 scale-100"
-                         x-transition:leave="transition ease-in duration-75"
-                         x-transition:leave-start="transform opacity-100 scale-100"
-                         x-transition:leave-end="transform opacity-0 scale-95" x-show="mobileMenuIsOpen">
-                        <ul class="pt-10 px-3  flex flex-col gap-2 ">
-                            @foreach(getPages() as $pageName=>$navArr)
-                                <x-links.mobile-nav-link
-                                    :subMenu="[['title'=>'first','link'=>'#'],['title'=>'second','link'=>'#']]"
-                                    :title="$navArr['title']" :link="$navArr['url']"></x-links.mobile-nav-link>
-                            @endforeach
-                        </ul>
-                        <ul class="flex space-between items-center pt-4">
-                            @foreach(getSocialIcons() as $iconName=>$iconArr)
-                                <x-links.social-links :icon-size="'text-lg'" :iconName="$iconName"
-                                                      :iconClass="$iconArr['icon']"
-                                                      :iconLink="$iconArr['link']"></x-links.social-links>
-                            @endforeach
-                        </ul>
-                        <div @click="mobileMenuIsOpen=false"
-                             class="remove border border-gray-300  absolute top-3 right-3 h-6 flex-center  w-6 rounded-full cursor-pointer  bg-white">
-                            <i class="fa-solid fa-xmark text-black  icon-size "></i>
-                        </div>
-                    </div>
+                   
                 </div>
 
             </div>
