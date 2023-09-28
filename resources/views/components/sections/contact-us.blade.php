@@ -38,20 +38,20 @@ space-between-sections-t
                     </div>
                     <div class="text-center md:text-left">
                         <div class="form__submit inline-flex md:flex flex-col md:flex-row justify-between items-center md:items-stretch">
-                            <div class="form__actions grow inline-flex justify-start items-center gap-5">
-                                <div class="icon__parent bg-[#FAF7F0] w-16 h-16  flex items-center justify-center border border-[#D1AA65]  rounded-2xl">
+                            <div class="order-2 md:order-1  form__actions grow inline-flex justify-start items-center gap-5 ">
+                                <div class=" icon__parent bg-[#FAF7F0] w-16 h-16  flex items-center justify-center border border-[#D1AA65]  rounded-2xl">
                                     <div class="w-12 h-12 rounded-2xl bg-main relative">
                                         <i class="fa-solid fa-phone-volume text-2xl text-white absolute-center "></i>
                                     </div>
                                 </div>
 
-                                <div class="contact__div">
-                                    <p class="text-main text-xs uppercase"> {{ __('Call Now') }}</p>
-                                    <p class="tracking-wider normal__header text-black ">{{$settings->phone}}</p>
+                                <div class="contact__div ">
+                                    <p onclick="window.open('tel:{{ $settings->phone }}');" class="text-main text-xs uppercase cursor-pointer"> {{ __('Call Now') }}</p>
+                                    <p  onclick="window.open('tel:{{ $settings->phone }}');" class="tracking-wider normal__header text-black cursor-pointer">{{$settings->phone}}</ش>
                                 </div>
 
                             </div>
-                            <button id="submit_button" form="Form"  type="submit" type="submit" class="submit__btn grow w-full px-10 py-2 mt-5  lg:mt-0 md:max-w-[200px] lg:max-w-[290px] bg-main rounded-2xl text-white capitalize text-center flex-center">{{ __('Submit') }}</button>
+                            <button id="submit_button" form="Form"  type="submit" type="submit" class="order-1 md:order-2 mb-10 md:mb-0 submit__btn grow w-full px-10 py-2 mt-5  lg:mt-0 md:max-w-[200px] lg:max-w-[290px] bg-main rounded-2xl text-white capitalize text-center flex-center">{{ __('Submit') }}</button>
                         </div>
                     </div>
 

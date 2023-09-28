@@ -92,7 +92,6 @@
                     var i, l, tmp = document.createDocumentFragment();
                     for (i = 0, l = len(); i < l; i += 1) {
                         tmp.appendChild($('<figure>').addClass('dotOff').get(0));
-                        console.log('loop ' + i)
                     }
                     _obj.dotsCtrl.empty().html(tmp).children().on('click', function () {
                         var idx = $(this).index();
@@ -230,7 +229,6 @@
             this.len = function (val) {
                 if (val == undefined)
                     return _obj.nodes;
-                console.log("len");
                 _obj.nodes = val;
                 _obj.pos = 0;
                 _obj.rot = 360 / _obj.nodes * _obj.pos;
@@ -291,156 +289,6 @@
 @endpush
 @push('css')
     <style>
-        .video-class {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .carousel * {
-            max-width: 100%;
-            max-height: 100%;
-        }
-
-        .carousel {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
-        }
-
-        .carousel > * {
-            display: block;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-
-        .carousel.backface > * {
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-        }
-
-        .carousel {
-            -webkit-transition: -webkit-transform 1s;
-            transition: transform 1s;
-        }
-
-        .carousel > * {
-            -webkit-transition: opacity 1s, -webkit-transform 1s;
-            transition: opacity 1s, transform 1s;
-        }
-
-        /**/
-        .floatleft {
-            float: left;
-        }
-
-        .floatright {
-            float: right;
-        }
-
-        .textalignleft {
-            text-align: left;
-        }
-
-        #ctrls {
-            position: fixed;
-            bottom: 0;
-            display: none;
-        }
-
-        figure, video {
-            cursor: pointer;
-            display: block;
-            -webkit-margin-before: 0;
-            -webkit-margin-after: 0;
-            -webkit-margin-start: 0;
-            -webkit-margin-end: 0;
-        }
-
-        .wrapper {
-            width: 100%;
-            overflow: hidden;
-
-        }
-
-        #dots {
-            width: 100%;
-            float: left;
-        }
-
-        .dotOff {
-            width: 15px;
-            height: 15px;
-            background-color: gray;
-            float: left;
-            border-radius: 100%;
-            margin: 1%;
-            position: relative;
-        }
-
-        .dotOn {
-            background-color: blue;
-        }
-
-        .container, #container {
-            width: 40%;
-            position: relative;
-            margin: 50px 30%;
-            min-height: 670px;
-        }
-
-        #container::after, .dotOff ::after {
-            content: '';
-            display: block;
-            padding-top: 100%;
-        }
-
-        .carousel > * {
-            /* opacity:0.8;    */
-            background-color: radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-            text-align: center;
-            width: 70%;
-            min-width: 120px;
-            height: 90%;
-            min-height: 600px;
-            left: 5%;
-            top: 5%;
-            border-radius: 0 25px 25px 25px;
-            box-shadow: 1px 1px 1px 1px #999;
-        }
-
-        .threeD {
-            -webkit-perspective: 800px;
-            perspective: 800px;
-        }
-
-        .twoD {
-            border: 1px solid;
-            overflow: hidden;
-        }
-
-        .twoD > * > * {
-            width: 100%;
-            height: 100%;
-            left: 0;
-            top: 0;
-            border-radius: 0;
-        }
-
-        figure, video {
-            background-repeat: no-repeat;
-            background-size: 100%;
-            background-position: center center;
-
-        }
-
-        figure[data-pos] {
-
-        }
+     
     </style>
 @endpush

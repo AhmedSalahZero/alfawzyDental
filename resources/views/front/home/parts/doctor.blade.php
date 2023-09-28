@@ -1,7 +1,7 @@
-<section class="space-between-sections-y">
+<section class="space-between-sections-y mt-52 md:mt-0">
     <div class="res-container mt-96 md:mt-36">
         <div
-            class="online-consultings flex justify-between text-center md:text-left items-center flex-col md:flex-row  gap-20">
+            class="online-consultings flex justify-between text-center md:text-left items-center flex-col md:flex-row  gap-20 ">
             <div class="online-consulting ">
                 <h4 class="main__title mb-5">{{ __('Online Consulting') }}</h4>
                 <h2 class="sub__title max-w-[386px] mb-5">{{ __('Make online and live Consultation easily.') }}</h2>

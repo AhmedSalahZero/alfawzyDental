@@ -24,8 +24,16 @@
 <body x-data="{showSideBar:false}" class="overflow-x-hidden ">
 
 <div class="fixed-video">
-    <video loop="" autoplay="" playsinline="" muted="" preload="auto" controlslist="nodownload"
-           disablepictureinpicture="">
+	<span id="close-video">x</span>
+    <video 
+	id="fixed-video-id" 
+	loop="" autoplay="" playsinline="" 
+	muted="muted"
+	{{-- controls --}}
+	 preload="auto" controlslist="nodownload"
+           disablepictureinpicture=""
+		   >
+        {{-- <source src="https://media.geeksforgeeks.org/wp-content/uploads/20210314115545/sample-video.mp4" type="video/mp4"> --}}
         <source src="{{get_file($settings->video_footer)}}" type="video/mp4">
     </video>
 </div>
@@ -54,9 +62,10 @@
 
         </div>
     @endif
-    <div class="res-container h-full !items-start">
+    <div class="res-container h-full !items-stretch md:!items-start pb-16 md:pb-0">
         <div class="header__menu z-[5] flex justify-between
-			items-center
+			items-start
+			md:items-center
 			@if(isset($showHeaderBanner) && $showHeaderBanner)
 			pt-4
 			@else
@@ -357,16 +366,22 @@
                         'title'=>__('email'),
                         'value'=>__($settings->email)
                         ]
-                        ] as $contactInfoArr)
+                        ] as $iconIndex=>$contactInfoArr)
 
                             <div
-                                class="contact__element rounded-2xl px-2  sm:px-4  h-[76px] py-2 bg-white flex space-x-1 sm:space-x-3 items-center  ">
+								
+								@if($iconIndex == 0)
+								onclick="window.open('tel:{{ $contactInfoArr['value'] }}');"
+								@else
+								onclick="window.open('mailto:{{ $contactInfoArr['value'] }}')"
+								@endif 
+                                class="contact__element rounded-2xl px-2 cursor-pointer  sm:px-4  h-[76px] py-2 bg-white flex space-x-1 sm:space-x-3 items-center  ">
                                 <div class="contact-icon bg-main rounded-2xl  px-1 py-2 w-[42px] h-[42px] flex-center ">
                                     <i class="{{ $contactInfoArr['icon'] }} text-white icon-size    "></i>
                                 </div>
                                 <div class="contact__description">
                                     <p class="tracking-tight text-black xs:font-normal sm:font-medium md:font-semibold text-xs  md:text-base uppercase ">{{$contactInfoArr['title'] }}</p>
-                                    <p class="tracking-tight text-black xs:font-normal sm:font-medium md:font-medium text-xs  md:text-base uppercase ">{{ $contactInfoArr['value'] }}</p>
+                                    <p  class="tracking-tight text-black xs:font-normal sm:font-medium md:font-medium text-xs  md:text-base uppercase ">{{ $contactInfoArr['value'] }}</p>
                                 </div>
                             </div>
                         @endforeach
@@ -412,7 +427,7 @@
                         </li>
                     @endforeach
                 </ul>
-                <a href="#"
+                <a href="mailto:bookappointment@alfawzydental.com"
                    class="font-semibold text-xs lg:text-base tracking-tight ">{{ __('bookappointment@alfawzydental.com') }}</a>
             </div>
             <div class="footer__addresses w-full md:w-1/3 ">
@@ -494,6 +509,17 @@
         ,
     });
 
+	$('#close-video').click(function(e){
+		e.preventDefault();
+		$('.fixed-video').remove();
+	})
+	$(document).on('click','.fixed-video',function(){
+		$(this).find('video').prop('muted',false)
+		$(this).css('height','260px');
+		$(this).css('width','300px');
+	})
+
 </script>
+
 </body>
 </html>

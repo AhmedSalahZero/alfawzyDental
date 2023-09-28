@@ -40,8 +40,8 @@
     <script>
         window.addEventListener("load", function () {
             new Swiper(".testimonial-swiper", {
-                loop: false,
-                slidesPerView: "3",
+                loop: true,
+                slidesPerView: "2",
 
                 breakpoints: {
                     // when window width is >= 320px
@@ -56,10 +56,10 @@
                     // when window width is >= 480px
 
                     // when window width is >= 640px
-                   // 1280: {
-                   //     slidesPerView: 3
-                   //     , spaceBetween: '40'
-                   // }
+                    1000: {
+                        slidesPerView: 3
+                        , spaceBetween: '30'
+                    }
                 },
                 spaceBetween: 30,
                 speed: 6000,
@@ -73,10 +73,9 @@
 
             });
             new Swiper(".testimonial-swiper2", {
-                loop: false,
-
-                grabCursor: true,
+                loop: true,
                 slidesPerView: "3",
+
                 breakpoints: {
                     // when window width is >= 320px
                     320: {
@@ -90,10 +89,10 @@
                     // when window width is >= 480px
 
                     // when window width is >= 640px
-                   // 1280: {
-                   //     slidesPerView: 3
-                   //     , spaceBetween: '40'
-                   // }
+                    1000: {
+                        slidesPerView: 3
+                        , spaceBetween: '30'
+                    }
                 },
                 spaceBetween: 30,
                 speed: 6000,

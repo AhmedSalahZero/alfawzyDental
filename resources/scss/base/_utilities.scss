@@ -122,3 +122,21 @@
     z-index: 200;
 	
 }
+#close-video{
+	box-sizing: border-box;
+	z-index:201;
+	position: absolute;
+    top: 4px;
+    right: 3px;
+    font-size: 1rem;
+    background: #FFCF8A;
+    padding: 0 5px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    cursor: pointer;	
+}

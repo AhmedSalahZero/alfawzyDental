@@ -29,7 +29,7 @@
 	    <div class="swiper-pagination"></div>
 
 	    <!-- If we need navigation buttons -->
-	    <div class="z-50  relative left-1/2 -translate-x-1/2 top-[-70px] md:top-[-1px] inline-block ">
+	    <div class="z-50  relative left-1/2 -translate-x-1/2 top-[-70px] md:top-[-1px] inline-block mt-16 md:mt-0">
 	        <div class=" swiper-button-prev swiper-button-prev-img !h-6 !w-6 lg:!h-12 lg:!w-12 z-10 absolute !left-[-40px]  sm:!left-[-100px] md:!left-[-180px] !mt-0 !top-1/2 !-translate-y-1/2"></div>
 	        <div class=" swiper-button-next swiper-button-next-img !h-6 !w-6 lg:!h-12 lg:!w-12 z-10 absolute !right-[-40px] sm:!right-[-100px] md:!right-[-180px] !mt-0 !top-1/2 !-translate-y-1/2 "></div>
 	        <a href="{{route('web_services.index')}}" class="all-services px-3 py-2  lg:py-3 lg:px-5 z-10 text-base lg:text-xl block text-white bg-main rounded-2xl capitalize"> view all services</a>
