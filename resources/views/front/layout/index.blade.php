@@ -523,6 +523,12 @@
 	})
 
 </script>
-
+{{-- 
+<script defer src="{{ asset('front/js/video-gallery/jquery.youtubevideogallery.js') }}"></script>
+  <script defer>
+       $("ul.youtube-videogallery").youtubeVideoGallery({
+              plugin:'fancybox'
+          });
+  </script> --}}
 </body>
 </html>
