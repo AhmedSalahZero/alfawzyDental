@@ -1,4 +1,4 @@
-<section class="space-between-sections-y mt-52 md:mt-0">
+<section class="space-between-sections-y mt-52 lg:mt-0">
     <div class="res-container mt-96 md:mt-36">
         <div
             class="online-consultings flex justify-between text-center md:text-left items-center flex-col md:flex-row  gap-20 ">

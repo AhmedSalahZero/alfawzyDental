@@ -11,8 +11,8 @@ space-between-sections-t
 @endif
  contact-us-section section">
     <div class="res-container">
-        <div class="contact-us flex flex-col md:flex-row gap-[118px]">
-            <div class="basis-2/5 space-right contact__map ">
+        <div class="contact-us flex flex-col lg:flex-row gap-[118px]">
+            <div class="h-[500px] lg:basis-2/5  space-right contact__map ">
                 @include('front.map.maps',[
                 'mapId'=>'map__contact',
                 'searchTextField'=>'map__search',

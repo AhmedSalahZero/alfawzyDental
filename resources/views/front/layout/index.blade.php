@@ -21,7 +21,7 @@
     </style>
     @stack('css')
 </head>
-<body x-data="{showSideBar:false,mobileMenuIsOpen:false}" class="overflow-x-hidden ">
+<body x-data="{showSideBar:false,mobileMenuIsOpen:false}" class="overflow-x-hidden">
 
 <div class="fixed-video">
 	<span id="close-video">x</span>
