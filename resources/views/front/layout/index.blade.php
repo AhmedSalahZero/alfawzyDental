@@ -400,8 +400,7 @@
 </header>
 @stack('content')
 
-<footer class="pt-20 h-[425px] bg-cover "
-        style="background:url('{{ asset('front/image/footer.jpg') }}'),lightgray 50%;background-position:left center; ">
+<footer class="pt-20 lg:h-[425px] bg-cover footer">
     <div class="res-container">
         <div class="footer__content flex flex-col md:flex-row ">
             <div class="footer__logos w-full md:w-1/3 flex space-y-10 items-center justify-between flex-col  h-full">

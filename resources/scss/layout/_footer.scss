@@ -1,0 +1,12 @@
+footer.footer{
+	background-image:url("/front/image/footer.jpg");
+	background-repeat: no-repeat;
+	background-position:center center ;
+	background-size:cover ;
+}
+@media(max-width:$md){
+	footer.footer{
+		background-image:url("/front/image/footer.png");
+	
+}	
+}
