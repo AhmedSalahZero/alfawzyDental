@@ -283,9 +283,16 @@
                 <x-social.whatsapp :settings="$settings">
                     </x-social.whatsapp:>
             </a>
-            <div class="w-10 h-10 rounded-lg bg-white  md:flex md:justify-center md:items-center  cursor-pointer"
+            <div class="w-10 h-10 rounded-lg   md:justify-center md:items-center  cursor-pointer flex-center bg-transparent"
                  @click="showSideBar=!showSideBar">
-                <i class="fa-solid fa-bars-staggered text-black icon-size"></i>
+                <i class="fa-solid fa-bars-staggered
+				@if(isset($showHeaderBanner) && $showHeaderBanner)
+				text-white
+				 @else
+				 text-black
+				 @endif  
+				 
+				  icon-size"></i>
             </div>
 
 
@@ -459,7 +466,9 @@
     </div>
 
     <div class="footer__bottom min-h-[60px]  flex items-center justify-center bg-main text-white">
-        {{ __('Copyright © 2023 All Right Reserved Al Fawzy Dental.') }}
+       <div class="res-container">
+	    {{ __('Copyright © 2023 All Right Reserved Al Fawzy Dental.') }}
+	   </div>
     </div>
 
 </footer>
