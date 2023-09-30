@@ -38,10 +38,10 @@
     </video>
 </div>
 <x-sidebar></x-sidebar>
-<a target="_blank" href="{{ getWhatsappApi($settings->whatsapp) }}"
-    class="inline-flex md:hidden z-[999] fixed md:static bottom-0 md:bottom-auto left-1/2 md:left-auto w-full md:w-auto -translate-x-1/2 md:-translate-x-0  md:z-0    whatsapp__container  items-center justify-center social-whatsapp mr-8">
+{{-- <a target="_blank" href="{{ getWhatsappApi($settings->whatsapp) }}"
+    class="inline-flex md:hidden z-[999] !rounded-none fixed md:static bottom-0 md:bottom-auto left-1/2 md:left-auto w-full md:w-auto -translate-x-1/2 md:-translate-x-0  md:z-0    whatsapp__container  items-center justify-center social-whatsapp mr-8">
     <x-social.whatsapp></x-social.whatsapp>
-</a>
+</a> --}}
 
 <div class="fixed z-[9999999] top-0 left-0 w-[70vw] h-screen bg-white  "
                          x-transition:enter="transition ease-out duration-100"
@@ -283,13 +283,13 @@
                 <x-social.whatsapp :settings="$settings">
                     </x-social.whatsapp:>
             </a>
-            <div class="w-10 h-10 rounded-lg bg-white hidden md:flex md:justify-center md:items-center  cursor-pointer"
+            <div class="w-10 h-10 rounded-lg bg-white  md:flex md:justify-center md:items-center  cursor-pointer"
                  @click="showSideBar=!showSideBar">
                 <i class="fa-solid fa-bars-staggered text-black icon-size"></i>
             </div>
 
 
-            <div class="bar__menu relative z-20   md:hidden " >
+            <div class="bar__menu relative z-20   hidden " >
                 <div class="bar__ment-content  " @click.away="mobileMenuIsOpen=false">
                     <div @click="mobileMenuIsOpen=!mobileMenuIsOpen" class="cursor-pointer">
                         <i class="fa-solid fa-bars-staggered text-white "></i>

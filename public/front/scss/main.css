@@ -2249,6 +2249,9 @@ input[type="range"]:active::-webkit-slider-thumb {
 .rounded-xl {
   border-radius: 0.75rem;
 }
+.\!rounded-none {
+  border-radius: 0px !important;
+}
 .rounded-b-lg {
   border-bottom-right-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;

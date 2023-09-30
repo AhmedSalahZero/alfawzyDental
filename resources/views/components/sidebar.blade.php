@@ -1,4 +1,4 @@
-<div  x-cloak x-show="showSideBar" class="hidden md:flex bg-white flex-col h-full p-3 w-60 dark:bg-gray-900 dark:text-gray-100   right-0 z-[99999999999999999] top-0  bottom-0 fixed">
+<div  x-cloak x-show="showSideBar" class="flex bg-white flex-col h-full p-3 w-60 dark:bg-gray-900 dark:text-gray-100   right-0 z-[99999999999999999] top-0  bottom-0 fixed">
 	<div class="space-y-3">
 		<div class="flex items-center justify-between">
 			<h2 class="opacity-0">Home</h2>

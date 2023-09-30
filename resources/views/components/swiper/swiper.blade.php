@@ -10,7 +10,7 @@
 	            {{-- <img class="" src="{{ $sliderImage }}"> --}}
 	            <x-cards.flip-card>
 	                <x-slot name="front__face">
-					<a href="#">
+					<a href="#" onclick="return false">
 	                    <img class="h-[280px] object-cover w-[310px] md:w-[342px] rounded-[32px] mx-auto" src="{{ get_file($service->image) }}">
 
 						<p class="text-xl font-semibold tracking-tight text-black mt-5 ">{{ $service->title }}</p>
