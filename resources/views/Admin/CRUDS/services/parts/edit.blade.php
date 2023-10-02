@@ -52,7 +52,7 @@
 
 
         <div class="col-sm-12 pb-3 p-2">
-            <label for="details" class="form-label"> Details <span class="red-star">*</span> </label>
+            <label for="details" class="form-label"> Details  </label>
             <textarea name="details" id="details" class="form-control" rows="5"
                       placeholder="">{{$row->details}}</textarea>
         </div>
