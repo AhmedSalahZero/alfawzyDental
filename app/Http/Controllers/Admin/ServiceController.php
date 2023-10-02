@@ -115,7 +115,7 @@ class ServiceController extends Controller
             'image' => 'required|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
             'desc' => 'required',
             'category_service_id'=>'required|exists:category_services,id',
-            'details' => 'required',
+            'details' => 'nullable',
 
 
         ]);
@@ -159,7 +159,7 @@ class ServiceController extends Controller
             'image' => 'nullable|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
             'desc' => 'required',
             'category_service_id'=>'required|exists:category_services,id',
-            'details' => 'required',
+            'details' => 'nullable',
 
         ]);
 
