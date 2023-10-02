@@ -73,7 +73,9 @@ class HomeController extends Controller
         return view('front.about.about',compact('row','partners','categories','specialCategory'));
 	}public function showServices()
 	{
-        $categories=CategoryService::with(['services'])->orderBy('ranking','ASC')->get();
+        $categories=CategoryService::with(['services'])->whereHas('services',function ($query){
+            $query->where('is_special',0);
+        })->orderBy('ranking','ASC')->get();
         $special_services=Service::where('is_special',true)->orderBy('ranking','ASC')->get();
 		return view('front.services.services',compact('categories','special_services'));
 	}
