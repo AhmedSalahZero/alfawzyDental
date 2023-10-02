@@ -42,6 +42,16 @@
                 <input type="text" id="contact_us_link" name="contact_us_link" class="form-control" placeholder="" value="{{$settings->contact_us_link}}">
             </div>
 
+            <div class="col-6">
+                <label for="latitude" class="form-label"> latitude </label>
+                <input type="text" id="latitude" name="latitude" class="form-control" placeholder="" value="{{$settings->latitude}}">
+            </div>
+
+            <div class="col-6">
+                <label for="longitude" class="form-label"> longitude </label>
+                <input type="text" id="longitude" name="longitude" class="form-control" placeholder="" value="{{$settings->longitude}}">
+            </div>
+
 
 
 

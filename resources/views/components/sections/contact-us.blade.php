@@ -17,8 +17,8 @@ space-between-sections-t
                 'mapId'=>'map__contact',
                 'searchTextField'=>'map__search',
                 'lang'=>App()->getLocale(),
-                'latitude'=>'30.033333',
-                'longitude'=>'31.233334',
+                'latitude'=>$settings->latitude,
+                'longitude'=>$settings->longitude,
                 'mapHeight'=>'!h-full'
                 ])
             </div>

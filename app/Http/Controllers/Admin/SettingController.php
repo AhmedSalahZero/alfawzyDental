@@ -120,6 +120,9 @@ class SettingController extends Controller
             "partner_desc" => $request->partner_desc,
             "contact_us_link" => $request->contact_us_link,
             "contact_us_desc" => $request->contact_us_desc,
+            "latitude" => $request->latitude,
+            "longitude" => $request->longitude,
+
 
         ];
     }
