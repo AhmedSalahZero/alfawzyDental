@@ -684,7 +684,7 @@ if (!function_exists('session_lang')) {
 function getWhatsappApi($number = null)
 {
 	$number = $number ?: getWhatsappNumber() ;
-	return 'https://api.whatsapp.com/send?phone='.$number;
+	return 'https://wa.me/'.$number;
 }
 function getWhatsappNumber()
 {
