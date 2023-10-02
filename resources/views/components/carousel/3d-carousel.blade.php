@@ -3,13 +3,13 @@
 ])
 <div class='wrapper'>
     <!--you can swap "threeD" for "twoD" -->
-    <section id="container" class='threeD relative'>
+    <section id="container" class='threeD relative !w-full !mx-[10%] lg:!mx-[35%] lg:!w-[40%]'>
         <figure id="carousel" class=''></figure>
-        <div class="z-50 w-[50px] h-[100px] absolute top-full  left-[43%] -translate-x-1/2  -translate-y-1/2 ">
+        <div class="z-50 w-[50px] h-[100px] absolute top-full left-[35%]  lg:left-[43%] translate-y-[-15%] lg:-translate-x-1/2   ">
             <div id="prev"
-                 class=" swiper-button-prev after:!text-sm swiper-button-prev-video !h-6 !w-6  z-10 absolute !left-[-40px]  !mt-0 !top-1/2 !-translate-y-1/2"></div>
+                 class="-rotate-90 lg:rotate-0 swiper-button-prev after:!text-sm swiper-button-prev-video !h-6 !w-6  z-10 absolute !left-[-40px]  !mt-0 !top-1/2 !-translate-y-1/2"></div>
             <div id="next"
-                 class=" swiper-button-next after:!text-sm swiper-button-next-video !h-6 !w-6  z-10 absolute !right-[-40px] !mt-0 !top-1/2 !-translate-y-1/2 "></div>
+                 class="-rotate-90 lg:rotate-0 swiper-button-next after:!text-sm swiper-button-next-video !h-6 !w-6  z-10 absolute !right-[-40px] !mt-0 !top-1/2 !-translate-y-1/2 "></div>
         </div>
     </section>
 </div>
@@ -28,7 +28,7 @@
     <div>
         {{-- <button id="prev" data-increment="-1">Previous</button> --}}
         {{-- <button id="next" data-increment="1">Next</button> --}}
-        <button id="axisCtrl">Toggle Carousel Axis</button>
+        <button id="axisCtrl" >Toggle Carousel Axis</button>
         <button id="backfaceCtrl">Backface</button>
         <button id="3DCtrl">3D Toggle</button>
     </div>
@@ -220,6 +220,7 @@
                 }
             };
             this.toggleAxis = function () {
+				
                 _obj.axis = _rotOpp[_obj.axis];
                 var pos = _obj.pos;
                 this.len(_obj.nodes);
@@ -285,10 +286,21 @@
         $('#3DCtrl').click(function () {
             $('#container').toggleClass('twoD threeD');
         })
+		
+		$(window).on('resize',function(){
+			console.log('resized',window.innerWidth)
+			if(window.innerWidth < 1024){
+				$('#axisCtrl').trigger('click')
+			}
+		})
+		$(function(){
+			$(window).trigger('resize')
+		})
     </script>
 @endpush
 @push('css')
     <style>
-     
+	
+    
     </style>
 @endpush
