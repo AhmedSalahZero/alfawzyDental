@@ -43,10 +43,10 @@
                         <div class="service__description-img basis-1/4 mb-4 md:mb-0">
                             <img src="{{get_file($service->image)}}" alt="" class="max-w-full">
                         </div>
-                        <div class="">
+                        <div class="service__description-infos basis-3/4  md:pl-10 max-w-[732px] text-justify">
                             {!! $service->desc !!}
                         </div>
-                        <div class="">
+                        <div class="basis-full max-w-[1146px]">
                             {!! $service->details !!}
 
                         </div>
