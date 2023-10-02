@@ -5,11 +5,8 @@
 @endsection
 @push('content')
     <x-banners.single-banner :title="__('Our Services')"></x-banners.single-banner>
-
-    {{-- {{ dd(getTopManngements()) }} --}}
-    <section class="top-managements section-bg section-py">
+    <section class="top-managements  section-py">
         <div class="res-container">
-
             <div class="top-managemet-element mb-24">
                 <div class="top-managements__title text-center">
                     <x-badges.badge :title="$category->title" :lg="true"></x-badges.badge>

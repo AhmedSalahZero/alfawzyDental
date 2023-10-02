@@ -5,7 +5,7 @@
 @endsection
 @push('content')
 <x-banners.single-banner :lg="true" :title="__('Contact Us')"></x-banners.single-banner>
-<section class="contact-us-info-section section -translate-y-1/2 md:-translate-y-[60%] mb-[-930px] md:mb-[-500px]">
+<section class="contact-us-info-section section -translate-y-1/2 md:-translate-y-[60%] pb-16 lg:pb-0 mb-[-930px] md:mb-[-500px]">
     <div class="res-container">
         <div class="main-branches-elements">
             <div class="main-branches grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-20 ">

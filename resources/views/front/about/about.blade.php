@@ -98,8 +98,8 @@
     </div>
 </section>
 {{-- {{ dd(getTopManngements()) }} --}}
-<section class="top-managements section-bg section-py">
-    <div class="res-container">
+<section class="top-managements  shadow-sm section-py">
+    <div class="res-container ">
         @foreach( $categories as $key =>$category)
         <div class="top-managemet-element mb-24">
             <div class="top-managements__title text-center">
@@ -128,11 +128,11 @@
     </div>
 </section>
 
-<section class="success-parteners section-bg py-20">
+<section class="success-parteners shadow-sm py-20">
     <div class="res-container">
-        <div class="our-parteners space-y-10 text-center max-w-[1030px] mx-auto">
+        <div class="our-parteners  space-y-10 text-center max-w-[1030px] mx-auto">
             <h2 class="header__text font-bold ">{{ $settings->partner_title }}</h2>
-            <p class="description__paragraph ">{{ $settings->partner_desc  }}</p>
+            <p class="description__paragraph !text-center">{{ $settings->partner_desc  }}</p>
             <div class="grid  grid-cols-1 gap-y-10 gap-x-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center items-center">
                 @foreach($partners as $index=>$partner)
                     <div class="partener-img">

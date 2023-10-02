@@ -299,7 +299,7 @@
 
 
                                 </div>
-                                <h1 class="absolute-center header__text  text-center  text-white uppercase font-semibold mt-[-50px] lg:mt-0">
+                                <h1 class="absolute-center header__text w-full text-center  text-white uppercase font-semibold mt-[-50px] lg:mt-0 main-header-title">
                                     {{$slider->title}}
                                 </h1>
                             </div>
@@ -315,16 +315,18 @@
                         [
                         'icon'=> 'fa-solid fa-phone-volume',
                         'title'=>__('call now'),
-                        'value'=>__($settings->phone)
+                        'value'=>__($settings->phone),
+						'animation'=>'scroll-from-left-to-right'
                         ],
                         [
                         'icon'=> 'fa-solid fa-envelope',
                         'title'=>__('email'),
-                        'value'=>__($settings->email)
+                        'value'=>__($settings->email),
+						'animation'=>'scroll-from-right-to-left'
                         ]
                         ] as $iconIndex=>$contactInfoArr)
 
-                        <div @if($iconIndex==0) onclick="window.open('tel:{{ $contactInfoArr['value'] }}');" @else onclick="window.open('mailto:{{ $contactInfoArr['value'] }}')" @endif class="contact__element rounded-2xl px-2 cursor-pointer  sm:px-4  h-[76px] py-2 bg-white flex space-x-1 sm:space-x-3 items-center  ">
+                        <div @if($iconIndex==0) onclick="window.open('tel:{{ $contactInfoArr['value'] }}');" @else onclick="window.open('mailto:{{ $contactInfoArr['value'] }}')" @endif class="contact__element {{ $contactInfoArr['animation'] ?? '' }} rounded-2xl px-2 cursor-pointer  sm:px-4  h-[76px] py-2 bg-white flex space-x-1 sm:space-x-3 items-center  ">
                             <div class="contact-icon bg-main rounded-2xl  px-1 py-2 w-[42px] h-[42px] flex-center ">
                                 <i class="{{ $contactInfoArr['icon'] }} text-white icon-size    "></i>
                             </div>
@@ -459,6 +461,66 @@
             $(this).css('height', '260px');
             $(this).css('width', '300px');
         })
+
+    </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+	const scrollMobile = false ;
+	const scrollFromLeftToRight = {
+            delay: 500,
+			duration:500,
+			opacity:0,
+			origin:'bottom',
+			  distance: '140%',
+			  reset:false,
+			  mobile:scrollMobile
+         };
+		 
+		 const scrollFromRightToLeft = {
+            delay: 500,
+			duration:1200,
+			opacity:0,
+			origin:'right',
+			  distance: '150%',
+			  reset:false,
+			  mobile:scrollMobile
+			  
+         };
+		 const scrollFromBottomToUp = {
+            delay: 500,
+			duration:1200,
+			opacity:0,
+			origin:'bottom',
+			  distance: '150%',
+			  reset:false,
+			  mobile:scrollMobile
+			  
+         };
+        const revealOptions = {
+            distance: '150%',
+			reset:false
+            , origin: 'top'
+            , opacity: 0
+            , delay: 500
+            , duration: 500,
+			scale:1.05,
+			  mobile:scrollMobile
+			
+        };
+        ScrollReveal().reveal('.min-services-container', revealOptions);
+        ScrollReveal().reveal('.section-header', revealOptions);
+        ScrollReveal().reveal('.main-header-title', {
+			delay:500 ,
+			origin:'left',
+		});
+        ScrollReveal().reveal('.swiper-slide', {
+            delay: 1000
+         });
+	
+		 ScrollReveal().reveal('.scroll-from-left-to-right', scrollFromLeftToRight);
+		 ScrollReveal().reveal('.scroll-from-bottom-to-up', scrollFromBottomToUp);
+		 ScrollReveal().reveal('.scroll-from-right-to-left', scrollFromRightToLeft);
+		// ScrollReveal().reveal('.detinal-card-description', scrollFromRightToLeft);
 
     </script>
     {{--

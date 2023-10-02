@@ -1,6 +1,8 @@
 @props([
 'patients'=>$patients??[]
 ])
+
+<div id="resized" data-value="0"></div>
 <div class='wrapper'>
     <!--you can swap "threeD" for "twoD" -->
     <section id="container" class='threeD relative !w-full !mx-[10%] lg:!mx-[35%] lg:!w-[40%]'>
@@ -275,7 +277,7 @@
                 var link="{{route('patientVideo',':id')}}";
                 link=link.replace(':id',id);
                 $(this).load(link);
-
+				
                 window.dispatchEvent(new Event('resize'));
 
 
@@ -288,15 +290,20 @@
         })
 		
 		$(window).on('resize',function(){
-			console.log('resized',window.innerWidth)
+			if($('#resized').attr('data-value') == '0'){
 			if(window.innerWidth < 1024){
-				$('#axisCtrl').trigger('click')
+				$('#axisCtrl').trigger('click');
+				$('#resized').attr('data-value',1);
+			}	
 			}
+			
 		})
 		$(function(){
 			$(window).trigger('resize')
 		})
     </script>
+	
+	
 @endpush
 @push('css')
     <style>

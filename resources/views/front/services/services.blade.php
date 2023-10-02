@@ -5,9 +5,8 @@
 @endsection
 @push('content')
 <x-banners.single-banner :title="__('Our Services')"></x-banners.single-banner>
-
 {{-- {{ dd(getTopManngements()) }} --}}
-<section class="top-managements section-bg section-py">
+<section class="top-managements  section-py">
     <div class="res-container">
         @foreach($categories as $index=>$category)
         <div class="top-managemet-element mb-24">
@@ -33,7 +32,7 @@
         </div>
         @endforeach
 
-
+{{-- {{ dd($special_services) }} --}}
             @foreach($special_services as $service)
                 <div class="top-managemet-element mb-24 py-5 px-2 md:px-20 shadow-sm rounded-[32px] ">
                     <div class="top-managements__title text-center mb-16 ">
@@ -41,10 +40,10 @@
                     </div>
                     <div class="service-description__item flex flex-col md:flex-row flex-wrap ">
                         <div class="service__description-img basis-1/4 mb-4 md:mb-0">
-                            <img src="{{get_file($service->image)}}" alt="" class="max-w-full">
+                            <img src="{{get_file($service->image)}}" alt="" class="max-w-full rounded-[32px]">
                         </div>
                         <div class="service__description-infos basis-3/4  md:pl-10 max-w-[732px] text-justify">
-                            {!! $service->desc !!}
+						{!! $service->desc !!}
                         </div>
                         <div class="basis-full max-w-[1146px]">
                             {!! $service->details !!}
