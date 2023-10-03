@@ -17,7 +17,16 @@
 	                </a>
 					</x-slot>
 					 <x-slot name="back__face">
-                         <p>{!! Str::limit($service->desc, 365) !!}
+                         <p>@php
+                                 try {
+                                     $limitedDesc = Illuminate\Support\Str::limit($service->desc, 365);
+                                 } catch (\Exception $e) {
+                                      Illuminate\Support\Facades\Log::error($e->getMessage());
+                                     $limitedDesc = ''; // Set a default value or handle the error as needed.
+                                 }
+                             @endphp
+
+                             {!! $limitedDesc !!}
 
 
                          </p>
