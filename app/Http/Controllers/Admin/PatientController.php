@@ -82,7 +82,7 @@ class PatientController extends Controller
     public function store(Request $request)
     {
         $data = $request->validate([
-            'image' => 'required|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
+            'image' => 'nullable|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
             'video' => 'required|file|max:20000',
 
         ]);
