@@ -17,7 +17,10 @@
 	                </a>
 					</x-slot>
 					 <x-slot name="back__face">
-                         <p>{{$service->desc}}</p>
+                         <p>{!! Str::limit($service->desc, 365) !!}
+
+
+                         </p>
 					</x-slot>
 
 	            </x-cards.flip-card>
