@@ -36,7 +36,7 @@
                     <a class="nav-link active" id="v-pills-logo-t" data-bs-toggle="pill" href="#v-pills-logo" role="tab"
                        aria-controls="v-pills-logo" aria-selected="true">
                         <i class="bx bx-image-alt d-block check-nav-icon mt-1 mb-1"></i>
-                        <p class="fw-bold mb-4">اللوجو</p>
+                        <p class="fw-bold mb-4">Logo</p>
                     </a>
 
                     {{----------------------------------}}
@@ -45,20 +45,20 @@
                     <a class="nav-link" id="v-pills-social-tab" data-bs-toggle="pill" href="#v-pills-social" role="tab"
                        aria-controls="v-pills-social" aria-selected="false">
                         <i class="bx bx-like d-block check-nav-icon mt-1 mb-1"></i>
-                        <p class="fw-bold mb-4">مواقع التواصل الإجتماعى</p>
+                        <p class="fw-bold mb-4">  Social Media</p>
                     </a>
 
                     <a class="nav-link" id="v-pills-counter-tab" data-bs-toggle="pill" href="#v-pills-counter" role="tab"
                        aria-controls="v-pills-counter" aria-selected="false">
                         <i class="bx bxs-comment d-block check-nav-icon mt-1 mb-1"></i>
-                        <p class="fw-bold mb-4">  اعدادات العدادات </p>
+                        <p class="fw-bold mb-4">   Counter Setting  </p>
                     </a>
 
 
                     <a class="nav-link" id="v-pills-other-tab" data-bs-toggle="pill" href="#v-pills-other" role="tab"
                        aria-controls="v-pills-other" aria-selected="false">
                         <i class="bx bxs-landscape d-block check-nav-icon mt-1 mb-1"></i>
-                        <p class="fw-bold mb-4">  اعدادات اخري</p>
+                        <p class="fw-bold mb-4">   Other Setting</p>
                     </a>
                     {{----------------------------------}}
 

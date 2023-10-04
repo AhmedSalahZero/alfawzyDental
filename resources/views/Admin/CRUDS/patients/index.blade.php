@@ -1,6 +1,6 @@
 @extends('Admin.layouts.inc.app')
 @section('title')
-   Patients
+    Patients Videos
 @endsection
 @section('css')
 
@@ -8,11 +8,11 @@
 @section('content')
     <div class="card">
         <div class="card-header d-flex align-items-center">
-            <h5 class="card-title mb-0 flex-grow-1">Patients</h5>
+            <h5 class="card-title mb-0 flex-grow-1">Patients Videos</h5>
 
 
                 <div>
-                    <button id="addBtn" class="btn btn-primary">Add a Patient</button>
+                    <button id="addBtn" class="btn btn-primary">Add a Patient Video</button>
                 </div>
 
         </div>
@@ -40,7 +40,7 @@
                 <!--begin::Modal header-->
                 <div class="modal-header">
                     <!--begin::Modal title-->
-                    <h2><span id="operationType"></span> Patient </h2>
+                    <h2><span id="operationType"></span> Patient Video </h2>
                     <!--end::Modal title-->
                     <!--begin::Close-->
                     <div class="btn btn-sm btn-icon btn-active-color-primary" style="cursor: pointer"

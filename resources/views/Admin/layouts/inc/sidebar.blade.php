@@ -79,7 +79,7 @@
 
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="{{route('patients.index')}}">
-                        <i class="fa fa-medkit"></i> <span data-key="t-dashboards">Patients</span>
+                        <i class="fa fa-medkit"></i> <span data-key="t-dashboards">Patients Videos</span>
                     </a>
                 </li> <!-- end Dashboard Menu -->
 
@@ -148,7 +148,7 @@
 
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="{{route('contacts.index')}}">
-                        <i class="fa fa-envelope"></i> <span data-key="t-dashboards">Contacts </span>
+                        <i class="fa fa-envelope"></i> <span data-key="t-dashboards">Quotes </span>
                     </a>
                 </li> <!-- end Dashboard Menu -->
 

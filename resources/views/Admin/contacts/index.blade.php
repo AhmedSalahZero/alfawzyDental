@@ -1,6 +1,6 @@
 @extends('Admin.layouts.inc.app')
 @section('title')
-   Contacts
+    Quotes
 @endsection
 @section('css')
 
@@ -8,7 +8,7 @@
 @section('content')
     <div class="card">
         <div class="card-header d-flex align-items-center">
-            <h5 class="card-title mb-0 flex-grow-1">Contacts</h5>
+            <h5 class="card-title mb-0 flex-grow-1">Quotes</h5>
 
 
 
