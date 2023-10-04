@@ -1,6 +1,6 @@
 <div>
 
-    <h4 class="card-title">اعدادات اخري</h4>
+    <h4 class="card-title"> Other Setting</h4>
 
     <form id="Form_other" method="post" action="{{route('settings.update',$settings->id)}}">
         @csrf
@@ -53,6 +53,17 @@
             </div>
 
 
+            <div class="col-6">
+                <label for="gallery_image_title" class="form-label"> Gallery Image Title </label>
+                <input type="text" id="gallery_image_title" name="gallery_image_title" class="form-control" placeholder="" value="{{$settings->gallery_image_title}}">
+            </div>
+
+            <div class="col-6">
+                <label for="gallery_video_title" class="form-label"> Gallery Video Title </label>
+                <input type="text" id="gallery_video_title" name="gallery_video_title" class="form-control" placeholder="" value="{{$settings->gallery_video_title}}">
+            </div>
+
+
 
 
             <div class="col-6">
@@ -89,7 +100,7 @@
             <div class="col-sm-6 mt-3">
                 <div class="text-end">
                     <button id='btnOther' form="Form_other" type="submit" class="btn btn-success">
-                        <i class="mdi mdi-content-save me-1"></i> حفظ
+                        <i class="mdi mdi-content-save me-1"></i> Save
                     </button>
                 </div>
             </div> <!-- end col -->

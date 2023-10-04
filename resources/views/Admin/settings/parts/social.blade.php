@@ -1,6 +1,6 @@
 <div>
 
-    <h4 class="card-title">مواقع التواصل الإجتماعى</h4>
+    <h4 class="card-title">  Social Media</h4>
 
     <form id="Form_social" method="post" action="{{route('settings.update',$settings->id)}}">
         @csrf
@@ -115,7 +115,7 @@
             <div class="col-sm-6">
                 <div class="text-end">
                     <button id='btnSocial' form="Form_social" type="submit" class="btn btn-success">
-                        <i class="mdi mdi-content-save me-1"></i> حفظ
+                        <i class="mdi mdi-content-save me-1"></i> Save
                     </button>
                 </div>
             </div> <!-- end col -->

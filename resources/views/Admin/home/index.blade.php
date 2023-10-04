@@ -12,7 +12,7 @@
         <div class="col-xl-3 col-lg-4 col-sm-6">
             <a href="{{route('contacts.index')}}" class="text-center bg-white d-block  rounded-3 mb-3">
                 <p class="text-uppercase fw-bold text-white text-truncate rounded-3 bg-danger p-2 mb-0">
-                    Contacts </p>
+                    Quotes </p>
                 <h2 class="py-4 mb-0 text-danger"><span class="counter-value"
                                                         data-target="{{$contacts}}">0</span>
                     <span class="fs-5 text-muted">  </span>
@@ -66,7 +66,7 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title mb-4">Contacts </h4>
+                    <h4 class="card-title mb-4">Quotes </h4>
 
                     <div class="row">
                         <div id="calendar"></div>
@@ -156,7 +156,7 @@
             eventRender: function (event, element, view) {
                 var sup = element.find('.fc-content')
                 var con = sup.closest('span');
-                var day_title = 'عدد الاشتراكات';
+                var day_title = 'Quotes Number';
 
                 sup.html(day_title + "<br>" + event.title + " <br> <br>" + `<button style="display: none" id="${event.ids}" class="click_me btn btn-outline-danger text-white">تفاصيل</button>`);
                 //event.title

@@ -197,7 +197,7 @@
                 data: formData,
                 beforeSend: function () {
                     $('.loader-ajax').show()
-                    $(`#${btnId}`).html('<span style="margin-right: 4px;">انتظر ..</span><i class="bx bx-loader bx-spin"></i>').attr('disabled', true);
+                    $(`#${btnId}`).html('<span style="margin-right: 4px;">wait ..</span><i class="bx bx-loader bx-spin"></i>').attr('disabled', true);
                 },
 
                 complete: function () {
@@ -209,10 +209,10 @@
                     $(".logo_basic").attr("src", data.logo);
                     cuteToast({
                         type: "success", // or 'info', 'error', 'warning'
-                        message: "تم تعديل الإعدادات العامة",
+                        message: "Done",
                         timer: 3000
                     });
-                                             $(`#${btnId}`).html(`<i class="mdi mdi-content-save me-1"></i> حفظ`).attr('disabled', false);
+                                             $(`#${btnId}`).html(`<i class="mdi mdi-content-save me-1"></i> Save`).attr('disabled', false);
 
                 },
                 error: function (data) {
@@ -224,7 +224,7 @@
                             timer: 3000
                         });
 
-                          $(`#${btnId}`).html(`<i class="mdi mdi-content-save me-1"></i> حفظ`).attr('disabled', false);
+                          $(`#${btnId}`).html(`<i class="mdi mdi-content-save me-1"></i> Save`).attr('disabled', false);
 
 
                     }
@@ -238,12 +238,12 @@
                                         message: value,
                                         timer: 3000
                                     });
-                                      $(`#${btnId}`).html(`<i class="mdi mdi-content-save me-1"></i> حفظ`).attr('disabled', false);
+                                      $(`#${btnId}`).html(`<i class="mdi mdi-content-save me-1"></i> Save`).attr('disabled', false);
 
                                 });
 
                             } else {
-                                  $(`#${btnId}`).html(`<i class="mdi mdi-content-save me-1"></i> حفظ`).attr('disabled', false);
+                                  $(`#${btnId}`).html(`<i class="mdi mdi-content-save me-1"></i> Save`).attr('disabled', false);
 
                             }
                         });

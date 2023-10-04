@@ -1,6 +1,6 @@
 <div>
 
-    <h4 class="card-title">اعدادات صفحة التعليقات</h4>
+    <h4 class="card-title">  Counter Setting</h4>
 
     <form id="Form_counter" method="post" action="{{route('settings.update',$settings->id)}}">
         @csrf
@@ -79,7 +79,7 @@
             <div class="col-sm-6 mt-3">
                 <div class="text-end">
                     <button id='btnCounter' form="Form_counter" type="submit" class="btn btn-success">
-                        <i class="mdi mdi-content-save me-1"></i> حفظ
+                        <i class="mdi mdi-content-save me-1"></i> save
                     </button>
                 </div>
             </div> <!-- end col -->

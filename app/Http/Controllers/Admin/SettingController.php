@@ -122,6 +122,8 @@ class SettingController extends Controller
             "contact_us_desc" => $request->contact_us_desc,
             "latitude" => $request->latitude,
             "longitude" => $request->longitude,
+            "gallery_image_title" => $request->gallery_image_title,
+            "gallery_video_title" => $request->gallery_video_title,
 
 
         ];
