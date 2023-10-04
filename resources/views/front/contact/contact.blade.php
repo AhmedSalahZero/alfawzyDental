@@ -38,7 +38,7 @@
                 </div>
             </div>
         </div>
-        <div class="main-branches-google py-10 px-2 md:px-10 flex flex-col md:flex-row items-start  bg-white shadow-sm md:rounded-[48px] mt-20">
+        <div class="main-branches-google mb-20  md:mb-10 xl:mb-0 py-10 px-2 md:px-10 flex flex-col md:flex-row items-start  bg-white shadow-sm md:rounded-[48px] mt-20">
             <div class="basis-1/3">
                 <img src="{{get_file($settings->contact_us_image) }}" class="max-w-full" alt="">
             </div>

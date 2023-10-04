@@ -7,7 +7,8 @@
 <section class="
 @if($paddingBottom)
 space-between-sections-b
-@if(Request()->route()->getName() != 'web_contacts.index')
+{{-- {{ dd(Request()->route()->getName()) }} --}}
+@if(Request()->route()->getName() != 'web_contacts.index' && Request()->route()->getName() != 'web_services.index')
 space-between-sections-t
 @endif
 @else
@@ -30,17 +31,17 @@ space-between-sections-t
                 'longitude'=>$settings->longitude,
                 'mapHeight'=>'!h-full'
                 ])
-                <div class="absolute shadow-md  py-5 px-5 top-[80%] w-[80%] mx-auto rounded-[32px] bg-white left-1/2 -translate-x-1/2 ">
+                <div class="absolute shadow-md  py-5 px-5 top-[75%] md:top-[80%] w-[80%] mx-auto rounded-[32px] bg-white left-1/2 -translate-x-1/2 ">
                     <div class="flex items-center ">
                         <div class="  form__actions mr-5  inline-flex justify-start items-center gap-5 ">
-                                <div class=" icon__parent bg-[#FAF7F0] w-16 h-16  flex items-center justify-center border border-[#D1AA65]  rounded-2xl">
-                                    <div class="w-12 h-12 rounded-2xl bg-main relative">
-                                        <i class="fa-solid fa-home text-2xl text-white absolute-center "></i>
+                                <div class=" icon__parent bg-[#FAF7F0] w-12 h-12  md:w-16 md:h-16  flex items-center justify-center border border-[#D1AA65]  rounded-2xl">
+                                    <div class="w-8 h-8  md:w-12 md:h-12 rounded-2xl bg-main relative">
+                                        <i class="fa-solid fa-home text-lg md:text-2xl text-white absolute-center "></i>
                                     </div>
                                 </div>
 
                             </div>
-						<p class=" md:max-w-[288px] font-bold text-black text-lg tracking-tight leading-7 ">
+						<p class=" md:max-w-[288px] font-bold text-black text-xs md:text-sm lg:text-md xl:text-lg tracking-tight leading-7 ">
 						96 Nile st., Al Galaa Square, Al Agouzah, Giza, Egypt- 5th floor
 						</p>
                     </div>
@@ -61,7 +62,7 @@ space-between-sections-t
                             </x-form.input>
                     </div>
                     <div class="text-center md:text-left">
-                        <div class="form__submit inline-flex md:flex flex-col md:flex-row justify-between items-center md:items-stretch">
+                        <div class="form__submit inline-flex md:flex w-full   md:w-auto flex-col md:flex-row justify-between items-center md:items-stretch">
                             <div class="order-2 md:order-1  form__actions grow inline-flex justify-start items-center gap-5 ">
                                 <div class=" icon__parent bg-[#FAF7F0] w-16 h-16  flex items-center justify-center border border-[#D1AA65]  rounded-2xl">
                                     <div class="w-12 h-12 rounded-2xl bg-main relative">
@@ -75,7 +76,7 @@ space-between-sections-t
                                 </div>
 
                             </div>
-                            <button id="submit_button" form="Form" type="submit" type="submit" class="order-1 md:order-2 mb-10 md:mb-0 submit__btn grow w-full px-10 py-2 mt-5  lg:mt-0 md:max-w-[200px] lg:max-w-[290px] bg-main rounded-2xl text-white capitalize text-center flex-center">{{ __('Submit') }}</button>
+                            <button id="submit_button" form="Form" type="submit" type="submit" class="order-1 max-w-[420px] md:order-2 mb-10 md:mb-0 submit__btn grow w-full px-10 py-2 mt-5  lg:mt-0 md:max-w-[200px] lg:max-w-[290px] bg-main rounded-2xl text-white capitalize text-center flex-center">{{ __('Submit') }}</button>
                         </div>
                     </div>
 

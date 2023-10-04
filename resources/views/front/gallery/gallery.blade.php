@@ -11,7 +11,7 @@ Galleries
         <div class="gallery-images  mb-24  ">
             <section class="section">
                 <h1 class="text-center max-w-[490px] mx-auto sub__title !font-bold leading-[52px] mb-10">{{$settings->gallery_image_title}}    </h1>
-                <div class="grid-gallery  !grid-cols-3">
+                <div class="grid-gallery  !grid-col-1 mg:!grid-col-2  lg:!grid-cols-3">
                     @foreach($images as $image)
 
                     <div class="gallery-item item--medium" style="background-image:url('{{ get_file($image->file) }}')">
@@ -28,7 +28,7 @@ Galleries
         <div x-data="{openGalleryItem:false}" class="gallery-images  mb-24  ">
             <section class="section">
                 <h1 class="text-center max-w-[490px] mx-auto sub__title !font-bold leading-[52px] mb-10">{{$settings->gallery_video_title}}</h1>
-                <div class="grid-gallery video-gallery !grid-cols-3">
+                <div class="grid-gallery video-gallery !grid-col-1 mg:!grid-col-2  lg:!grid-cols-3">
 
                     {{-- <ul class="youtube-video-gallery ">
       <li><a href="http://www.youtube.com/watch?v=UCOC1YwNwZw">Call me gordie</a></li>
