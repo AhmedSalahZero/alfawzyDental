@@ -3,9 +3,9 @@
   ])
   <div class="
   @if($enabled)
-  doctors-card
+  doctors-card 
   @endif 
-  
+   
    !px-5 shadow-lg  transition-all  duration-500   group/doctor-card preserve-3d  relative element-internal-padding rounded-[32px]">
                     <div class="card__front backface-hidden  text-center">
                         {{ $front__face }}

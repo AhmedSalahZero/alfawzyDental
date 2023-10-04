@@ -11,7 +11,7 @@
                 </div>
             </div>
             <div class="testimonals-elements grow relative z-1 ">
-
+{{-- {{ dd($oddReview,$evenReviews) }} --}}
                 <div class="swiper testimonial-swiper   w-screen ">
                     <div class="swiper-wrapper">
 {{-- {{ dd($evenReviews , $oddReview) }} --}}

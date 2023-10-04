@@ -25,6 +25,7 @@
         "alpinejs": "^3.13.0",
         "circletype": "^2.3.0",
         "jquery": "^3.7.1",
+        "scrollreveal": "^4.0.9",
         "swiper": "^10.2.0",
         "tw-elements": "^1.0.0-rc.1",
         "webpack-rtl-plugin": "^2.0.0"

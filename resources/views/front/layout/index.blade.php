@@ -36,7 +36,7 @@
     <x-social.whatsapp></x-social.whatsapp>
     </a> --}}
 
-    <div class="fixed z-[9999999] top-0 left-0 w-[70vw] h-screen bg-white  " x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" x-show="mobileMenuIsOpen">
+    <div x-cloak class="fixed z-[9999999] top-0 left-0 w-[70vw] h-screen bg-white  " x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" x-show="mobileMenuIsOpen">
         <ul class="pt-10 px-3  flex flex-col gap-2 ">
             @foreach(getPages() as $pageName=>$navArr)
             <x-links.mobile-nav-link :subMenu="[['title'=>'first','link'=>'#'],['title'=>'second','link'=>'#']]" :title="$navArr['title']" :link="$navArr['url']"></x-links.mobile-nav-link>
@@ -229,7 +229,7 @@
 
 
                 </ul>
-                <a target="_blank" href="{{ getWhatsappApi($settings->whatsapp) }}" class="hidden md:inline-flex fixed md:static bottom-0 md:bottom-auto left-1/2 md:left-auto w-full md:w-auto -translate-x-1/2 md:-translate-x-0 z-50 md:z-0    whatsapp__container  items-center justify-center social-whatsapp mr-8">
+                <a target="_blank" href="{{ getWhatsappApi($settings->whatsapp) }}" class="hidden lg:inline-flex fixed md:static bottom-0 md:bottom-auto left-1/2 md:left-auto w-full md:w-auto -translate-x-1/2 md:-translate-x-0 z-50 md:z-0    whatsapp__container  items-center justify-center social-whatsapp mr-8">
                     <x-social.whatsapp :settings="$settings">
                         </x-social.whatsapp:>
                 </a>
@@ -299,7 +299,7 @@
 
 
                                 </div>
-                                <h1 class="absolute-center header__text w-full text-center  text-white uppercase font-semibold mt-[-50px] lg:mt-0 main-header-title">
+                                <h1 class="absolute-center header__text w-full text-center  text-white uppercase font-semibold mt-[-50px] lg:mt-0 scroll-from-left-to-right">
                                     {{$slider->title}}
                                 </h1>
                             </div>
@@ -463,73 +463,6 @@
         })
 
     </script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
-	const scrollMobile = false ;
-	const scrollFromLeftToRight = {
-            delay: 500,
-			duration:500,
-			opacity:0,
-			origin:'bottom',
-			  distance: '140%',
-			  reset:false,
-			  mobile:scrollMobile
-         };
-		 
-		 const scrollFromRightToLeft = {
-            delay: 500,
-			duration:1200,
-			opacity:0,
-			origin:'right',
-			  distance: '150%',
-			  reset:false,
-			  mobile:scrollMobile
-			  
-         };
-		 const scrollFromBottomToUp = {
-            delay: 500,
-			duration:1200,
-			opacity:0,
-			origin:'bottom',
-			  distance: '150%',
-			  reset:false,
-			  mobile:scrollMobile
-			  
-         };
-        const revealOptions = {
-            distance: '150%',
-			reset:false
-            , origin: 'top'
-            , opacity: 0
-            , delay: 500
-            , duration: 500,
-			scale:1.05,
-			  mobile:scrollMobile
-			
-        };
-        ScrollReveal().reveal('.min-services-container', revealOptions);
-        ScrollReveal().reveal('.section-header', revealOptions);
-        ScrollReveal().reveal('.main-header-title', {
-			delay:500 ,
-			origin:'left',
-		});
-        ScrollReveal().reveal('.swiper-slide', {
-            delay: 1000
-         });
-	
-		 ScrollReveal().reveal('.scroll-from-left-to-right', scrollFromLeftToRight);
-		 ScrollReveal().reveal('.scroll-from-bottom-to-up', scrollFromBottomToUp);
-		 ScrollReveal().reveal('.scroll-from-right-to-left', scrollFromRightToLeft);
-		// ScrollReveal().reveal('.detinal-card-description', scrollFromRightToLeft);
 
-    </script>
-    {{--
-<script defer src="{{ asset('front/js/video-gallery/jquery.youtubevideogallery.js') }}"></script>
-    <script defer>
-        $("ul.youtube-videogallery").youtubeVideoGallery({
-            plugin: 'fancybox'
-        });
-
-    </script> --}}
 </body>
 </html>

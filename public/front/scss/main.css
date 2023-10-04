@@ -823,6 +823,9 @@ input[type="range"]:active::-webkit-slider-thumb {
 .top-full {
   top: 100%;
 }
+.top-\[80\%\] {
+  top: 80%;
+}
 .\!z-40 {
   z-index: 40 !important;
 }
@@ -1373,6 +1376,12 @@ input[type="range"]:active::-webkit-slider-thumb {
 .h-screen {
   height: 100vh;
 }
+.h-\[500px\] {
+  height: 500px;
+}
+.h-\[370px\] {
+  height: 370px;
+}
 .max-h-\[500px\] {
   max-height: 500px;
 }
@@ -1381,6 +1390,9 @@ input[type="range"]:active::-webkit-slider-thumb {
 }
 .max-h-full {
   max-height: 100%;
+}
+.max-h-\[380px\] {
+  max-height: 380px;
 }
 .min-h-\[1\.5rem\] {
   min-height: 1.5rem;
@@ -1580,6 +1592,9 @@ input[type="range"]:active::-webkit-slider-thumb {
 .w-screen {
   width: 100vw;
 }
+.w-\[800px\] {
+  width: 800px;
+}
 .min-w-0 {
   min-width: 0px;
 }
@@ -1681,6 +1696,9 @@ input[type="range"]:active::-webkit-slider-thumb {
 }
 .max-w-screen-xl {
   max-width: 1280px;
+}
+.max-w-\[800px\] {
+  max-width: 800px;
 }
 .flex-1 {
   flex: 1 1 0%;
@@ -2892,6 +2910,9 @@ input[type="range"]:active::-webkit-slider-thumb {
 }
 .pt-\[6px\] {
   padding-top: 6px;
+}
+.pb-28 {
+  padding-bottom: 7rem;
 }
 .text-left {
   text-align: left;
@@ -6259,6 +6280,10 @@ footer.footer {
     margin-top: 460px;
   }
 
+  .md\:mt-60 {
+    margin-top: 15rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -6323,6 +6348,14 @@ footer.footer {
     width: auto;
   }
 
+  .md\:w-\[80\%\] {
+    width: 80%;
+  }
+
+  .md\:w-\[50\%\] {
+    width: 50%;
+  }
+
   .md\:max-w-\[200px\] {
     max-width: 200px;
   }
@@ -6353,6 +6386,14 @@ footer.footer {
 
   .md\:max-w-\[65\%\] {
     max-width: 65%;
+  }
+
+  .md\:max-w-\[500px\] {
+    max-width: 500px;
+  }
+
+  .md\:max-w-\[425px\] {
+    max-width: 425px;
   }
 
   .md\:-translate-x-0 {
@@ -6567,6 +6608,14 @@ footer.footer {
     margin-top: 20rem;
   }
 
+  .lg\:mt-36 {
+    margin-top: 9rem;
+  }
+
+  .lg\:inline-flex {
+    display: inline-flex;
+  }
+
   .lg\:\!h-12 {
     height: 3rem !important;
   }
@@ -6583,6 +6632,10 @@ footer.footer {
     height: 90vh;
   }
 
+  .lg\:h-\[380px\] {
+    height: 380px;
+  }
+
   .lg\:\!w-12 {
     width: 3rem !important;
   }
@@ -6593,6 +6646,10 @@ footer.footer {
 
   .lg\:w-auto {
     width: auto;
+  }
+
+  .lg\:w-\[800px\] {
+    width: 800px;
   }
 
   .lg\:max-w-\[290px\] {

@@ -3,9 +3,13 @@
 'all_services'=>$all_services??[],
 'settings'=>$settings??[],
 ])
+{{-- {{ dd() }} --}}
 <section class="
 @if($paddingBottom)
 space-between-sections-b
+@if(Request()->route()->getName() != 'web_contacts.index')
+space-between-sections-t
+@endif
 @else
 space-between-sections-t
 @endif
@@ -26,7 +30,7 @@ space-between-sections-t
                 'longitude'=>$settings->longitude,
                 'mapHeight'=>'!h-full'
                 ])
-                <div class="absolute shadow-md  py-5 px-5 top-[70%] w-[80%] mx-auto rounded-[32px] bg-white left-1/2 -translate-x-1/2 ">
+                <div class="absolute shadow-md  py-5 px-5 top-[80%] w-[80%] mx-auto rounded-[32px] bg-white left-1/2 -translate-x-1/2 ">
                     <div class="flex items-center ">
                         <div class="  form__actions mr-5  inline-flex justify-start items-center gap-5 ">
                                 <div class=" icon__parent bg-[#FAF7F0] w-16 h-16  flex items-center justify-center border border-[#D1AA65]  rounded-2xl">
