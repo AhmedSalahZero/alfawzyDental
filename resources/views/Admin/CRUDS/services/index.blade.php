@@ -89,7 +89,6 @@
 
 @endsection
 @section('js')
-    <script src="https://cdn.ckeditor.com/4.21.0/standard/ckeditor.js"></script>
 
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 

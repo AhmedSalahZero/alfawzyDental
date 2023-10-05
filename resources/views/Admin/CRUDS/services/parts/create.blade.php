@@ -55,18 +55,22 @@
 
     </div>
 </form>
-<script src="https://cdn.ckeditor.com/4.21.0/standard/ckeditor.js"></script>
 
 
 <script>
     CKEDITOR.replace('desc', {
-        extraAllowedContent: 'div ol ul ol li',
-    });
+        height: 300
+        , filebrowserUploadUrl: "{{Route('upload.image',['_token'=>csrf_token()])}}"
+        , });
+
     CKEDITOR.replace('details', {
-        extraAllowedContent: 'div ol ul ol li',
-    });
+        height: 300
+        , filebrowserUploadUrl: "{{Route('upload.image',['_token'=>csrf_token()])}}"
+        , });
+
 
 </script>
+
 
 
 <script>

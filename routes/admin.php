@@ -136,6 +136,10 @@ Route::group(
         Route::resource('sliders', \App\Http\Controllers\Admin\SliderController::class);
 
 
+        ### ckeditor
+
+        Route::post('/pages/uploadImage',[\App\Http\Controllers\Ckeditor::class,'uploadImage'])->name('upload.image');
+
 
     });
 
