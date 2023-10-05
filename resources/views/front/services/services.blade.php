@@ -46,8 +46,8 @@
 
 						 {!! $service->desc !!}
                         </div>
-                        <div class="basis-full max-w-[1146px] leading-9 text-justify mt-9">
-
+                        <div class="basis-full custom-ul max-w-[1146px] leading-9 text-justify mt-9">
+						
                              {!! $service->details !!}
 
                         </div>
