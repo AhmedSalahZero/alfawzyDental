@@ -16,7 +16,6 @@
 
     @include('front.home.parts.doctor')
 
-
     @include('front.home.parts.dental')
 
     @include('front.home.parts.review')

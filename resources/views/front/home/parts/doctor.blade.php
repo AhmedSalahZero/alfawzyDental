@@ -1,5 +1,6 @@
-<section class="space-between-sections-y mt-52 lg:mt-0">
-    <div class="res-container mt-96 md:mt-36">
+<section class="space-between-sections-y @if(!isset($mt)) mt-52 @endif  lg:mt-0">
+
+    <div class="res-container @if(!isset($mt)) mt-96 md:mt-36 @endif ">
         <div
             class="online-consultings text-left mt-24 mb-60  lg:my-0 flex justify-between  md:text-left items-center flex-col md:flex-row  gap-12 lg:gap-20 ">
             <div class="online-consulting scroll-from-left-to-right">

@@ -17,7 +17,7 @@ space-between-sections-t
  contact-us-section section">
     <div class="res-container">
         <div class="contact-us flex flex-col lg:flex-row gap-[118px]">
-		{{-- {{ dd() }} --}}
+            {{-- {{ dd() }} --}}
             <div class="h-[750px]
 			@if(Request()->route()->getName() == 'home.index')
 			hidden md:block			
@@ -34,16 +34,16 @@ space-between-sections-t
                 <div class="absolute shadow-md  py-5 px-5 top-[75%] md:top-[80%] w-[80%] mx-auto rounded-[32px] bg-white left-1/2 -translate-x-1/2 ">
                     <div class="flex items-center ">
                         <div class="  form__actions mr-5  inline-flex justify-start items-center gap-5 ">
-                                <div class=" icon__parent bg-[#FAF7F0] w-12 h-12  md:w-16 md:h-16  flex items-center justify-center border border-[#D1AA65]  rounded-2xl">
-                                    <div class="w-8 h-8  md:w-12 md:h-12 rounded-2xl bg-main relative">
-                                        <i class="fa-solid fa-home text-lg md:text-2xl text-white absolute-center "></i>
-                                    </div>
+                            <div class=" icon__parent bg-[#FAF7F0] w-12 h-12  md:w-16 md:h-16  flex items-center justify-center border border-[#D1AA65]  rounded-2xl">
+                                <div class="w-8 h-8  md:w-12 md:h-12 rounded-2xl bg-main relative">
+                                    <i class="fa-solid fa-home text-lg md:text-2xl text-white absolute-center "></i>
                                 </div>
-
                             </div>
-						<p class=" md:max-w-[288px] font-bold text-black text-xs md:text-sm lg:text-md xl:text-lg tracking-tight leading-7 ">
-						96 Nile st., Al Galaa Square, Al Agouzah, Giza, Egypt- 5th floor
-						</p>
+
+                        </div>
+                        <p class=" md:max-w-[288px] font-bold text-black text-xs md:text-sm lg:text-md xl:text-lg tracking-tight leading-7 ">
+                            96 Nile st., Al Galaa Square, Al Agouzah, Giza, Egypt- 5th floor
+                        </p>
                     </div>
                 </div>
             </div>
@@ -59,7 +59,7 @@ space-between-sections-t
                         <x-form.input :required="true" :label="'Phone Number'" :name="'phone'" :id="'phone'" :type="'text'" :placeholder="__('Enter Your phone ..')"></x-form.input>
                         <x-form.select :multi="true" :required="true" :options="$all_services" :label="'Services'" :name="'service_id'" :id="'service_id'"></x-form.select>
                         <x-form.textarea :required="true" :label="'Messages'" :name="'message'" :id="'message'" :placeholder="__('Enter Your Messages ..')">
-                            </x-form.input>
+                            </x-form.texarea>
                     </div>
                     <div class="text-center md:text-left">
                         <div class="form__submit inline-flex md:flex w-full   md:w-auto flex-col md:flex-row justify-between items-center md:items-stretch">

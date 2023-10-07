@@ -4,9 +4,10 @@
 'name'=>$name,
 'placeholder'=>$placeholder ?? '',
 'type'=>$type ??'text',
-'required'=>$required ?? false
+'required'=>$required ?? false,
+'classParent'=>''
 ])
-<div class="w-full md:w-1/2 px-3 mb-2">
+<div class="w-full md:w-1/2 px-3 mb-2 {{ $classParent }}">
     <label class="block uppercase tracking-wide text-gray-500 text-xs font-bold mb-2" for="{{ $id }}">
         {{ $label }}
         @if($required)

@@ -1992,6 +1992,9 @@ input[type="range"]:active::-webkit-slider-thumb {
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
 .\!flex-row {
   flex-direction: row !important;
 }
@@ -2086,6 +2089,9 @@ input[type="range"]:active::-webkit-slider-thumb {
 }
 .gap-y-20 {
   row-gap: 5rem;
+}
+.gap-y-24 {
+  row-gap: 6rem;
 }
 .space-x-0 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
@@ -3155,6 +3161,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 .text-\[\#3b71ca\] {
   --tw-text-opacity: 1;
   color: rgb(59 113 202 / var(--tw-text-opacity));
+}
+.text-\[\#4B4B4B\] {
+  --tw-text-opacity: 1;
+  color: rgb(75 75 75 / var(--tw-text-opacity));
 }
 .text-\[\#4f4f4f\] {
   --tw-text-opacity: 1;
@@ -4420,6 +4430,70 @@ figure, video {
 
 .doctors-card:hover {
   transform: rotateY(180deg);
+}
+
+.avatar-upload {
+  position: relative;
+  max-width: 205px;
+}
+.avatar-upload .avatar-edit {
+  max-width: 175px;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
+.avatar-upload .avatar-edit input {
+  display: none;
+}
+.avatar-upload .avatar-edit input + label {
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  margin-bottom: 0;
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  box-sizing: inherit;
+  background-color: #D1AA65;
+  border: 1px solid transparent;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  font-weight: normal;
+  transition: all 0.5s ease-in-out;
+}
+.avatar-upload .avatar-edit input + label:hover {
+  background: #ce9228;
+}
+.avatar-upload .avatar-edit input + label:after {
+  display: none;
+  content: "\f040";
+  font-family: "FontAwesome";
+  color: #757575;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: auto;
+}
+.avatar-upload .avatar-preview {
+  width: 175px;
+  height: 175px;
+  position: relative;
+  border-radius: 100%;
+  border: 6px solid #f8f8f8;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.avatar-upload .avatar-preview > div {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #D1AA65;
+  box-sizing: border-box;
 }
 
 .header {
@@ -6039,6 +6113,10 @@ footer.footer {
     width: auto;
   }
 
+  .md\:w-full {
+    width: 100%;
+  }
+
   .md\:max-w-\[200px\] {
     max-width: 200px;
   }
@@ -6423,6 +6501,14 @@ footer.footer {
 
   .lg\:pb-96 {
     padding-bottom: 24rem;
+  }
+
+  .lg\:\!text-center {
+    text-align: center !important;
+  }
+
+  .lg\:text-center {
+    text-align: center;
   }
 
   .lg\:text-2xl {

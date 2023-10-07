@@ -1,7 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use \App\Http\Controllers\Frontend\HomeController;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,6 +13,11 @@ use \App\Http\Controllers\Frontend\HomeController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('online-consulting',function(){
+	return view('front.online-consulting.online-consulting');
+});
+
+
 
 Route::group(
     [
@@ -46,6 +52,3 @@ Route::group(
 
 
 });
-
-
-
