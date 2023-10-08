@@ -21,7 +21,7 @@
                 // var name = `${$("#contact_name").val()}`;
 
                 // toastr.success("Your Reservation Is Send")
-                alertify.success('Your Reservation Is Send');
+                alertify.success('operation accomplished successfully');
 
 
                 $('#submit_button').attr('disabled', false)
@@ -40,7 +40,11 @@
                     $.each(errors, function (key, value) {
                         if ($.isPlainObject(value)) {
                             $.each(value, function (key, value) {
-                                toastr.error(value)
+
+
+                                alertify.error(`${value}`);
+
+
                             });
 
                         } else {
@@ -50,6 +54,7 @@
                 }
                 if (data.status == 421) {
                     toastr.error(data.message)
+
                 }
 
             },//end error method

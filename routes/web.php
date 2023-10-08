@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('online-consulting',function(){
-	return view('front.online-consulting.online-consulting');
-});
+
 
 
 
@@ -47,7 +45,9 @@ Route::group(
     Route::get('patientVideo/{id}',[HomeController::class, 'patientVideo'])->name('patientVideo');
     Route::get('patientImage',[HomeController::class, 'patientImage'])->name('patientImage');
 
+    Route::get('online-consulting',[HomeController::class, 'online_consulting'])->name('online-consulting');
 
+    Route::post('online-consulting-store',[HomeController::class, 'online_consulting_store'])->name('online-consulting-store');
 
 
 

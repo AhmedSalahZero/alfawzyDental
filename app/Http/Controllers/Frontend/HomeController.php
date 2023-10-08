@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Frontend;
 
 
 use App\Http\Controllers\Controller;
+use App\Http\Traits\Upload_Files;
 use App\Models\AboutUs;
 use App\Models\Blog;
 use App\Models\CategoryMember;
@@ -12,6 +13,8 @@ use App\Models\Contact;
 use App\Models\DentalTourism;
 use App\Models\FaqQuestion;
 use App\Models\Gallery;
+use App\Models\OnlineConsulting;
+use App\Models\OnlineConsultingSetting;
 use App\Models\Partner;
 use App\Models\Patient;
 use App\Models\Review;
@@ -22,6 +25,7 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+    use Upload_Files;
 	public function index()
 	{
         $categoryServices=CategoryService::orderBy('ranking','ASC')->get();
@@ -143,4 +147,45 @@ class HomeController extends Controller
         Contact::create($data);
         return response()->json([],200);
     }
+
+     public function online_consulting(){
+        $row=OnlineConsultingSetting::firstOrCreate();
+         return view('front.online-consulting.online-consulting',compact('row'));
+
+     }
+    public function online_consulting_store(Request $request){
+
+        $data = $request->validate([
+            'name' => 'required',
+            'phone' => 'required',
+            'email' => 'required|email',
+            'complaint' => 'required',
+            'x_ray' => 'required|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
+            'front_teeth_image' => 'required|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
+            'side_teeth_image' => 'required|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
+            'upper_teeth_image' => 'required|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
+            'lower_teeth_image' => 'required|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
+            'passport_or_id' => 'required|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
+        ]);
+
+        if ($request->x_ray)
+            $data['x_ray'] =  $this->uploadFiles('consulting',$request->file('x_ray'),null );
+        if ($request->front_teeth_image)
+            $data['front_teeth_image'] =  $this->uploadFiles('consulting',$request->file('front_teeth_image'),null );
+        if ($request->side_teeth_image)
+            $data['side_teeth_image'] =  $this->uploadFiles('consulting',$request->file('side_teeth_image'),null );
+        if ($request->upper_teeth_image)
+            $data['upper_teeth_image'] =  $this->uploadFiles('consulting',$request->file('upper_teeth_image'),null );
+
+        if ($request->lower_teeth_image)
+            $data['lower_teeth_image'] =  $this->uploadFiles('consulting',$request->file('lower_teeth_image'),null );
+        if ($request->passport_or_id)
+            $data['passport_or_id'] =  $this->uploadFiles('consulting',$request->file('passport_or_id'),null );
+
+
+
+        OnlineConsulting::create($data);
+        return response()->json([],200);
+
+}
 }

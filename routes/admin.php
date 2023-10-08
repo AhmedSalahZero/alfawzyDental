@@ -140,6 +140,22 @@ Route::group(
 
         Route::post('/pages/uploadImage',[\App\Http\Controllers\Ckeditor::class,'uploadImage'])->name('upload.image');
 
+        ### consulting Online Setting ####
+
+        Route::resource('consulting_setting', \App\Http\Controllers\Admin\ConsultingSettingController::class);
+
+        ### consulting Online ###
+
+        Route::resource('online_consulting', \App\Http\Controllers\Admin\ConsultingController::class);
+
+
+        ### Consulting Images ###
+
+        Route::get('online_consulting_images/{id}', [\App\Http\Controllers\Admin\ConsultingImagesController::class,'index'])->name('online_consulting_images.index');
+
+
+
+
 
     });
 

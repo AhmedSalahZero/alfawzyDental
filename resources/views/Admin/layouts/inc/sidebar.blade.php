@@ -49,6 +49,21 @@
                     </li> <!-- end Dashboard Menu -->
 
                 <li class="nav-item">
+                    <a class="nav-link menu-link" href="{{route('consulting_setting.index')}}">
+                        <i class="fa fa-handshake"></i> <span data-key="t-dashboards">Online Consulting Setting</span>
+                    </a>
+                </li> <!-- end Dashboard Menu -->
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="{{route('online_consulting.index')}}">
+                        <i class="fa fa-handshake"></i> <span data-key="t-dashboards">Online Consulting</span>
+                    </a>
+                </li> <!-- end Dashboard Menu -->
+
+
+
+
+                <li class="nav-item">
                     <a class="nav-link menu-link" href="{{route('sliders.index')}}">
                         <i class="fa fa-camera"></i> <span data-key="t-dashboards">Sliders</span>
                     </a>

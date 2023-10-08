@@ -6,12 +6,13 @@
 'label'=>'',
 'required'=>true ,
 'name',
-'readUrlFunctionName'=>'readUrl'
+'readUrlFunctionName'=>'readUrl',
+'image'=>'image',
 ])
 <div class="file-upload-container">
 
     @if($label)
-	
+
     <label class="text-sm text-[#4B4B4B] leading-6 tracking-tight ">{{ $label }} </label>
     @endif
     @if($required)
@@ -26,7 +27,7 @@
             </label>
         </div>
         <div class="avatar-preview">
-            <div id="{{ $id }}" style="background-image: url(./front/image/default.png);border-radius:{{ $borderRadius }}">
+            <div id="{{ $id }}" style="background-image: url({{get_file($image)}});border-radius:{{ $borderRadius }}">
             </div>
         </div>
     </div>
