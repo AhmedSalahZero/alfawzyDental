@@ -27,7 +27,7 @@
             </label>
         </div>
         <div class="avatar-preview">
-            <div id="{{ $id }}" style="background-image: url({{get_file($image)}});border-radius:{{ $borderRadius }}">
+            <div id="{{ $id }}" style="background-image: url('{{get_file($image)}}');border-radius:{{ $borderRadius }}">
             </div>
         </div>
     </div>
