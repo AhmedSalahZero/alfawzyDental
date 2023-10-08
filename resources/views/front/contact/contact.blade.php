@@ -40,7 +40,8 @@
         </div>
         <div class="main-branches-google mb-20  md:mb-10 xl:mb-0 py-10 px-2 md:px-10 flex flex-col md:flex-row items-start  bg-white shadow-sm md:rounded-[48px] mt-20">
             <div class="basis-1/3">
-                <img src="{{get_file($settings->contact_us_image) }}" class="max-w-full" alt="">
+                {{-- <img src="{{ asset('front/image/contact.png') }}" class="max-w-full " alt=""> --}}
+                <img src="{{get_file($settings->contact_us_image) }}" class="max-w-full rounded-[32px]" alt="">
             </div>
             <div class="basis-2/3  max-w-[666px]">
                 <p class="text-lg leading-8">

@@ -823,6 +823,15 @@ input[type="range"]:active::-webkit-slider-thumb {
 .top-full {
   top: 100%;
 }
+.bottom-\[-\] {
+  bottom: -;
+}
+.bottom-\[-23rem\] {
+  bottom: -23rem;
+}
+.bottom-\[-6rem\] {
+  bottom: -6rem;
+}
 .\!z-40 {
   z-index: 40 !important;
 }
@@ -916,6 +925,9 @@ input[type="range"]:active::-webkit-slider-thumb {
 .m-1 {
   margin: 0.25rem;
 }
+.m-4 {
+  margin: 1rem;
+}
 .\!mx-\[10\%\] {
   margin-left: 10% !important;
   margin-right: 10% !important;
@@ -947,6 +959,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 .my-0 {
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 .my-3 {
   margin-top: 0.75rem;
@@ -1179,6 +1195,9 @@ input[type="range"]:active::-webkit-slider-thumb {
 }
 .mt-auto {
   margin-top: auto;
+}
+.mt-7 {
+  margin-top: 1.75rem;
 }
 .box-border {
   box-sizing: border-box;
@@ -1579,6 +1598,12 @@ input[type="range"]:active::-webkit-slider-thumb {
 }
 .w-screen {
   width: 100vw;
+}
+.w-\[270px\] {
+  width: 270px;
+}
+.w-\[280px\] {
+  width: 280px;
 }
 .min-w-0 {
   min-width: 0px;
@@ -3024,11 +3049,17 @@ input[type="range"]:active::-webkit-slider-thumb {
 .font-semibold {
   font-weight: 600;
 }
+.font-extrabold {
+  font-weight: 800;
+}
 .\!uppercase {
   text-transform: uppercase !important;
 }
 .uppercase {
   text-transform: uppercase;
+}
+.lowercase {
+  text-transform: lowercase;
 }
 .capitalize {
   text-transform: capitalize;
@@ -3113,6 +3144,9 @@ input[type="range"]:active::-webkit-slider-thumb {
 }
 .tracking-wider {
   letter-spacing: 0.05em;
+}
+.tracking-\[0\.2px\] {
+  letter-spacing: 0.2px;
 }
 .\!text-\[\#14a44d\] {
   --tw-text-opacity: 1 !important;
@@ -4512,7 +4546,8 @@ footer.footer {
     background-image: url("/front/image/footer.png");
   }
 }
-.custom-ul ul {
+.custom-ul ul,
+.service__description-infos ul {
   list-style-type: disc;
   list-style-position: inside;
 }
@@ -4771,6 +4806,11 @@ footer.footer {
 .hover\:shadow-\[0_8px_9px_-4px_rgba\(59\2c 113\2c 202\2c 0\.3\)\2c 0_4px_18px_0_rgba\(59\2c 113\2c 202\2c 0\.2\)\]:hover {
   --tw-shadow: 0 8px 9px -4px rgba(59,113,202,0.3),0 4px 18px 0 rgba(59,113,202,0.2);
   --tw-shadow-colored: 0 8px 9px -4px var(--tw-shadow-color), 0 4px 18px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.hover\:shadow-md:hover {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .hover\:outline-none:hover {

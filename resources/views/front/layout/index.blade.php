@@ -327,12 +327,12 @@
                         ] as $iconIndex=>$contactInfoArr)
 
                         <div @if($iconIndex==0) onclick="window.open('tel:{{ $contactInfoArr['value'] }}');" @else onclick="window.open('mailto:{{ $contactInfoArr['value'] }}')" @endif class="contact__element {{ $contactInfoArr['animation'] ?? '' }} rounded-2xl px-2 cursor-pointer  sm:px-4  h-[76px] py-2 bg-white flex space-x-1 sm:space-x-3 items-center  ">
-                            <div class="contact-icon bg-main rounded-2xl  px-1 py-2 w-[42px] h-[42px] flex-center ">
+                            <div class="contact-icon bg-main  rounded-2xl  px-1 py-2 w-[42px] h-[42px] flex-center ">
                                 <i class="{{ $contactInfoArr['icon'] }} text-white icon-size    "></i>
                             </div>
                             <div class="contact__description">
                                 <p class="tracking-tight text-black xs:font-normal sm:font-medium md:font-semibold text-xs  md:text-base uppercase ">{{$contactInfoArr['title'] }}</p>
-                                <p class="tracking-tight text-black xs:font-normal sm:font-medium md:font-medium text-xs  md:text-base uppercase ">{{ $contactInfoArr['value'] }}</p>
+                                <p class="tracking-tight text-black xs:font-normal sm:font-medium md:font-medium text-xs  md:text-base lowercase ">{{ $contactInfoArr['value'] }}</p>
                             </div>
                         </div>
                         @endforeach
