@@ -14,7 +14,7 @@
                     <h2 class="font-semibold lg:text-xl xl:text-2xl text-black capitalize text-center">Dental tourism</h2>
                 </a>
 
-                <a target="_blank" href="{{ getWhatsappApi($settings->whatsapp) }}"
+                <a target="_blank" href="{{ route('online-consulting') }}"
                    class="min-service scroll-from-right-to-left grow flex items-center justify-center h-[190px] w-full lg:w-auto rounded-2xl shadow-md">
                     <h2 class="font-semibold lg:text-xl xl:text-2xl text-black capitalize text-center">Online Consultation</h2>
                 </a>

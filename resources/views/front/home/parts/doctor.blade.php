@@ -6,7 +6,7 @@
             <div class="online-consulting scroll-from-left-to-right">
                 <h4 class="main__title  mb-5 ">{{ __('Online Consulting') }}</h4>
                 <h2 class="sub__title  max-w-[386px] mb-5">{{ __('Make online and live Consultation easily.') }}</h2>
-                <a target="_blank" href="{{ getWhatsappApi($settings->whatsapp) }}" class="whatsapp__container absolute lg:static bottom-[-230%] left-1/2 -translate-x-1/2 lg:translate-x-0 hidden lg:inline-flex items-center justify-center social-whatsapp">
+                <a target="_blank" href="{{ route('online-consulting') }}" class="whatsapp__container absolute lg:static bottom-[-230%] left-1/2 -translate-x-1/2 lg:translate-x-0 hidden lg:inline-flex items-center justify-center social-whatsapp">
                     <x-social.whatsapp></x-social.whatsapp>
                 </a>
 
