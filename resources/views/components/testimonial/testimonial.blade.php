@@ -20,7 +20,7 @@
             </div>
         </div>
         <p class="text-[#6B7385]">
-            {{$review->text}}
+            {{ Illuminate\Support\Str::limit($review->text, 211)}}
         </p>
     </div>
 @endforeach
