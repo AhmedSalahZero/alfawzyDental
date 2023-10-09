@@ -823,6 +823,9 @@ input[type="range"]:active::-webkit-slider-thumb {
 .top-full {
   top: 100%;
 }
+.top-\[40px\] {
+  top: 40px;
+}
 .\!z-40 {
   z-index: 40 !important;
 }
@@ -2905,6 +2908,9 @@ input[type="range"]:active::-webkit-slider-thumb {
 }
 .pt-\[6px\] {
   padding-top: 6px;
+}
+.pb-5 {
+  padding-bottom: 1.25rem;
 }
 .text-left {
   text-align: left;
