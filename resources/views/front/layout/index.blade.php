@@ -117,7 +117,7 @@
                             About
                             <i class="fa-solid fa-chevron-down text-xs"></i>
                         </a>
-                        <ul x-cloak x-show="isOpen" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="submenu px-5 w-52 bg-white    rounded-md shadow-md  absolute top-9 left-1/2 -translate-x-1/2 z-10 ">
+                        <ul x-cloak x-show="isOpen" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="submenu text-left px-5 w-52 bg-white    rounded-md shadow-md  absolute top-9 left-1/2 -translate-x-1/2 z-10 ">
 
                             <li class="py-2  group/li2 block ">
                                 <a href="{{ route('web_about.index') }}" class="group-hover/li2:text-main text-black capitalize transition-colors duration-300">Our
@@ -146,7 +146,7 @@
                             <i class="fa-solid fa-chevron-down text-xs"></i>
 
                         </a>
-                        <ul x-cloak x-show="isOpen" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="submenu px-5 w-52 bg-white    rounded-md shadow-md  absolute top-9 left-1/2 -translate-x-1/2 z-10 ">
+                        <ul x-cloak x-show="isOpen" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="submenu text-left px-5 w-52 bg-white    rounded-md shadow-md  absolute top-9 left-1/2 -translate-x-1/2 z-10 ">
                             @foreach($serviceCategories as $category)
                             <x-links.sub-menu-item :link="route('web_category_services.index',$category->id)" :title="$category->title">
                             </x-links.sub-menu-item>

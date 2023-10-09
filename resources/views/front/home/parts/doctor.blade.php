@@ -5,11 +5,13 @@
             <div class="online-consulting scroll-from-left-to-right">
                 <h4 class="main__title  mb-5 ">{{ __('Online Consulting') }}</h4>
                 <h2 class="sub__title  max-w-[386px] mb-5">{{ __('Make online and live Consultation easily.') }}</h2>
+				@if(Request()->route()->getName() =='home.index')
                 <a  href="{{ route('online-consulting') }}" class="whatsapp__container h-16  mt-4 w-[280px] shadow-md absolute lg:static bottom-[-6rem] flex items-center justify-center social-whatsapp">
-                    <img src="{{ asset('front/image/teeth.png') }}">
+                    {{-- <img src="{{ asset('front/image/teeth.png') }}"> --}}
                     <span class="text-xl font-semibold tracking-[0.2px] capitalize ml-2 ">{{ __('Online Consulting') }}</span>
                     {{-- <x-social.whatsapp></x-social.whatsapp> --}}
                 </a>
+				@endif 
 
             </div>
             <div class="online-consulting scroll-from-bottom-to-up">
