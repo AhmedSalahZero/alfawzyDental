@@ -1190,6 +1190,9 @@ input[type="range"]:active::-webkit-slider-thumb {
 .mt-auto {
   margin-top: auto;
 }
+.mr-12 {
+  margin-right: 3rem;
+}
 .box-border {
   box-sizing: border-box;
 }
@@ -6062,6 +6065,10 @@ footer.footer {
     margin-top: 460px;
   }
 
+  .md\:mr-8 {
+    margin-right: 2rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -6397,6 +6404,10 @@ footer.footer {
 
   .lg\:mt-80 {
     margin-top: 20rem;
+  }
+
+  .lg\:mr-12 {
+    margin-right: 3rem;
   }
 
   .lg\:inline-flex {
