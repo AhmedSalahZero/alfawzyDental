@@ -2921,6 +2921,9 @@ input[type="range"]:active::-webkit-slider-thumb {
 .text-left {
   text-align: left;
 }
+.\!text-left {
+  text-align: left !important;
+}
 .\!text-center {
   text-align: center !important;
 }
