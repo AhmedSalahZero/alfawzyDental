@@ -14,7 +14,7 @@
                         <i class="text-white icon-size fa-solid fa-house"></i>
                     </div>
                     <h3 class="text-xl font-semibold text-black ">{{$settings->footer_title1}}</h3>
-                    <div class="!text-sm md:!text-lg !text-left description__paragraph !text-[#8A8A8A]">{!! $settings->footer_desc1 !!}</div>
+                    <div class="!text-sm md:!text-lg  description__paragraph !text-[#8A8A8A]">{!! $settings->footer_desc1 !!}</div>
 
                 </div>
 
@@ -23,7 +23,7 @@
                         <i class="text-white icon-size fa-solid fa-house"></i>
                     </div>
                     <h3 class="text-xl font-semibold text-black ">{{$settings->footer_title2}}</h3>
-                    <div class="!text-sm md:!text-lg !text-left description__paragraph !text-[#8A8A8A]">{!! $settings->footer_desc2 !!}</div>
+                    <div class="!text-sm md:!text-lg  description__paragraph !text-[#8A8A8A]">{!! $settings->footer_desc2 !!}</div>
 
                 </div>
 
