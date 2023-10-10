@@ -55,7 +55,7 @@
 
 
                     <div class="d-flex flex-column mb-7 fv-row col-sm-4">
-                        <label for="lower_teeth_image" class="form-control-label fs-6 fw-bold "> Lower Teeth Image     </label>
+                        <label for="lower_teeth_image" class="form-control-label fs-6 fw-bold "> Lower teeth picture    </label>
                         <input type="file" id="lower_teeth_image" class="dropify" name="lower_teeth_image"
                                data-default-file="{{get_file($row->lower_teeth_image)}}"
                                accept="image/*"/>
@@ -64,7 +64,7 @@
 
 
                     <div class="d-flex flex-column mb-7 fv-row col-sm-4">
-                        <label for="x_ray" class="form-control-label fs-6 fw-bold "> X-Ray	       </label>
+                        <label for="x_ray" class="form-control-label fs-6 fw-bold "> X-Ray (Required)	       </label>
                         <input type="file" id="x_ray" class="dropify" name="x_ray"
                                data-default-file="{{get_file($row->x_ray)}}"
                                accept="image/*"/>
@@ -75,7 +75,7 @@
 
 
                     <div class="d-flex flex-column mb-7 fv-row col-sm-4">
-                        <label for="passport_or_id" class="form-control-label fs-6 fw-bold "> Passport  Or  Id       </label>
+                        <label for="passport_or_id" class="form-control-label fs-6 fw-bold "> Passport or ID       </label>
                         <input type="file" id="passport_or_id" class="dropify" name="passport_or_id"
                                data-default-file="{{get_file($row->passport_or_id)}}"
                                accept="image/*"/>
