@@ -353,7 +353,7 @@
             <div class="footer__content flex flex-col md:flex-row ">
                 <div class="footer__logos w-full md:w-1/3 flex space-y-10 items-center justify-between flex-col  h-full">
                     <a href="{{ route('home.index') }}" class="footer__logo ">
-                        <img src="{{get_file($settings->logo_footer)}}" class=" w-[87px] h-[103px] md:w-[138px] md:h-[195px] " alt="">
+                        <img src="{{get_file($settings->logo_footer)}}" class=" w-[87px] h-[103px] md:w-[139px] md:h-[159px] " alt="">
                     </a>
                     <ul class="footer__social flex space-x-4 sm:space-x-3  md:space-x-4 lg:space-x-4 items-center h-full  ">
                         @foreach(getSocialIcons() as $iconName=>$iconArr)
