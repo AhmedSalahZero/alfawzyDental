@@ -38,7 +38,7 @@
             processing: true,
             pageLength: 25,
             paging: true,
-            // dom: 'Bfrltip',
+            dom: 'Bfrltip',
 
 
             bLengthChange: true,
@@ -50,15 +50,15 @@
             //     [0, "ASEC"]
             // ],
 
-            // buttons: [
-            //     'colvis',
-            //     'excel',
-            //     'print',
-            //     'copy',
-            //     'csv',
-            //
-            //     // 'pdf'
-            // ],
+            buttons: [
+                'colvis',
+                'excel',
+                'print',
+                'copy',
+                'csv',
+
+                // 'pdf'
+            ],
             lengthMenu: [
                 [25, 50, 100, -1],
                 [25, 50, 100, 'All'],

@@ -20,7 +20,7 @@
     @endif
     <div class="avatar-upload">
         <div class="avatar-edit">
-            <input data-id="{{ $id }}" name="{{ $name }}" type='file' id="{{ $imageUploadId }}" accept=".png, .jpg, .jpeg" />
+            <input data-id="{{ $id }}" name="{{ $name }}" type='file' id="{{ $imageUploadId }}"  />
             <label for="{{ $imageUploadId }}">
                 <i class="fa-solid fa-file-arrow-up mr-2 "></i>
                 {{ __('Choose File') }}

@@ -24,55 +24,123 @@
 
                 <div class="d-flex flex-column m-4 fv-row col-sm-4">
                     <label for="front_teeth_image" class="form-control-label fs-6 fw-bold "> Front Teeth Image </label>
+                    @php
+                        $lastDotPosition = strrpos(get_file($row->front_teeth_image), '.');
+
+                            $substringAfterLastDot = substr(get_file($row->front_teeth_image), $lastDotPosition + 1);
+
+                    @endphp
+                    @if($substringAfterLastDot=='pdf')
+                        <a target="_blank" href="{{get_file($row->front_teeth_image)}}" class="btn btn-success mt-4">Show Pdf</a>
+                    @else
+
                     <a data-fancybox="" href="{{get_file($row->front_teeth_image)}}">
                         <img alt="Muhammed Elsdodey" height="200px"
                              src="{{get_file($row->front_teeth_image)}}">
                     </a>
+                    @endif
                 </div>
 
 
                 <div class="d-flex flex-column m-4 fv-row col-sm-4">
                     <label for="side_teeth_image" class="form-control-label fs-6 fw-bold "> Side Teeth Image </label>
+
+                    @php
+                        $lastDotPosition = strrpos(get_file($row->side_teeth_image), '.');
+
+                            $substringAfterLastDot = substr(get_file($row->side_teeth_image), $lastDotPosition + 1);
+
+                    @endphp
+                    @if($substringAfterLastDot=='pdf')
+                        <a target="_blank" href="{{get_file($row->side_teeth_image)}}" class="btn btn-success mt-4">Show Pdf</a>
+                    @else
+
                     <a data-fancybox="" href="{{get_file($row->side_teeth_image)}}">
                         <img alt="Muhammed Elsdodey" height="200px"
                              src="{{get_file($row->side_teeth_image)}}">
                     </a>
+                    @endif
 
                 </div>
 
 
                 <div class="d-flex flex-column m-4 fv-row col-sm-4">
                     <label for="upper_teeth_image" class="form-control-label fs-6 fw-bold "> Upper Teeth Image </label>
+                    @php
+                        $lastDotPosition = strrpos(get_file($row->upper_teeth_image), '.');
+
+                            $substringAfterLastDot = substr(get_file($row->upper_teeth_image), $lastDotPosition + 1);
+
+                    @endphp
+                    @if($substringAfterLastDot=='pdf')
+                        <a target="_blank" href="{{get_file($row->upper_teeth_image)}}" class="btn btn-success mt-4">Show Pdf</a>
+                    @else
+
+
                     <a data-fancybox="" href="{{get_file($row->upper_teeth_image)}}">
                         <img alt="Muhammed Elsdodey" height="200px"
                              src="{{get_file($row->upper_teeth_image)}}">
                     </a>
+                    @endif
                 </div>
 
 
                 <div class="d-flex flex-column m-4 fv-row col-sm-4">
                     <label for="lower_teeth_image" class="form-control-label fs-6 fw-bold "> Lower Teeth Image </label>
+                    @php
+                        $lastDotPosition = strrpos(get_file($row->lower_teeth_image), '.');
+
+                            $substringAfterLastDot = substr(get_file($row->lower_teeth_image), $lastDotPosition + 1);
+
+                    @endphp
+                    @if($substringAfterLastDot=='pdf')
+                        <a target="_blank" href="{{get_file($row->lower_teeth_image)}}" class="btn btn-success mt-4">Show Pdf</a>
+                    @else
+
                     <a data-fancybox="" href="{{get_file($row->lower_teeth_image)}}">
                         <img alt="Muhammed Elsdodey" height="200px"
                              src="{{get_file($row->lower_teeth_image)}}">
                     </a>
+                    @endif
                 </div>
 
 
                 <div class="d-flex flex-column m-4 fv-row col-sm-4">
                     <label for="x_ray" class="form-control-label fs-6 fw-bold "> X-Ray </label>
+                    @php
+                        $lastDotPosition = strrpos(get_file($row->x_ray), '.');
+
+                            $substringAfterLastDot = substr(get_file($row->x_ray), $lastDotPosition + 1);
+
+                    @endphp
+                    @if($substringAfterLastDot=='pdf')
+                        <a target="_blank" href="{{get_file($row->x_ray)}}" class="btn btn-success mt-4">Show Pdf</a>
+                    @else
+
                     <a data-fancybox="" href="{{get_file($row->x_ray)}}">
                         <img alt="Muhammed Elsdodey" height="200px"  src="{{get_file($row->x_ray)}}">
                     </a>
+                    @endif
                 </div>
 
 
                 <div class="d-flex flex-column m-4 fv-row col-sm-4">
                     <label for="passport_or_id" class="form-control-label fs-6 fw-bold "> Passport Or Id </label>
+                    @php
+                        $lastDotPosition = strrpos(get_file($row->passport_or_id), '.');
+
+                            $substringAfterLastDot = substr(get_file($row->passport_or_id), $lastDotPosition + 1);
+
+                    @endphp
+                    @if($substringAfterLastDot=='pdf')
+                        <a target="_blank" href="{{get_file($row->passport_or_id)}}" class="btn btn-success mt-4">Show Pdf</a>
+                    @else
+
                     <a data-fancybox="" href="{{get_file($row->passport_or_id)}}">
                         <img alt="Muhammed Elsdodey" height="200px"
                              src="{{get_file($row->passport_or_id)}}">
                     </a>
+                    @endif
                 </div>
 
 

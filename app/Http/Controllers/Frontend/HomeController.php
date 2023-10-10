@@ -160,12 +160,12 @@ class HomeController extends Controller
             'phone' => 'required',
             'email' => 'required|email',
             'complaint' => 'required',
-            'x_ray' => 'required|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
-            'front_teeth_image' => 'required|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
-            'side_teeth_image' => 'required|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
-            'upper_teeth_image' => 'required|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
-            'lower_teeth_image' => 'required|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
-            'passport_or_id' => 'required|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
+            'x_ray' => 'required|mimes:jpeg,jpg,png,gif,svg,webp,avif,pdf|max:5000',
+            'front_teeth_image' => 'required|mimes:jpeg,jpg,png,gif,svg,webp,avif,pdf|max:5000',
+            'side_teeth_image' => 'required|mimes:jpeg,jpg,png,gif,svg,webp,avif,pdf|max:5000',
+            'upper_teeth_image' => 'required|mimes:jpeg,jpg,png,gif,svg,webp,avif,pdf|max:5000',
+            'lower_teeth_image' => 'required|mimes:jpeg,jpg,png,gif,svg,webp,avif,pdf|max:5000',
+            'passport_or_id' => 'required|mimes:jpeg,jpg,png,gif,svg,webp,avif,pdf|max:5000',
         ]);
 
         if ($request->x_ray)

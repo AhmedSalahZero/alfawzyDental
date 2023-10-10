@@ -51,7 +51,7 @@ Online Consulting
                     'id'=>'lower-teeth',
                     'image-upload-id'=>'lower-teeth-upload',
                     'name'=>'lower_teeth_image',
-                    'label'=>'lower teeth picture',
+                    'label'=>'Lower teeth picture',
                      'image'=>$row->lower_teeth_image,
 
                     ],
@@ -67,7 +67,7 @@ Online Consulting
                     'id'=>'passport-or-id',
                     'image-upload-id'=>'passport-or-id-upload',
                     'name'=>'passport_or_id',
-                    'label'=>'Passport Or Id',
+                    'label'=>'Passport or ID',
                     'image'=>$row->passport_or_id,
 
                     ]
