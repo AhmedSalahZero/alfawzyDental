@@ -2,7 +2,7 @@
 'reviews'=>$reviews??[]
 ])
 @foreach($reviews as $review)
-    <div class="testimonial py-10 px-5 shadow-lg rounded-2xl space-y-5 swiper-slide w-full md:w-[440px] mb-5 !h-max" >
+    <div class="testimonial min-h-[267px] py-10 px-5 shadow-lg rounded-2xl space-y-5 swiper-slide w-full md:w-[440px] mb-5 !h-max" >
         <div class="testimonial__upper flex items-center ">
             <div class="testimonal__image  mr-3 inline-block rounded-full">
                 <img src="{{ get_file($review->image) }}" alt="" class="rounded-full border-[3px] border-[#EDE7E7] shadow-sm w-14 h-14 object-cover">
