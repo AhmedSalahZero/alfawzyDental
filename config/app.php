@@ -182,6 +182,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         Yajra\DataTables\DataTablesServiceProvider::class,
+        \Srmklive\PayPal\Providers\PayPalServiceProvider::class,
         Spatie\Permission\PermissionServiceProvider::class,
 
 
@@ -219,7 +220,8 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'ExampleClass' => App\Example\ExampleClass::class,
-        'QrCode' => SimpleSoftwareIO\QrCode\Facades\QrCode::class
+        'QrCode' => SimpleSoftwareIO\QrCode\Facades\QrCode::class,
+        \Srmklive\PayPal\Facades\PayPal::class,
 
     ])->toArray(),
 
