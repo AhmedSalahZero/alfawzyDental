@@ -105,12 +105,12 @@
             <div class="top-managements__title text-center">
                 <x-badges.badge :title="$category->header_show" :lg="true"></x-badges.badge>
             </div>
-            <div class="doctors-cards element-internal-padding grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center items-center">
+            <div class="doctors-cards element-internal-padding grid gap-x-4  grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 justify-items-center items-center">
                 @foreach($category->members as $member)
                 <x-cards.flip-card :enabled="false">
                     <x-slot name="front__face">
                         <div class="doctor__image mb-6 mx-auto">
-                            <img class="rounded-[22px] max-w-full h-[325px]" src="{{ get_file($member->image)}}" alt="{{ $row->name}}">
+                            <img class="rounded-[22px] max-w-full h-[485px] w-full object-cover" src="{{ get_file($member->image)}}" alt="{{ $row->name}}">
                         </div>
                         <p class="name__title">{{ $member->name }}</p>
                         <p class="subname__title">{{ $member->job_title }}</p>
