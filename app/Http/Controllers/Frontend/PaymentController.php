@@ -18,28 +18,34 @@ class PaymentController extends Controller
     }
     public function payment($id){
         $payment=Payment::findOrFail($id);
-        $data=[];
-        $data['items']=[
+        $data = [];
+        $data['items'] = [
             [
-                'name'=>"$payment->name",
-                'price'=>200,
-                'desc'=>'Description',
-                'qty'=>1,
+                'name' => 'Product 1',
+                'price' => 5,
+                'desc'  => 'Description for product 1',
+                'qty' => 1
             ],
+            [
+                'name' => 'Product 2',
+                'price' => 6,
+                'desc'  => 'Description for product 2',
+                'qty' => 1
+            ]
         ];
         $return_url=route('successPayment',$payment->id);
         $cancel_url=route('cancelPayment',$payment->id);
         $data['invoice_id']=1;
         $data['invoice_description']="Service ##{{$payment->service_id}} Invoice ";
-        $data['return_url']="$return_url";
-        $data['cancel_url']="$cancel_url";
-        $data['total']=$payment->price;
+        $data['return_url']=$return_url;
+        $data['cancel_url']=$cancel_url;
+        $data['total']=11;
 
 
 
 
-     return   $provider=new ExpressCheckout;
-        $response=$provider->setExpressCheckout($data,true);
+        $provider=new ExpressCheckout;
+        $response=$provider->setExpressCheckout($data);
 
         dd($response);
 

@@ -17,7 +17,14 @@
 
     <div class="card">
         <div class="card-header ">
-            <h5 class="card-title mb-0 flex-grow-1">Online Consulting Images </h5>
+            <h5 class="card-title mb-0 flex-grow-1">Online Consulting Images For:
+
+                {{$row->name}}
+            </h5>
+
+            <a  class="btn btn-info my-4" href="{{route('online_consulting.index')}}"> Back To Online Consulting
+
+            </a>
 
 
             <div class="row my-2 g-4">
