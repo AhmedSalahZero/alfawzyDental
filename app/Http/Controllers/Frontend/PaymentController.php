@@ -71,7 +71,7 @@ class PaymentController extends Controller
         $response =$provider->capturePaymentOrder($request->token);
 
 
-        if (isset($response['status'])  && $response['status']=='completed'){
+        if (isset($response['status'])  && $response['status']=='COMPLETED'){
              $payment->update([
                  'status'=>'paid',
              ]);
