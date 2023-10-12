@@ -75,6 +75,7 @@ class PaymentController extends Controller
              $payment->update([
                  'status'=>'paid',
                  'paid_date'=>date('Y-m-d'),
+                 'transaction_id'=>$response['id'],
              ]);
         }
         else
