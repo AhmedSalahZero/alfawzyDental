@@ -41,7 +41,7 @@ class PaymentController extends Controller
             ]
 
         ]);
-        dd($response);
+//        dd($response);
 
         if (isset($response['id']) && $response['id']!=null){
             foreach ($response['links'] as $link){
@@ -49,6 +49,8 @@ class PaymentController extends Controller
                     return redirect()->away($link['href']);
                 }
             }
+            return  redirect()->route('cancelPayment',$payment->id);
+
         }
         else{
             return  redirect()->route('cancelPayment',$payment->id);
