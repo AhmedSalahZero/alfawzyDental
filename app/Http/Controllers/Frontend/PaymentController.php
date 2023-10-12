@@ -62,6 +62,7 @@ class PaymentController extends Controller
          dd($request);
     }
     public function success(Request $request,$id){
+
         $payment=Payment::findOrFail($id);
 
         $provider = new PayPalClient;
@@ -69,7 +70,7 @@ class PaymentController extends Controller
         $paypalToken=$provider->getAccessToken();
         $response =$provider->capturePaymentOrder($request->token);
 
-//        dd($response);
+        dd($response);
 
         if (isset($response['status'])  && $response['status']=='completed'){
 
