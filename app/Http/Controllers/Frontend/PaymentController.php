@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Frontend;
 use App\Http\Controllers\Controller;
 use App\Models\Payment;
 use Illuminate\Http\Request;
-use Srmklive\PayPal\Services\ExpressCheckout;
+use Srmklive\PayPal\Services\PayPal as PayPalClient;
 
 class PaymentController extends Controller
 {
@@ -18,38 +18,41 @@ class PaymentController extends Controller
     }
     public function payment($id){
         $payment=Payment::findOrFail($id);
-        $data = [];
-        $data['items'] = [
-            [
-                'name' => 'Product 1',
-                'price' => 5,
-                'desc'  => 'Description for product 1',
-                'qty' => 1
+
+        $provider = new PayPalClient;
+        $provider->setApiCredentials(config('paypal'));
+        $paypalToken=$provider->getAccessToken();
+
+        $response = $provider->createOrder([
+            "intent"=> "CAPTURE",
+            "application_context"=> [
+                "return_url"=> route('successPayment',$payment->id),
+                "cancel_url"=> route('cancelPayment',$payment->id),
             ],
-            [
-                'name' => 'Product 2',
-                'price' => 6,
-                'desc'  => 'Description for product 2',
-                'qty' => 1
+
+            "purchase_units"=>[
+                [
+                    "amount"=>[
+                        "currency_code"=> "USD",
+                        "value"=> $payment->price,
+                    ]
+
             ]
-        ];
-        $return_url=route('successPayment',$payment->id);
-        $cancel_url=route('cancelPayment',$payment->id);
-        $data['invoice_id']=1;
-        $data['invoice_description']="Service ##{{$payment->service_id}} Invoice ";
-        $data['return_url']=$return_url;
-        $data['cancel_url']=$cancel_url;
-        $data['total']=11;
+            ]
 
-
-
-
-        $provider=new ExpressCheckout;
-        $response=$provider->setExpressCheckout($data);
-
+        ]);
         dd($response);
 
-        return redirect($response['paypal_link']);
+        if (isset($response['id']) && $response['id']!=null){
+            foreach ($response['links'] as $link){
+                if ($link['rel']==='approve'){
+                    return redirect()->away($link['href']);
+                }
+            }
+        }
+        else{
+            return  redirect()->route('cancelPayment',$payment->id);
+        }
 
     }
 
@@ -57,9 +60,18 @@ class PaymentController extends Controller
          dd($request);
     }
     public function success(Request $request,$id){
-        $provider=new ExpressCheckout;
-        $response=$provider->getExpressCheckoutDetails($request->token);
+        $payment=Payment::findOrFail($id);
 
-        dd($request);
+        $provider = new PayPalClient;
+        $provider->setApiCredentials(config('paypal'));
+        $paypalToken=$provider->getAccessToken();
+        $response =$provider->capturePaymentOrder($request->token);
+
+//        dd($response);
+
+        if (isset($response['status'])  && $response['status']=='completed'){
+
+        }
+
     }
 }
