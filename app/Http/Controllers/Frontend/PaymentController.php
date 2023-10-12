@@ -13,7 +13,7 @@ class PaymentController extends Controller
     public function index($id){
 
         $payment=Payment::findOrFail($id);
-        return view('front.payment.index',compact('payment'));
+        return view('front.Payment.index',compact('payment'));
 
     }
     public function payment($id){
