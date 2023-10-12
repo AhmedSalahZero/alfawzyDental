@@ -85,7 +85,7 @@ class PaymentController extends Controller
 
 
 
-        dd($response);
+         return redirect()->route('paymentPage',$id);
 
     }
 }
