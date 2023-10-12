@@ -70,11 +70,21 @@ class PaymentController extends Controller
         $paypalToken=$provider->getAccessToken();
         $response =$provider->capturePaymentOrder($request->token);
 
-        dd($response);
 
         if (isset($response['status'])  && $response['status']=='completed'){
-
+             $payment->update([
+                 'status'=>'paid',
+             ]);
         }
+        else
+            $payment->update([
+                'status'=>'cancel',
+
+            ]);
+
+      return  $payment=Payment::findOrFail($id);
+
+
 
     }
 }
