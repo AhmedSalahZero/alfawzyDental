@@ -82,9 +82,9 @@ class PaymentController extends Controller
 
             ]);
 
-      return  $payment=Payment::findOrFail($id);
 
 
+        dd($response);
 
     }
 }
