@@ -74,6 +74,7 @@ class PaymentController extends Controller
         if (isset($response['status'])  && $response['status']=='COMPLETED'){
              $payment->update([
                  'status'=>'paid',
+                 'paid_date'=>date('Y-m-d'),
              ]);
         }
         else
