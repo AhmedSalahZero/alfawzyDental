@@ -27,8 +27,6 @@
 
     @include('front.home.parts.counter')
 
-
-
 @endpush
 @push('js')
     <style>

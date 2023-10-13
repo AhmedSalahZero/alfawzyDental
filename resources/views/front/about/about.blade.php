@@ -7,7 +7,7 @@
 <x-banners.single-banner :title="__('About Us')"></x-banners.single-banner>
 <section class="about-us section  space-y-md">
     <div class="res-container">
-        <div class="about-us-content flex flex-col md:flex-row gap-20">
+        <div class="about-us-content flex flex-col md:flex-row gap-8 lg:gap-20">
             <div class="about-us__images basis-1/2 space-right">
                 <img src="{{get_file($row->image1)}}" class="w-[90%]">
             </div>
@@ -83,7 +83,7 @@
         </div>
         <div class="founders flex flex-col mt-3 gap-8 items-start ">
             @foreach($specialCategory->members??[] as $member)
-            <div class="founder shadow-md rounded-2xl element-internal-padding space-y-5 flex justify-center items-cener flex-col md:flex-row  gap-12 w-full">
+            <div class="founder shadow-md rounded-2xl element-internal-padding space-y-5 flex justify-center items-cener flex-col md:flex-row  gap-4 lg:gap-12 w-full">
                 <div class="founder-info text-center w-[332px] mx-auto">
                     <img src="{{ get_file($member->image) }}" alt="" class="rounded-2xl mb-6  max-w-full h-[325px] object-cover ">
                     <p class="name__title">{{ $member->name }}</p>

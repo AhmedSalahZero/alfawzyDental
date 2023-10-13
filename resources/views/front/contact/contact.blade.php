@@ -44,8 +44,8 @@
                 <img src="{{get_file($settings->contact_us_image) }}" class="max-w-full rounded-[32px]" alt="">
             </div>
             <div class="basis-2/3  max-w-[666px]">
-                <p class="text-lg leading-8">
-                   {{$settings->contact_us_desc}}
+                <p class="text-lg leading-8 text-[#4B4B4B]">
+				   {!! $settings->contact_us_desc !!}
                 </p>
 				<div class="map__link mt-5 ">
 					<a target="_blank" href="{{$settings->contact_us_link}}" class=" inline-flex items-center justify-center min-h-[64px] w-[244px] gap-2 capitalize bg-main text-white rounded-2xl shadow-sm">

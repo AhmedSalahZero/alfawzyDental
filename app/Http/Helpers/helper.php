@@ -92,6 +92,11 @@ function footerPages()
             'link' => route('web_services.index'),
             'title' => 'Our Services',
 
+        ], 
+		[
+            'link' => route('web_about.index'),
+            'title' => 'Our Teams',
+
         ],
         [
             'link' => route('web_partners.index'),
@@ -101,7 +106,7 @@ function footerPages()
 
         [
             'link' => route('web_gallery.index'),
-            'title' => 'Photo Gallery',
+            'title' => 'Gallery',
 
         ],
         [

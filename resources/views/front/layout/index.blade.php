@@ -258,8 +258,8 @@
             @if(isset($showHeaderBanner) && $showHeaderBanner)
             <div class="header__main-content flex items-center ">
 
-                <div class="hidden md:block icons  z-[12]">
-                    <ul class="flex  flex-col space-y-7 ">
+                <div class=" md:block icons  z-[12]">
+                    <ul class="flex flex-row absolute md:static bottom-[12%] left-1/2 -translate-x-1/2 md:-translate-x-0 space-x-5 md:space-x-0 md:flex-col space-y-0 md:space-y-7 ">
                         @foreach([
                         __('Instagram')=>[
                         'icon'=>'fa-brands fa-instagram',
@@ -294,7 +294,11 @@
                             @isset($sliders)
                             @foreach($sliders as $slider)
                             <div class="swiper-slide">
-                                <div class="absolute top-0 right-0 left-0 bottom-0 bg-no-repeat bg-cover " style="background-image:url('{{get_file($slider->image)}}')">
+                                <div class="absolute top-0 right-0 left-0 bottom-0 bg-no-repeat 
+								{{-- bg-cover --}}
+								bg-cover
+								bg-center
+								 " style="background-image:url('{{get_file($slider->image)}}')">
                                     {{-- <img src="{{ asset('front/image/home.jpg') }}"> --}}
 
 
@@ -310,7 +314,7 @@
                             <div class="swiper-button-prev-header"></div>
                             <div class="swiper-pagination-header"></div> --}}
                     </div>
-                    <div class="header__contact z-[8]  items-stretch md:items-center flex flex-col md:flex-row  space-x-0 md:space-x-10 space-y-7 md:space-y-0">
+                    <div class="header__contact z-[8] relative bottom-[60px] md:static items-stretch md:items-center flex flex-col md:flex-row  space-x-0 md:space-x-10 space-y-7 md:space-y-0">
                         @foreach ([
                         [
                         'icon'=> 'fa-solid fa-phone-volume',
@@ -326,7 +330,7 @@
                         ]
                         ] as $iconIndex=>$contactInfoArr)
 
-                        <div @if($iconIndex==0) onclick="window.open('tel:{{ $contactInfoArr['value'] }}');" @else onclick="window.open('mailto:{{ $contactInfoArr['value'] }}')" @endif class="contact__element {{ $contactInfoArr['animation'] ?? '' }} rounded-2xl px-2 cursor-pointer  sm:px-4  h-[76px] py-2 bg-white flex space-x-1 sm:space-x-3 items-center  ">
+                        <div @if($iconIndex==0) onclick="window.open('tel:{{ $contactInfoArr['value'] }}');" @else onclick="window.open('mailto:{{ $contactInfoArr['value'] }}')" @endif class="contact__element {{ $contactInfoArr['animation'] ?? '' }} rounded-2xl px-2 cursor-pointer  sm:px-4 h-[55px] md:h-[76px] py-2 bg-white flex space-x-1 sm:space-x-3 items-center  ">
                             <div class="contact-icon bg-main  rounded-2xl  px-1 py-2 w-[42px] h-[42px] flex-center ">
                                 <i class="{{ $contactInfoArr['icon'] }} text-white icon-size    "></i>
                             </div>
