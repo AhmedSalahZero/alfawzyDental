@@ -60,6 +60,12 @@
                     </a>
                 </li> <!-- end Dashboard Menu -->
 
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="{{route('payments.index')}}">
+                        <i class="fa fa-credit-card"></i> <span data-key="t-dashboards">Payments</span>
+                    </a>
+                </li> <!-- end Dashboard Menu -->
+
 
 
 

@@ -154,6 +154,10 @@ Route::group(
         Route::get('online_consulting_images/{id}', [\App\Http\Controllers\Admin\ConsultingImagesController::class,'index'])->name('online_consulting_images.index');
 
 
+        ### payments ###
+
+
+        Route::resource('payments', \App\Http\Controllers\Admin\PaymentController::class);
 
 
 

@@ -50,5 +50,12 @@ Route::group(
     Route::post('online-consulting-store',[HomeController::class, 'online_consulting_store'])->name('online-consulting-store');
 
 
+    Route::get('paymentPage/{id}',[\App\Http\Controllers\Frontend\PaymentController::class, 'index'])->name('paymentPage');
+
+
+    Route::get('payment/{id}',[\App\Http\Controllers\Frontend\PaymentController::class, 'payment'])->name('payment');
+    Route::get('cancelPayment/{id}',[\App\Http\Controllers\Frontend\PaymentController::class, 'cancel'])->name('cancelPayment');
+    Route::get('successPayment/{id}',[\App\Http\Controllers\Frontend\PaymentController::class, 'success'])->name('successPayment');
+
 
 });
