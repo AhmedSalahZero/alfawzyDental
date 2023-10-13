@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::table('payments', function (Blueprint $table) {
             //
             $table->dropColumn('transaction_id');
-            $table->string('transaction_payment_id')->after('id');
+            $table->string('transaction_payment_id')->nullable()->after('id');
         });
     }
 
