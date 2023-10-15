@@ -117,11 +117,7 @@
 
 
 
-                                        <div class="col-sm-6 pb-3 p-2">
-                                            <label for="desc" class="form-label"> Desc <span class="red-star">*</span> </label>
-                                            <textarea name="desc" id="desc" class="form-control" rows="5"
-                                                      placeholder="">{{$row->desc}}</textarea>
-                                        </div>
+
 
                                         <div class="col-sm-6 pb-3 p-2">
                                             <label for="team_desc" class="form-label"> Team Desc  <span class="red-star">*</span> </label>
@@ -150,6 +146,11 @@
                                                       placeholder="">{{$row->our_mission_desc}}</textarea>
                                         </div>
 
+                                        <div class="col-sm-6 pb-3 p-2">
+                                            <label for="desc" class="form-label"> Desc <span class="red-star">*</span> </label>
+                                            <textarea name="desc" id="desc" class="form-control" rows="5"
+                                                      placeholder="">{{$row->desc}}</textarea>
+                                        </div>
 
 
                                     </div>
