@@ -46,13 +46,13 @@
         </div>
 
         <div class="col-sm-6 pb-3 p-2">
-            <label for="desc1" class="form-label"> Desc1 <span class="red-star">*</span> </label>
+            <label for="desc1" class="form-label"> Desc1 </label>
             <textarea name="desc1" id="desc1" class="form-control" rows="5"
                       placeholder="">{{$row->desc1}}</textarea>
         </div>
 
         <div class="col-sm-6 pb-3 p-2">
-            <label for="desc2" class="form-label"> Desc1 <span class="red-star">*</span> </label>
+            <label for="desc2" class="form-label"> Desc2 <span class="red-star">*</span> </label>
             <textarea name="desc2" id="desc2" class="form-control" rows="5"
                       placeholder="">{{$row->desc2}}</textarea>
         </div>

@@ -259,4 +259,15 @@
 
     </script>
 
+
+
+    <script>
+        CKEDITOR.replace('contact_us_desc', {
+            height: 300
+            , filebrowserUploadUrl: "{{Route('upload.image',['_token'=>csrf_token()])}}"
+            , });
+
+
+
+    </script>
 @endsection

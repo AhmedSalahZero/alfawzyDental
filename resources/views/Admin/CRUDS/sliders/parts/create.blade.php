@@ -15,10 +15,10 @@
         <div class="d-flex flex-column mb-7 fv-row col-sm-12">
             <!--begin::Label-->
             <label for="title" class="d-flex align-items-center fs-6 fw-bold form-label mb-2">
-                <span class="required mr-1">Title <span class="red-star">*</span></span>
+                <span class="required mr-1">Title </span>
             </label>
             <!--end::Label-->
-            <input id="title" required type="text" class="form-control form-control-solid" placeholder="" name="title"
+            <input id="title"  type="text" class="form-control form-control-solid" placeholder="" name="title"
                    value=""/>
         </div>
 

@@ -96,8 +96,8 @@ class DentalTourismController extends Controller
             'title2' => 'required',
             'image' => 'nullable|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
             'desc' => 'required',
-            'desc1' => 'required',
-            'desc2' => 'required',
+            'desc1' => 'nullable',
+            'desc2' => 'nullable',
 
         ]);
 
