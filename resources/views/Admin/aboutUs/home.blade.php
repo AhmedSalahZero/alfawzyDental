@@ -34,12 +34,6 @@
                                         </div>
 
 
-
-
-
-
-
-
                                         <div class="d-flex flex-column mb-7 fv-row col-sm-4">
                                             <!--begin::Label-->
                                             <label for="title_home" class="d-flex align-items-center fs-6 fw-bold form-label mb-2">
@@ -64,18 +58,12 @@
                                         <div class="d-flex flex-column mb-7 fv-row col-sm-4">
                                             <!--begin::Label-->
                                             <label for="our_goal_title_home" class="d-flex align-items-center fs-6 fw-bold form-label mb-2">
-                                                <span class="required mr-1">Our Goal Title   <span class="red-star">*</span></span>
+                                                <span class="required mr-1">Our Vision  Title   <span class="red-star">*</span></span>
                                             </label>
                                             <!--end::Label-->
                                             <input id="our_goal_title_home" required type="text" class="form-control form-control-solid" placeholder="" name="our_goal_title_home"
                                                    value="{{$row->our_goal_title_home}}"/>
                                         </div>
-
-
-
-
-
-
 
 
 
@@ -91,7 +79,7 @@
 
 
                                         <div class="col-sm-6 pb-3 p-2">
-                                            <label for="our_goal_desc_home" class="form-label"> Our Goal Desc <span class="red-star">*</span> </label>
+                                            <label for="our_goal_desc_home" class="form-label"> Our Vision  Desc <span class="red-star">*</span> </label>
                                             <textarea name="our_goal_desc_home" id="our_goal_desc_home" class="form-control" rows="5"
                                                       placeholder="">{{$row->our_goal_desc_home}}</textarea>
                                         </div>

@@ -247,5 +247,14 @@
             });
         });
     </script>
+    <script>
+        CKEDITOR.replace('desc', {
+            height: 300
+            , filebrowserUploadUrl: "{{Route('upload.image',['_token'=>csrf_token()])}}"
+            , });
+
+
+
+    </script>
 
 @endsection
