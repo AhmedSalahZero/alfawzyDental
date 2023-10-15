@@ -82,6 +82,12 @@
                     </a>
                 </li> <!-- end Dashboard Menu -->
 
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="{{route('about_us_home.index')}}">
+                        <i class="fa fa-info"></i> <span data-key="t-dashboards">About Us Home </span>
+                    </a>
+                </li> <!-- end Dashboard Menu -->
+
 
 
                 <li class="nav-item">

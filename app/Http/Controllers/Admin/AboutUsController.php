@@ -21,8 +21,9 @@ class AboutUsController extends Controller
     public function store(Request $request){
 
         $data = $request->validate([
-            'image1' => 'nullable|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
-            'image2' => 'nullable|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
+            'image11' => 'nullable|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
+            'image12' => 'nullable|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
+            'image13' => 'nullable|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
             'team_image' => 'nullable|mimes:jpeg,jpg,png,gif,svg,webp,avif|max:5000',
             'title'=>'nullable',
             'desc'=>'nullable',
@@ -39,11 +40,17 @@ class AboutUsController extends Controller
         ]);
 
 
-        if ($request->image1)
-            $data["image1"] = $this->uploadFiles('aboutUs', $request->file('image1'), null);
+        if ($request->image11)
+            $data["image11"] = $this->uploadFiles('aboutUs', $request->file('image11'), null);
 
-        if ($request->image2)
-            $data["image2"] = $this->uploadFiles('aboutUs', $request->file('image2'), null);
+        if ($request->image12)
+            $data["image12"] = $this->uploadFiles('aboutUs', $request->file('image12'), null);
+
+        if ($request->image13)
+            $data["image13"] = $this->uploadFiles('aboutUs', $request->file('image13'), null);
+
+
+
 
         if ($request->team_image)
             $data["team_image"] = $this->uploadFiles('aboutUs', $request->file('team_image'), null);

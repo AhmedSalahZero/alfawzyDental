@@ -6,18 +6,18 @@
         </div>
         <div
             class="rounded-none  detinal-card-description  md:rounded-[40px] text-center md:text-left left-1/2 -translate-x-1/2 md:translate-x-0 w-full md:w-auto dential-card-content bg-white shadow-sm -mt-6   md:max-w-[425px] lg:max-w-[622px] absolute md:left-auto  -top-full md:top-0  md:-translate-y-1/2 right:0 md:right-[5%] py-10 md:py-10 px-5 md:px-10 md:mt-60 lg:mt-36">
-            <h2 class="main__title text-left  max-w-none md:max-w-[274px] mb-4 ">{{$about->title}}</h2>
-            <p class="leading-7 font-normal text-left  mb-10  color-subtext">{{$about->desc}} </p>
+            <h2 class="main__title text-left  max-w-none md:max-w-[274px] mb-4 ">{{$about->title_home}}</h2>
+            <p class="leading-7 font-normal text-left  mb-10  color-subtext">{{$about->desc_home}} </p>
             <div class="columns-1 lg:columns-2 gap-6 lg:gap-8 mb-6 space-y-10 md:space-y-0">
 
                 <div class="">
-                    <h2 class="mb-3 text-left font-semibold text-2xl"> {{$about->our_goal_title}} </h2>
-                    <p class="color-subtext text-left leading-6 font-normal ">{{$about->our_goal_desc}}</p>
+                    <h2 class="mb-3 text-left font-semibold text-2xl"> {{$about->our_goal_title_home}} </h2>
+                    <p class="color-subtext text-left leading-6 font-normal ">{{$about->our_goal_desc_home}}</p>
                 </div>
 
                 <div class="">
-                    <h2 class="mb-3 text-left font-semibold text-2xl"> {{$about->our_mission_title}} </h2>
-                    <p class="color-subtext text-left leading-6 font-normal ">{{$about->our_mission_desc}}</p>
+                    <h2 class="mb-3 text-left font-semibold text-2xl"> {{$about->our_mission_title_home}} </h2>
+                    <p class="color-subtext text-left leading-6 font-normal ">{{$about->our_mission_desc_home}}</p>
                 </div>
 
 

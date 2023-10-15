@@ -122,6 +122,10 @@ Route::group(
 
         Route::resource('about_us', \App\Http\Controllers\Admin\AboutUsController::class);
 
+        ### about Us Home ###
+
+        Route::resource('about_us_home', \App\Http\Controllers\Admin\AboutUsHomeController::class);
+
 
         ### dental Tourism ####
 

@@ -27,22 +27,30 @@
 
 
                                         <div class="d-flex flex-column mb-7 fv-row col-sm-4">
-                                            <label for="image1" class="form-control-label">Image </label>
-                                            <input type="file" class="dropify" name="image1" data-default-file="{{get_file($row->image1)}}" accept="image/*"/>
+                                            <label for="image11" class="form-control-label">Image 1 </label>
+                                            <input type="file" class="dropify" name="image11" data-default-file="{{get_file($row->image11)}}" accept="image/*"/>
                                             <span
                                                 class="form-text text-muted text-center">{{trans('admin.Only the following formats are allowed: jpeg, jpg, png, gif, svg, webp, avif.')}}</span>
                                         </div>
 
 
                                         <div class="d-flex flex-column mb-7 fv-row col-sm-4">
-                                            <label for="image2" class="form-control-label">Image2 </label>
-                                            <input type="file" class="dropify" name="image2" data-default-file="{{get_file($row->image2)}}" accept="image/*"/>
+                                            <label for="image12" class="form-control-label">Image 2 </label>
+                                            <input type="file" class="dropify" name="image12" data-default-file="{{get_file($row->image12)}}" accept="image/*"/>
+                                            <span
+                                                class="form-text text-muted text-center">{{trans('admin.Only the following formats are allowed: jpeg, jpg, png, gif, svg, webp, avif.')}}</span>
+                                        </div>
+
+                                        <div class="d-flex flex-column mb-7 fv-row col-sm-4">
+                                            <label for="image13" class="form-control-label">Image 3 </label>
+                                            <input type="file" class="dropify" name="image13" data-default-file="{{get_file($row->image13)}}" accept="image/*"/>
                                             <span
                                                 class="form-text text-muted text-center">{{trans('admin.Only the following formats are allowed: jpeg, jpg, png, gif, svg, webp, avif.')}}</span>
                                         </div>
 
 
-                                        <div class="d-flex flex-column mb-7 fv-row col-sm-4">
+
+                                        <div class="d-flex flex-column mb-7 fv-row col-sm-12">
                                             <label for="team_image" class="form-control-label">Team Image </label>
                                             <input type="file" class="dropify" name="team_image" data-default-file="{{get_file($row->team_image)}}" accept="image/*"/>
                                             <span
