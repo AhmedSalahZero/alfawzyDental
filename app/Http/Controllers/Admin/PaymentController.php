@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Payment;
+use App\Models\PaymentService;
 use App\Models\Service;
 use Illuminate\Http\Request;
 use Yajra\DataTables\DataTables;
@@ -52,9 +53,6 @@ class PaymentController extends Controller
                                    ';
                 })
 
-                ->editColumn('service_id', function ($row) {
-                    return $row->service->title??'';
-                })
 
                 ->editColumn('paid_date', function ($row) {
                     if ($row->status=='paid')
@@ -96,14 +94,23 @@ class PaymentController extends Controller
     {
         $data = $request->validate([
             'name' => 'required',
-            'service_id' => 'required|exists:services,id',
             'price' => 'required|regex:/^\d+(\.\d{1,2})?$/',
-
+            'services'=>'required|array',
+            'services.*'=>'required',
         ]);
 
 
+    $data=$request->except(['services']);
+       $row= Payment::create($data);
 
-        Payment::create($data);
+        if ($request->services){
+            foreach ($request->services as $service)
+                PaymentService::create([
+                    'payment_id'=>$row->id,
+                    'service_id'=>$service,
+                ]);
+        }
+
 
 
         return response()->json(
@@ -135,14 +142,27 @@ class PaymentController extends Controller
     {
         $data = $request->validate([
             'name' => 'required',
-            'service_id' => 'required|exists:services,id',
             'price' => 'required|regex:/^\d+(\.\d{1,2})?$/',
+            'services'=>'required|array',
+            'services.*'=>'required',
         ]);
 
+        $data=$request->except(['services']);
 
         $row=Payment::findOrFail($id);
 
         $row->update($data);
+
+
+        PaymentService::whereNotIn('service_id',$request->services)->where('payment_id',$id)->delete();
+
+        if ($request->services){
+            foreach ($request->services as $service)
+                PaymentService::updateOrCreate([
+                    'payment_id'=>$id,
+                    'service_id'=>$service,
+                ]);
+        }
 
 
         return response()->json(

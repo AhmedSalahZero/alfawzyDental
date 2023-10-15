@@ -23,7 +23,6 @@
                 <tr>
                     <th>#</th>
                     <th>name</th>
-                    <th>Service</th>
                     <th>Status</th>
                     <th>Price</th>
                     <th>Paid Date</th>
@@ -92,7 +91,6 @@
         var columns = [
             {data: 'id', name: 'id'},
             {data: 'name', name: 'name'},
-            {data: 'service_id', name: 'service_id'},
             {data: 'status', name: 'status'},
             {data: 'price', name: 'price'},
             {data: 'paid_date', name: 'paid_date'},
@@ -103,5 +101,17 @@
     </script>
     @include('Admin.layouts.inc.ajax',['url'=>'payments'])
 
+    <script>
+        $(document).on('change','#check_all',function () {
+            var checked = $(this).is(':checked');
+
+            if (checked){
+                $('.checkbox').prop('checked', true);
+            }
+            else {
+                $('.checkbox').prop('checked', false);
+            }
+        })
+    </script>
 
 @endsection
