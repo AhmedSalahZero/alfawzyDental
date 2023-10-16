@@ -151,3 +151,11 @@
 #submit_button{
 	height:64px;	
 }
+.shared-abs{
+	position:relative;
+	left:50%;
+	transform: translateX(-50%);
+}
+.payment-spacer{
+	height:100px;
+}

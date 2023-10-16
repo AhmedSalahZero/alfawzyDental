@@ -1532,3 +1532,819 @@
 #77 D:\\Mohamed\\tailor\\alfawzyDental\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('D:\\\\Mohamed\\\\tail...')
 #78 {main}
 "} 
+[2023-10-16 18:26:59] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 18:27:00] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 18:27:59] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 18:29:00] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 18:30:00] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 18:31:01] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 18:32:00] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 18:33:02] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 18:34:02] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 18:35:01] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 18:36:02] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 18:37:02] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 18:38:01] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 18:39:02] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 18:39:59] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 18:40:59] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 18:41:59] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 18:42:59] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 18:43:59] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 18:44:59] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 18:45:59] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 18:46:59] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 18:47:59] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 18:48:59] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 18:49:59] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 18:50:59] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 18:51:59] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 18:52:59] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 18:53:59] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 18:54:59] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 18:55:59] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 18:56:59] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 18:57:59] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 18:58:59] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 18:59:59] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:00:59] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:01:59] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:03:00] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:03:59] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:04:59] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:05:59] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:06:59] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:07:59] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:09:00] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:09:59] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:11:00] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:12:00] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:13:00] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:14:01] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:15:01] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:16:02] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:17:01] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:18:00] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:18:59] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:19:59] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:21:00] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:22:01] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:23:01] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:24:01] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:25:02] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:26:01] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:27:00] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:28:01] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:29:01] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:30:00] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:31:00] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:32:02] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:33:01] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:33:59] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:35:00] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:36:00] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:37:01] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:38:00] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:39:02] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:40:02] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:41:00] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:42:01] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:43:00] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:44:02] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:45:00] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:46:00] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:47:01] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:48:01] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:49:01] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:50:00] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:51:00] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:52:00] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:53:00] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:54:00] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:55:00] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:56:16] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:57:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:58:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 19:59:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:00:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:01:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:02:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:03:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:04:20] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:05:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:06:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:07:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:08:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:09:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:10:15] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:11:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:12:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:13:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:14:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:15:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:16:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:17:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:18:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:19:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:20:15] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:21:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:22:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:23:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:24:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:25:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:26:15] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:27:15] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:28:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:29:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:30:15] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:31:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:32:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:33:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:34:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:35:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:36:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:37:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:38:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:39:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:40:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:41:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:42:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:43:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:44:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:45:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:46:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:47:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:48:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:49:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:50:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:51:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:52:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:53:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:54:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:55:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:56:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:57:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:58:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 20:59:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:00:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:01:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:02:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:03:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:04:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:05:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:06:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:07:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:08:13] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:09:15] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:10:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:11:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:12:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:13:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:14:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:15:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:16:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:17:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:18:15] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:19:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:20:15] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:21:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:22:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:23:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:24:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:25:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:26:15] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:27:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:28:16] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:29:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:30:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:31:15] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:32:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:33:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:34:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:35:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:36:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:37:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:38:16] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:39:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:40:15] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:41:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:42:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:43:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:44:15] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:45:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:46:15] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:47:14] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:48:15] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 
+[2023-10-16 21:49:15] local.ERROR: Cannot use 'Parent' as class name as it is reserved {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use 'Parent' as class name as it is reserved at C:\\laragon\\www\\alfawzyDental\\app\\Models\\Parent.php:8)
+[stacktrace]
+#0 {main}
+"} 

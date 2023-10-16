@@ -1,0 +1,10 @@
+.payment__description::after{
+	content:'';
+	position:absolute;
+	height:55px;
+	bottom:-55px;
+	width:100%;
+	background-color:#EFEFEF;
+	left:0;
+	border-radius: 0, 0, 16px, 16px;
+}

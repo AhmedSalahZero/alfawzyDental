@@ -8,8 +8,12 @@
 <section class="about-us section  space-y-md">
     <div class="res-container">
         <div class="about-us-content flex flex-col md:flex-row gap-8 lg:gap-20">
-            <div class="about-us__images basis-1/2 space-right">
-                <img src="{{get_file($row->image1)}}" class="w-[90%]">
+            <div class="about-us__images h-[440px] lg:h-auto  lg:basis-1/2 space-right relative">
+				
+				<img class="shared-abs max-w-[210px] lg:max-w-[274px] absolute top-[17px] ml-[-60px] lg:ml-[-25px] " src="{{ asset('front/image/about/1.png') }}">
+				<img class="shared-abs  absolute ml-[27%] md:ml-[33%] lg:ml-[33%] top-[-36%]   max-w-[168px]" src="{{ asset('front/image/about/3.png') }}">
+				<img class="shared-abs max-w-[274px] ml-[5%] lg:ml-[20%] absolute  top-[-40%] " src="{{ asset('front/image/about/2.png') }}">
+                {{-- <img src="{{get_file($row->image1)}}" class="w-[90%]"> --}}
             </div>
             <div class="about__descriptions basis-1/2 space-left">
                 <h2 class="max-w-none md:max-w-[438px]  mb-5 main__title__bold ">{{$row->title}}</h2>

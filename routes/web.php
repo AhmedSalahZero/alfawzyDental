@@ -15,7 +15,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-
+Route::get('payment',function(){
+	return view('front.payments.purchase');
+});
+Route::get('payment-status',function(){
+	return view('front.payments.status');
+});
 
 Route::group(
     [
@@ -56,6 +61,7 @@ Route::group(
     Route::get('payment/{id}',[\App\Http\Controllers\Frontend\PaymentController::class, 'payment'])->name('payment');
     Route::get('cancelPayment/{id}',[\App\Http\Controllers\Frontend\PaymentController::class, 'cancel'])->name('cancelPayment');
     Route::get('successPayment/{id}',[\App\Http\Controllers\Frontend\PaymentController::class, 'success'])->name('successPayment');
+
 
 
 });
