@@ -13,7 +13,7 @@
                     <div class="branch-icon bg-main w-8 h-8 md:w-11 md:h-11 rounded-2xl  flex-center">
                         <i class="text-white icon-size fa-solid fa-house"></i>
                     </div>
-                    <h3 class="text-xl font-semibold text-black ">{{$settings->footer_title1}}</h3>
+                    <h3 class="text-xl font-semibold text-black ">{!! $settings->footer_title1 !!}</h3>
                     <div class="!text-sm md:!text-lg  description__paragraph !text-[#8A8A8A]">{!! $settings->footer_desc1 !!}</div>
 
                 </div>
